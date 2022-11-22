@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="77px" height="75px" viewBox="0 0 77 75" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 58 (84663) - https://sketch.com -->
+    <title>Rectangle Copy 29</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="50%" y1="100%" x2="50%" y2="3.061617e-15%" id="linearGradient-1">
+            <stop stop-color="#FCE0E0" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+        <path d="M52.9120419,38 L67.0879581,38 C69.6411642,38 72.0742148,39.084439 73.7811133,40.9832173 L82.0563019,50.1886555 C85.0307124,53.4974324 85.1410544,58.4830778 82.315944,61.9202094 L66.9527973,80.6115694 C63.7966164,84.4514933 58.1251528,85.0057765 54.2852288,81.8495955 C53.8332985,81.4781366 53.4186616,81.0634997 53.0472027,80.6115694 L37.684056,61.9202094 C34.8589456,58.4830778 34.9692876,53.4974324 37.9436981,50.1886555 L46.2188867,40.9832173 C47.9257852,39.084439 50.3588358,38 52.9120419,38 Z M52.9120419,45 C52.3446627,45 51.8039848,45.2409864 51.4246741,45.6629372 L43.1494855,54.8683754 C42.4885054,55.6036591 42.4639849,56.7115804 43.0917872,57.4753874 L58.4549339,76.1667473 C58.5374804,76.2671763 58.6296219,76.3593178 58.7300509,76.4418643 C59.5833673,77.1432378 60.8436925,77.0200638 61.5450661,76.1667473 L76.9082128,57.4753874 C77.5360151,56.7115804 77.5114946,55.6036591 76.8505145,54.8683754 L68.5753259,45.6629372 C68.1960152,45.2409864 67.6553373,45 67.0879581,45 L52.9120419,45 Z" id="path-2"></path>
+        <filter x="-53.4%" y="-41.4%" width="206.7%" height="213.3%" filterUnits="objectBoundingBox" id="filter-3">
+            <feOffset dx="0" dy="2" in="SourceAlpha" result="shadowOffsetOuter1"></feOffset>
+            <feGaussianBlur stdDeviation="2.5" in="shadowOffsetOuter1" result="shadowBlurOuter1"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.606629303   0 0 0 0 0.241241493   0 0 0 0 0.241241493  0 0 0 0.3 0" type="matrix" in="shadowBlurOuter1" result="shadowMatrixOuter1"></feColorMatrix>
+            <feOffset dx="0" dy="7" in="SourceAlpha" result="shadowOffsetOuter2"></feOffset>
+            <feGaussianBlur stdDeviation="7.5" in="shadowOffsetOuter2" result="shadowBlurOuter2"></feGaussianBlur>
+            <feColorMatrix values="0 0 0 0 0.62279212   0 0 0 0 0.0528803675   0 0 0 0 0.0528803675  0 0 0 0.7 0" type="matrix" in="shadowBlurOuter2" result="shadowMatrixOuter2"></feColorMatrix>
+            <feMerge>
+                <feMergeNode in="shadowMatrixOuter1"></feMergeNode>
+                <feMergeNode in="shadowMatrixOuter2"></feMergeNode>
+            </feMerge>
+        </filter>
+    </defs>
+    <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-5" transform="translate(-681.000000, -235.000000)">
+            <g id="Group-2" transform="translate(660.000000, 205.000000)">
+                <g id="Rectangle-Copy-29">
+                    <use fill="black" fill-opacity="1" filter="url(#filter-3)" xlink:href="#path-2"></use>
+                    <use fill="url(#linearGradient-1)" fill-rule="evenodd" xlink:href="#path-2"></use>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

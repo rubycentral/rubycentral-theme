@@ -105,7 +105,7 @@ header {
         top: 20px;
         border-radius: 40px;
         box-shadow: 0 9px 18px rgba(129, 0, 0, 0.3), 0 2px 5px rgba(137, 0, 0, 0.2);
-        background: url(../img/gem-logo.svg) no-repeat center 10px, linear-gradient(to top, #DF3434 0%, #FB5E55 100%); }
+        background: url(/assets/images/gem-logo.svg) no-repeat center 10px, linear-gradient(to top, #DF3434 0%, #FB5E55 100%); }
     header #main-logo:hover .logo-square {
       box-shadow: 0 4px 12px rgba(255, 186, 186, 0.4), 0px 25px 35px rgba(232, 10, 10, 0.15);
       transform: translateY(-3px); }
@@ -185,13 +185,13 @@ header {
   border-radius: 10px;
   border: 2px solid var(--divider); }
   .upcoming-details.denver {
-    background-image: url(../img/denver.png); }
+    background-image: url(/assets/images/denver.png); }
   .upcoming-details.atlanta {
-    background-image: url(../img/atlanta.png); }
+    background-image: url(/assets/images/atlanta.png); }
   .upcoming-details.portland {
-    background-image: url(../img/portland.png); }
+    background-image: url(/assets/images/portland.png); }
   .upcoming-details.houston {
-    background-image: url(../img/houston.png); }
+    background-image: url(/assets/images/houston.png); }
   .upcoming-details h3 {
     margin: 0;
     font-size: 30px; }
@@ -296,7 +296,7 @@ h3 {
     margin: 0 0 27px 0; }
   #blurb .icon-box {
     box-shadow: 0 9px 18px rgba(156, 25, 20, 0.33), 0 1px 5px rgba(141, 69, 69, 0.21);
-    background: url(../img/blurb-icon.svg) center center no-repeat, linear-gradient(to top, #DF3434 0%, #FB5E55 100%); }
+    background: url(/assets/images/blurb-icon.svg) center center no-repeat, linear-gradient(to top, #DF3434 0%, #FB5E55 100%); }
 
 #community {
   background-color: var(--purple); }
@@ -307,14 +307,14 @@ h3 {
     font-weight: 600; }
   #community .icon-box {
     box-shadow: 0 9px 18px rgba(77, 50, 89, 0.45), 0 1px 5px rgba(132, 69, 141, 0.21);
-    background: url(../img/community-icon.svg) center center no-repeat, linear-gradient(to top, #6D4D7C 0%, #7E5B8D 100%); }
+    background: url(/assets/images/community-icon.svg) center center no-repeat, linear-gradient(to top, #6D4D7C 0%, #7E5B8D 100%); }
 
 #rubygems {
   background-color: var(--green);
   padding-bottom: 82px; }
   #rubygems .icon-box {
     box-shadow: 0 9px 18px rgba(54, 147, 107, 0.4), 0 1px 5px rgba(78, 146, 117, 0.21);
-    background: url(../img/rubygems-icon.svg) center center no-repeat, linear-gradient(to top, #6BB998 0%, #78CAA6 100%); }
+    background: url(/assets/images/rubygems-icon.svg) center center no-repeat, linear-gradient(to top, #6BB998 0%, #78CAA6 100%); }
 
 #conferences {
   background-color: var(--yellow); }
@@ -328,15 +328,15 @@ h3 {
   background-color: var(--blue); }
   #support .icon-box {
     box-shadow: 0 9px 18px rgba(15, 35, 63, 0.14), 0 1px 5px rgba(23, 43, 69, 0.12);
-    background: url(../img/support-icon.svg) center center no-repeat, linear-gradient(to top, #5A81B7 0%, #6992CA 100%); }
+    background: url(/assets/images/support-icon.svg) center center no-repeat, linear-gradient(to top, #5A81B7 0%, #6992CA 100%); }
 
 #rubyconf .icon-box {
   box-shadow: 0 9px 18px rgba(239, 158, 70, 0.12), 0 1px 5px rgba(255, 213, 186, 0.3);
-  background: url(../img/ruby-icon.svg) center center no-repeat, linear-gradient(to top, #FDF7F1 0%, #fff 100%); }
+  background: url(/assets/images/ruby-icon.svg) center center no-repeat, linear-gradient(to top, #FDF7F1 0%, #fff 100%); }
 
 #railsconf .icon-box {
   box-shadow: 0 9px 18px rgba(239, 158, 70, 0.12), 0 1px 5px rgba(255, 213, 186, 0.3);
-  background: url(../img/rails-icon.svg) center center no-repeat, linear-gradient(to top, #FDF7F1 0%, #fff 100%); }
+  background: url(/assets/images/rails-icon.svg) center center no-repeat, linear-gradient(to top, #FDF7F1 0%, #fff 100%); }
 
 @keyframes video_hover {
   0% {
@@ -378,7 +378,7 @@ h3 {
       width: 27px;
       border: 2px solid #5E83A7;
       border-radius: 5px;
-      background: url(../img/video-icon.svg) 5px center no-repeat;
+      background: url(/assets/images/video-icon.svg) 5px center no-repeat;
       animation: video_hover_out .2s linear; }
       .conference-list li a:hover {
         animation: video_hover .2s linear; }
@@ -410,7 +410,7 @@ h3 {
   color: var(--white); }
   #history .icon-box {
     box-shadow: 0 9px 18px rgba(17, 24, 38, 0.1), 0 1px 5px rgba(26, 30, 36, 0.2);
-    background: url(../img/history-icon.svg) center center no-repeat, linear-gradient(to top, #292F3A 0%, #313743 100%); }
+    background: url(/assets/images/history-icon.svg) center center no-repeat, linear-gradient(to top, #292F3A 0%, #313743 100%); }
 
 .profile-image {
   border: 2px solid var(--white);
@@ -471,13 +471,13 @@ h3 {
   position: relative; }
   #directors .icon-box {
     box-shadow: 0 9px 18px rgba(191, 204, 214, 0.12), 0 1px 5px rgba(205, 231, 252, 0.3);
-    background: url(../img/directors-icon.svg) center center no-repeat, linear-gradient(to top, #F6FBFE 0%, #fff 100%); }
+    background: url(/assets/images/directors-icon.svg) center center no-repeat, linear-gradient(to top, #F6FBFE 0%, #fff 100%); }
 
 #staff {
   position: relative; }
   #staff .icon-box {
     box-shadow: 0 9px 18px rgba(191, 204, 214, 0.12), 0 1px 5px rgba(205, 231, 252, 0.3);
-    background: url(../img/staff-icon.svg) center center no-repeat, linear-gradient(to top, #F6FBFE 0%, #fff 100%); }
+    background: url(/assets/images/staff-icon.svg) center center no-repeat, linear-gradient(to top, #F6FBFE 0%, #fff 100%); }
   #staff .people li aside {
     background: #5E83A7;
     border-color: #3F6589; }
@@ -496,7 +496,7 @@ h3 {
       line-height: 27px;
       margin: 0 0 15px 0;
       padding: 0 0 0 20px;
-      background: url(../img/bullet.svg) 0 8px no-repeat;
+      background: url(/assets/images/bullet.svg) 0 8px no-repeat;
       list-style-type: none; }
 
 .back {

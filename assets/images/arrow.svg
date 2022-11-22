@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="9px" height="11px" viewBox="0 0 9 11" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>arrow</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Site" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Desktop-HD-Copy-5" transform="translate(-493.000000, -1242.000000)" fill="#FFFDF9">
+            <path d="M494.524097,1242.93791 L500.616055,1246.6868 C501.086413,1246.97625 501.233067,1247.5922 500.943616,1248.06256 C500.861573,1248.19588 500.749376,1248.30808 500.616055,1248.39012 L494.524097,1252.13902 C494.05374,1252.42847 493.437793,1252.28181 493.148342,1251.81146 C493.051352,1251.65385 493,1251.47242 493,1251.28736 L493,1243.78956 C493,1243.23728 493.447715,1242.78956 494,1242.78956 C494.18506,1242.78956 494.36649,1242.84092 494.524097,1242.93791 Z" id="arrow"></path>
+        </g>
+    </g>
+</svg>

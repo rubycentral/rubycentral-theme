@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="13px" height="8px" viewBox="0 0 13 8" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 62 (91390) - https://sketch.com -->
+    <title>video-icon</title>
+    <desc>Created with Sketch.</desc>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="video-icon" fill="#5E83A7" fill-rule="nonzero">
+            <path d="M7,0 C8.104569,0 9,0.89543 9,2 L9,2.499 L10.552786,1.72361 C10.69681,1.65159 10.849903,1.6176 11.000656,1.61782 L11,1.5 C11,1.22386 11.223858,1 11.5,1 L12.5,1 C12.776142,1 13,1.22386 13,1.5 L13,6.5 C13,6.77614 12.776142,7 12.5,7 L11.5,7 C11.223858,7 11,6.77614 11,6.5 L11,6.38197 C10.844755,6.38197 10.691642,6.34582 10.552786,6.27639 L9,5.5 L9,6 C9,7.10457 8.104569,8 7,8 L2,8 C0.895431,8 0,7.10457 0,6 L0,2 C0,0.89543 0.895431,0 2,0 L7,0 Z"></path>
+        </g>
+    </g>
+</svg>
