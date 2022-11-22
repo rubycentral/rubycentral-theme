@@ -1,4 +1,4 @@
-import '../../css/app.css';
+import "../../css/app.css"
 
 // LiveReload server
 if (ENV === 'development') {

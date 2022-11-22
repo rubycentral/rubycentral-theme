@@ -33,7 +33,7 @@ export default [
   {
     input: 'src/js/app/index.js',
     output: {
-      file: 'assets/built/app.js',
+      file: 'assets/dist/app.js',
       format: 'iife',
       sourcemap: true,
     },
@@ -42,7 +42,7 @@ export default [
   {
     input: 'src/js/post/index.js',
     output: {
-      file: 'assets/built/post.js',
+      file: 'assets/dist/post.js',
       format: 'iife',
       sourcemap: true,
     },

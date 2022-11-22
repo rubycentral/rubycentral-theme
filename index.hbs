@@ -2,16 +2,299 @@
 {{!< default}}
 <section class="grid">
     <header>
-        <h1>{{@site.title}}</h1>
-        <p>{{@site.description}}</p>
+        <a href="/" id="main-logo">
+            <div class="logo-square">
+                <div class="logo-circle"></div>
+            </div>
+            <h1>{{@site.title}}</h1>
+        </a>
+        <h2>{{@site.description}}</h2>
     </header>
 
+<div class="upcoming">
+  <div class="next-conf">
+    <a href="/executive-director">Ruby Central Welcomes New Executive Director, Neil McGovern</a>
+  </div>
+
+  <div class="next-conf">
+    <a href="/ruby-shield">Ruby Central announces Ruby Shield, a partnership with Shopify to fund infrastructure and security.</a>
+  </div>
+
+  <div class="next-conf">
+    <span>
+      Our next conference is 
+      <a href="https://rubyconf.org" target="_blank">RubyConf</a> on November 29 - December 1, 2022 in Houston, TX.
+    </span>
+    <a href="https://rubyconf.org" target="_blank" class="next-conf-button">Let's go!</a>
+  </div>
+</div>
+
+<div class="main-grid">
+  <div>
+    <section id="blurb">
+      <div class="icon-box"></div>
+      <h4>
+        Ruby Central is a non-profit organization dedicated to Ruby support
+        and advocacy of the worldwide Ruby community.
+      </h4>
+      <p>
+        We organize the annual RubyConf and RailsConf software conferences,
+        support community growth, and provide vital infrastructure for the
+        Ruby programming language.
+      </p>
+      <p><a href="#about">Learn more about us.</a></p>
+    </section>
+    <section id="rubygems">
+      <div class="section-header">
+        <div class="icon-box"></div>
+        <h3>RubyGems</h3>
+        <img src="{{asset "img/arrow.svg"}}" class="arrow">
+      </div>
+      <p>
+        RubyGems is the code-packaging system for the Ruby community.
+        Started as a project in 2004 by the directors of Ruby Central and
+        friends, RubyGems has grown into an invaluable and wide-ranging
+        resource for the sharing of code among all members of the community.
+        With hosting support by Ruby Central, more information can be found
+        at <a href="https://rubygems.org">rubygems.org</a>.
+      </p>
+    </section>
+  </div>
+  <div>
+    <section id="community">
+      <div class="section-header">
+        <div class="icon-box"></div>
+        <h3>Community</h3>
+        <img src="{{asset "img/arrow.svg"}}" class="arrow">
+      </div>
+      <p>
+        Here at Ruby Central, we’re incredibly appreciative of our
+        community, which is dedicated to maintaining an open, welcoming, and
+        supportive environment for all Rubyists. As such, we’re always
+        excited to hear about new Ruby-related projects and regional
+        conferences.
+      </p>
+
+      <p>
+        In some instances, we are able to provide resources, grants, or
+        other forms of assistance. If you have a project or conference that
+        you think we should know about, please don’t hesitate to
+        <a href="mailto:contact@rubycentral.org">contact us</a>.
+      </p>
+      <h5>Community Grants</h5>
+      <p>
+        Launching a new event (conferences, user groups, etc.) benefiting the Ruby community? We may be able to provide guidance and/or support. <a href="/grants">Learn more about grants</a>.
+      </p>
+      <h5>Opportunity Scholarships</h5>
+      <p>
+        Interested in replicating our Opportunity Scholarship program at your own event, with some assistance from us? <a href="/scholarships">Learn more about scholarships</a>.
+      </p>
+    </section>
+    <section id="conferences">
+      <h3>33 Conferences and counting.</h3>
+    </section>
+  </div>
+</div>
+<section id="support">
+  <div class="section-header">
+    <div class="icon-box"></div>
+    <h3>Support</h3>
+    <img src="{{asset "img/arrow.svg"}}" class="arrow">
+  </div>
+  <p>
+    The Ruby language could not have developed so robustly without its
+    dedicated community. This community consists of not only talented and
+    passionate individual developers, but also many dynamic companies that
+    recognize the value of helping foster a strong, sustainable environment
+    for Ruby development.
+  </p>
+  <p></p>
+
+  <p>
+    If you are looking for ways in which you can help us support the Ruby
+    community, please contact us at
+    <a href="mailto:contact@rubycentral.org">contact@rubycentral.org</a>.
+  </p>
+</section>
+<div class="main-grid">
+  <div>
+    <section id="rubyconf" class="light-background">
+      <div class="section-header">
+        <div class="icon-box"></div>
+        <h3>RubyConf</h3>
+        <img src="{{asset "img/darkarrow.svg"}}" class="arrow">
+      </div>
+      <p>
+        <a href="https://rubyconf.org">RubyConf</a> is the Ruby community’s
+        annual celebration of all things Ruby! Every fall, we gather Ruby
+        enthusiasts together to enjoy detailed talks about exciting new
+        projects; meet and network with other Ruby developers; and hear from
+        the community’s leading minds, including Yukihiro Matsumoto
+        ("Matz"), the creator of the Ruby language.
+      </p>
+      <ul class="conference-list">
+        <li>
+          Nashville 2019<a
+            href="https://www.youtube.com/watch?v=2g9R7PUCEXo&list=PLE7tQUdRKcyZDE8nFrKaqkpd-XK4huygU"
+          ></a>
+        </li>
+        <li>
+          Los Angeles 2018<a
+            href="http://confreaks.tv/events/rubyconf2018"
+          ></a>
+        </li>
+        <li>
+          New Orleans 2017<a
+            href="http://confreaks.tv/events/rubyconf2017"
+          ></a>
+        </li>
+        <li>
+          Cincinnati 2016<a
+            href="http://confreaks.tv/events/rubyconf2016"
+          ></a>
+        </li>
+        <li>
+          San Antonio 2015<a
+            href="http://confreaks.tv/events/rubyconf2015"
+          ></a>
+        </li>
+        <li>
+          San Diego 2014<a
+            href="http://confreaks.tv/events/rubyconf2014"
+          ></a>
+        </li>
+        <li>
+          Miami Beach 2013<a
+            href="http://confreaks.tv/events/rubyconf2013"
+          ></a>
+        </li>
+        <li>
+          Denver 2012<a href="http://confreaks.tv/events/rubyconf2012"></a>
+        </li>
+        <li>
+          New Orleans 2011<a
+            href="http://confreaks.tv/events/rubyconf2011"
+          ></a>
+        </li>
+        <li>
+          New Orleans 2010<a
+            href="http://confreaks.tv/events/rubyconf2010"
+          ></a>
+        </li>
+        <li>
+          San Francisco 2009<a
+            href="http://confreaks.tv/events/rubyconf2009"
+          ></a>
+        </li>
+        <li>
+          Orlando 2008<a href="http://confreaks.tv/events/rubyconf2008"></a>
+        </li>
+        <li>
+          Charlotte 2007<a
+            href="http://confreaks.tv/events/rubyconf2007"
+          ></a>
+        </li>
+        <li>Denver 2006</li>
+        <li>San Diego 2005</li>
+        <li>Reston 2004</li>
+        <li>Austin 2003</li>
+        <li>Seattle 2002</li>
+        <li>Tampa 2001</li>
+      </ul>
+    </section>
+  </div>
+  <div>
+    <section id="railsconf" class="light-background">
+      <div class="section-header">
+        <div class="icon-box"></div>
+        <h3>RailsConf</h3>
+        <img src="{{asset "img/darkarrow.svg"}}" class="arrow">
+      </div>
+      <p>
+        <a href="https://railsconf.org">RailsConf</a> is the world’s largest
+        gathering of Rails developers, brought together to further
+        discussion and learning about building, managing, and testing Rails
+        applications. With a specific focus on Rails, conference topics can
+        range from new users to administration to advanced techniques.
+      </p>
+      <ul class="conference-list">
+        <li>
+          Minneapolis 2019<a
+            href="https://www.youtube.com/playlist?list=PLE7tQUdRKcyaOq3HlRm9h_Q_WhWKqm5xc"
+          ></a>
+        </li>
+        <li>
+          Pittsburgh 2018<a
+            href="http://confreaks.tv/events/railsconf2018"
+          ></a>
+        </li>
+        <li>
+          Phoenix 2017<a
+            href="http://confreaks.tv/events/railsconf2017"
+          ></a>
+        </li>
+        <li>
+          Kansas City 2016<a
+            href="http://confreaks.tv/events/railsconf2016"
+          ></a>
+        </li>
+        <li>
+          Atlanta 2015<a
+            href="http://confreaks.tv/events/railsconf2015"
+          ></a>
+        </li>
+        <li>
+          Chicago 2014<a
+            href="https://www.youtube.com/playlist?list=PLE7tQUdRKcyZ5jfnbS_osIoWzK_FrwKz5"
+          ></a>
+        </li>
+        <li>
+          Portland 2013<a
+            href="https://www.youtube.com/playlist?list=PLE7tQUdRKcybxgqVTwuOA12wr5Gn2M2Pp"
+          ></a>
+        </li>
+        <li>
+          Austin 2012<a
+            href="https://www.youtube.com/playlist?list=PLF16D2F3A8469021E"
+          ></a>
+        </li>
+        <li>
+          Baltimore 2011<a
+            href="https://www.youtube.com/playlist?list=PL379EA9290474C86C"
+          ></a>
+        </li>
+        <li>
+          Baltimore 2010<a
+            href="https://www.youtube.com/playlist?list=PL393ECE649BB3813D"
+          ></a>
+        </li>
+        <li>Las Vegas 2009</li>
+        <li>Portland 2008</li>
+        <li>Portland 2007</li>
+        <li>Chicago 2006</li>
+      </ul>
+    </section>
+  </div>
+</div>
+
+<div id="about">
+  <div class="content">
+    <!-- <%= erb :directors %> -->
+    <!-- <%= erb :staff %> -->
+  </div>
+</div>
+<div id="history">
+  <div class="content">
+    <!-- <%= erb :history %> -->
+  </div>
+</div>
+    
     {{#foreach posts}}
 
         <article>
             {{#if feature_image}}
                 <div>
-                    <img src="{{img_url feature_image size="m"}}" alt=""> 
+                    <img src="{{asset "{{img_url feature_image size="}}"m"}}" alt=""> 
                 </div>
             {{/if}}
             <div>
