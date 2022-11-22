@@ -1,8 +1,13 @@
 {
+  "$schema": "https://docs.renovatebot.com/renovate-schema.json",
   "extends": [
-    "@tryghost:theme"
+    "config:base"
   ],
-  "node": {
-    "supportPolicy": ["lts_latest"]
-  }
+
+  "packageRules": [
+    {
+      "matchUpdateTypes": ["minor", "patch", "pin", "digest"],
+      "automerge": true
+    }
+  ]
 }

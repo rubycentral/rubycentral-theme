@@ -8,11 +8,12 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v3
-      - run: yarn install
-      - run: yarn test:ci
-      - run: yarn ship
+      - run: npm install
+      - run: npm run check
+      - run: npm run zip
       - name: Deploy Ghost Theme
-        uses: TryGhost/action-deploy-theme@v1.6.2
+        uses: TryGhost/action-deploy-theme@v1
         with:
           api-url: ${{ secrets.GHOST_ADMIN_API_URL }}
           api-key: ${{ secrets.GHOST_ADMIN_API_KEY }}
+          file: dist/theme.zip
