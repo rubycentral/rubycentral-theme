@@ -1,7 +1,7 @@
 {
-  "name": "ghost-theme-starter",
-  "version": "1.0.1",
-  "description": "A Ghost theme starter",
+  "name": "rubycentral-theme",
+  "version": "1.0.0",
+  "description": "A Ghost theme for Ruby Central",
   "engines": {
     "ghost": ">=4.0.0",
     "ghost-api": "v4"
@@ -20,11 +20,11 @@
     "ghost-theme"
   ],
   "author": {
-    "name": "Ryan Feigenbaum",
-    "email": "ryan.feigenbaum@gmail.com",
-    "url": "https://ryanfeigenbaum.com"
+    "name": "Ruby Central",
+    "email": "hello@rubycentral.org",
+    "url": "https://rubycentral.org"
   },
-  "license": "MIT",
+  "license": "private",
   "config": {
     "posts_per_page": 15,
     "image_sizes": {
