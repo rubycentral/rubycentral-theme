@@ -504,20 +504,6 @@ h3 {
   display: inline-block;
   margin: 0 0 20px 0; }
 
-footer {
-  padding: 150px 0;
-  text-align: center; }
-  footer a {
-    background: linear-gradient(to top, #DF3434 0%, #FB5E55 100%);
-    box-shadow: 0 15px 28px rgba(129, 0, 0, 0.2), 0 2px 5px rgba(137, 0, 0, 0.2);
-    width: 120px;
-    padding: 30px 0 17px 0;
-    display: inline-block;
-    border-radius: 10px; }
-    footer a img {
-      padding: 0 0 10px 0;
-      border-bottom: 3px solid var(--yellow); }
-
 .arrow {
   display: none; }
 
@@ -700,12 +686,6 @@ footer {
       position: absolute;
       left: 100px;
       top: 45px; }
-
-  footer {
-    padding: 20px; }
-    footer a {
-      width: auto;
-      display: block; }
 
   .content {
     width: auto; }
