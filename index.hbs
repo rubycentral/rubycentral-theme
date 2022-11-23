@@ -1,25 +1,25 @@
 {{!-- Put this into default.hbs --}}
 {{!< default}}
-    <header>
-        <a href="/" id="main-logo">
-            <div class="logo-square">
-                <div class="logo-circle"></div>
-            </div>
-            <h1>{{@site.title}}</h1>
-        </a>
-        <h2>{{@site.description}}</h2>
-    </header>
+<header>
+  <a href="/" id="main-logo">
+    <div class="logo-square">
+      <div class="logo-circle"></div>
+    </div>
+    <h1>{{@site.title}}</h1>
+  </a>
+  <h2>{{@site.description}}</h2>
+</header>
 
 
 <div class="upcoming">
-    {{#get "posts" limit="all" filter="featured:true"}}
-        {{#foreach posts}}
-            <div class="next-conf">
-                <a href="{{slug}}">{{title}}</a>
-            </div>
-        {{/foreach}}
-    {{/get}}
-    
+  {{#get "posts" limit="all" filter="featured:true"}}
+  {{#foreach posts}}
+  <div class="next-conf">
+    <a href="{{slug}}">{{title}}</a>
+  </div>
+  {{/foreach}}
+  {{/get}}
+
   <div class="next-conf">
     <span>
       Our next conference is 
@@ -135,64 +135,64 @@
       <ul class="conference-list">
         <li>
           Nashville 2019<a
-            href="https://www.youtube.com/watch?v=2g9R7PUCEXo&list=PLE7tQUdRKcyZDE8nFrKaqkpd-XK4huygU"
-          ></a>
+                          href="https://www.youtube.com/watch?v=2g9R7PUCEXo&list=PLE7tQUdRKcyZDE8nFrKaqkpd-XK4huygU"
+                          ></a>
         </li>
         <li>
           Los Angeles 2018<a
-            href="http://confreaks.tv/events/rubyconf2018"
-          ></a>
+                            href="http://confreaks.tv/events/rubyconf2018"
+                            ></a>
         </li>
         <li>
           New Orleans 2017<a
-            href="http://confreaks.tv/events/rubyconf2017"
-          ></a>
+                            href="http://confreaks.tv/events/rubyconf2017"
+                            ></a>
         </li>
         <li>
           Cincinnati 2016<a
-            href="http://confreaks.tv/events/rubyconf2016"
-          ></a>
+                           href="http://confreaks.tv/events/rubyconf2016"
+                           ></a>
         </li>
         <li>
           San Antonio 2015<a
-            href="http://confreaks.tv/events/rubyconf2015"
-          ></a>
+                            href="http://confreaks.tv/events/rubyconf2015"
+                            ></a>
         </li>
         <li>
           San Diego 2014<a
-            href="http://confreaks.tv/events/rubyconf2014"
-          ></a>
+                          href="http://confreaks.tv/events/rubyconf2014"
+                          ></a>
         </li>
         <li>
           Miami Beach 2013<a
-            href="http://confreaks.tv/events/rubyconf2013"
-          ></a>
+                            href="http://confreaks.tv/events/rubyconf2013"
+                            ></a>
         </li>
         <li>
           Denver 2012<a href="http://confreaks.tv/events/rubyconf2012"></a>
         </li>
         <li>
           New Orleans 2011<a
-            href="http://confreaks.tv/events/rubyconf2011"
-          ></a>
+                            href="http://confreaks.tv/events/rubyconf2011"
+                            ></a>
         </li>
         <li>
           New Orleans 2010<a
-            href="http://confreaks.tv/events/rubyconf2010"
-          ></a>
+                            href="http://confreaks.tv/events/rubyconf2010"
+                            ></a>
         </li>
         <li>
           San Francisco 2009<a
-            href="http://confreaks.tv/events/rubyconf2009"
-          ></a>
+                              href="http://confreaks.tv/events/rubyconf2009"
+                              ></a>
         </li>
         <li>
           Orlando 2008<a href="http://confreaks.tv/events/rubyconf2008"></a>
         </li>
         <li>
           Charlotte 2007<a
-            href="http://confreaks.tv/events/rubyconf2007"
-          ></a>
+                          href="http://confreaks.tv/events/rubyconf2007"
+                          ></a>
         </li>
         <li>Denver 2006</li>
         <li>San Diego 2005</li>
@@ -220,53 +220,53 @@
       <ul class="conference-list">
         <li>
           Minneapolis 2019<a
-            href="https://www.youtube.com/playlist?list=PLE7tQUdRKcyaOq3HlRm9h_Q_WhWKqm5xc"
-          ></a>
+                            href="https://www.youtube.com/playlist?list=PLE7tQUdRKcyaOq3HlRm9h_Q_WhWKqm5xc"
+                            ></a>
         </li>
         <li>
           Pittsburgh 2018<a
-            href="http://confreaks.tv/events/railsconf2018"
-          ></a>
+                           href="http://confreaks.tv/events/railsconf2018"
+                           ></a>
         </li>
         <li>
           Phoenix 2017<a
-            href="http://confreaks.tv/events/railsconf2017"
-          ></a>
+                        href="http://confreaks.tv/events/railsconf2017"
+                        ></a>
         </li>
         <li>
           Kansas City 2016<a
-            href="http://confreaks.tv/events/railsconf2016"
-          ></a>
+                            href="http://confreaks.tv/events/railsconf2016"
+                            ></a>
         </li>
         <li>
           Atlanta 2015<a
-            href="http://confreaks.tv/events/railsconf2015"
-          ></a>
+                        href="http://confreaks.tv/events/railsconf2015"
+                        ></a>
         </li>
         <li>
           Chicago 2014<a
-            href="https://www.youtube.com/playlist?list=PLE7tQUdRKcyZ5jfnbS_osIoWzK_FrwKz5"
-          ></a>
+                        href="https://www.youtube.com/playlist?list=PLE7tQUdRKcyZ5jfnbS_osIoWzK_FrwKz5"
+                        ></a>
         </li>
         <li>
           Portland 2013<a
-            href="https://www.youtube.com/playlist?list=PLE7tQUdRKcybxgqVTwuOA12wr5Gn2M2Pp"
-          ></a>
+                         href="https://www.youtube.com/playlist?list=PLE7tQUdRKcybxgqVTwuOA12wr5Gn2M2Pp"
+                         ></a>
         </li>
         <li>
           Austin 2012<a
-            href="https://www.youtube.com/playlist?list=PLF16D2F3A8469021E"
-          ></a>
+                       href="https://www.youtube.com/playlist?list=PLF16D2F3A8469021E"
+                       ></a>
         </li>
         <li>
           Baltimore 2011<a
-            href="https://www.youtube.com/playlist?list=PL379EA9290474C86C"
-          ></a>
+                          href="https://www.youtube.com/playlist?list=PL379EA9290474C86C"
+                          ></a>
         </li>
         <li>
           Baltimore 2010<a
-            href="https://www.youtube.com/playlist?list=PL393ECE649BB3813D"
-          ></a>
+                          href="https://www.youtube.com/playlist?list=PL393ECE649BB3813D"
+                          ></a>
         </li>
         <li>Las Vegas 2009</li>
         <li>Portland 2008</li>
