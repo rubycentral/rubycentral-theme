@@ -3,8 +3,7 @@
   "version": "1.0.0",
   "description": "A Ghost theme for Ruby Central",
   "engines": {
-    "ghost": ">=4.0.0",
-    "ghost-api": "v4"
+    "ghost": ">=4.0.0"
   },
   "main": "'src/index.js'",
   "scripts": {
@@ -26,6 +25,7 @@
   },
   "license": "private",
   "config": {
+    "card_assets": true,
     "posts_per_page": 15,
     "image_sizes": {
       "xxs": {
