@@ -285,6 +285,14 @@
 </div>
 <div id="history">
   <div class="content">
-    <!-- <%= erb :history %> -->
+    <div class="icon-box"></div>
+    {{#get "pages" limit="1" filter="title:History"}}
+      {{#foreach pages}}
+        <h3>{{title}}</h3>
+        {{content}}
+      {{else}}
+        <p>Create a page titled "History" and it will appear here!</p>
+      {{/foreach}}
+    {{/get}}
   </div>
 </div>
