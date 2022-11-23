@@ -1,6 +1,5 @@
 {{!-- Put this into default.hbs --}}
 {{!< default}}
-<section class="grid">
     <header>
         <a href="/" id="main-logo">
             <div class="logo-square">
@@ -11,15 +10,16 @@
         <h2>{{@site.description}}</h2>
     </header>
 
+
 <div class="upcoming">
-  <div class="next-conf">
-    <a href="/executive-director">Ruby Central Welcomes New Executive Director, Neil McGovern</a>
-  </div>
-
-  <div class="next-conf">
-    <a href="/ruby-shield">Ruby Central announces Ruby Shield, a partnership with Shopify to fund infrastructure and security.</a>
-  </div>
-
+    {{#get "posts" limit="all" filter="featured:true"}}
+        {{#foreach posts}}
+            <div class="next-conf">
+                <a href="{{slug}}">{{title}}</a>
+            </div>
+        {{/foreach}}
+    {{/get}}
+    
   <div class="next-conf">
     <span>
       Our next conference is 
@@ -288,23 +288,3 @@
     <!-- <%= erb :history %> -->
   </div>
 </div>
-    
-    {{#foreach posts}}
-
-        <article>
-            {{#if feature_image}}
-                <div>
-                    <img src="{{asset "{{img_url feature_image size="}}"m"}}" alt=""> 
-                </div>
-            {{/if}}
-            <div>
-                <h2><a href="{{url}}">{{title}}</a></h2>
-                <p>{{authors}} &bull; {{date published_at timeago="true"}} &bull; {{tags}}</p>
-                <p>{{excerpt}}</p>
-            </div>
-        </article>
-
-    {{/foreach}}
-
-    {{pagination}}
-</section>
