@@ -22,21 +22,23 @@ footer {
 footer a {
     background: linear-gradient(to top, #df3434 0%, #fb5e55 100%);
     box-shadow: 0 15px 28px rgba(129, 0, 0, 0.2), 0 2px 5px rgba(137, 0, 0, 0.2);
-    width: 104px;
-    padding: 13px 0 20px 0;
+    padding: 20px 25px 25px 25px;
     display: inline-block;
     border-radius: 10px;
 }
-.nav-contact-us > a > span {
-    display: none;
-}
-.nav-contact-us a:after {
-    content: "";
-    display: block;
-    width: 37px;
-    height: 28px;
-    margin: 5px auto 0 auto;
-    padding: 0 0 16px 0;
+footer a span {
+    color: #fff;
+    font-weight: bold;
+    padding-bottom: 5px;
     border-bottom: 3px solid var(--yellow);
-    background: center / contain no-repeat url("/assets/images/contact-icon.svg");
+}
+.nav-contact-us > a > span {
+    background-attachment: local;
+    background-image: url("/assets/images/contact-icon.svg");
+    background-clip: padding-box;
+    background-origin: padding-box;
+    background-repeat: no-repeat;
+    background-position: top 2px left;
+    background-size: 20px;
+    padding-left: 25px;
 }
