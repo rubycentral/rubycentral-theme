@@ -2,9 +2,17 @@ routes:
   /: index
 
 collections:
+  /directors/:
+    permalink: /director/{slug}/
+    template: director
+    filter: 'primary_tag:hash-director'
+  /blog/:
+    permalink: /blog/{slug}/
+    template: news
   /:
     permalink: /{slug}/
+    template: index
 
 taxonomies:
   tag: /tag/{slug}/
-  author: /author/{slug}/
+  # author: /author/{slug}/

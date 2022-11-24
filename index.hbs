@@ -272,6 +272,35 @@
       <div class="icon-box"></div>
       <h3>Directors</h3>
       <ul class="people">
+    {{#get "pages" limit="1" filter="tags:hash-director"}}
+      {{#foreach pages}}
+        <h3>{{title}}</h3>
+        {{content}}
+      {{else}}
+      <p>Create a page for each director, title the post with their name, set the featured image to their profile picture, and put an optional link in the page content. Add the tag <code>#director</code> for them to show up here.</p>
+      {{/foreach}}
+    {{/get}}
+        
+        {{#get "pages" limit="all" filter="primary_tag:hash-director"}}
+        PAGES
+        {{#foreach pages}}
+        PAGE
+          <li>
+            {{#if feature_image}}
+              <img src="{{img_url feature_image size="m"}}" alt="{{title}}"> 
+            {{/if}}
+            <strong>{{title}}</strong>
+            {{content}}
+          </li>
+        {{/foreach}}
+        {{/get}}
+      </ul>
+    </div>
+
+    <div id="directors">
+      <div class="icon-box"></div>
+      <h3>Directors</h3>
+      <ul class="people">
         <li>
           <img src="/assets/images/adarsh.png" alt="Adarsh Pandit" />
           <aside>
