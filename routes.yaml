@@ -4,6 +4,7 @@ routes:
 collections:
   /news/:
     permalink: /news/{slug}/
+    data: page.news
 
 taxonomies:
   tag: /news/tag/{slug}/
