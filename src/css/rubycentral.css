@@ -13,42 +13,18 @@
   --divider: #F6F3F0; }
 
 #blurb a, .people li aside a {
-  text-decoration: none;
-  color: var(--white);
-  padding-bottom: 1px;
-  box-shadow: inset 0 -2px 0 var(--yellow);
-  transition: all .15s ease-in-out;
   text-shadow: 0 2px 0 var(--red), 1px 2px 0 var(--red), -1px 2px 0 var(--red), 2px 2px 0 var(--red), -2px 2px 0 var(--red); }
 
 #community a {
-  text-decoration: none;
-  color: var(--white);
-  padding-bottom: 1px;
-  box-shadow: inset 0 -2px 0 var(--yellow);
-  transition: all .15s ease-in-out;
   text-shadow: 0 2px 0 var(--purple), 1px 2px 0 var(--purple), -1px 2px 0 var(--purple), 2px 2px 0 var(--purple), -2px 2px 0 var(--purple); }
 
 #rubygems a {
-  text-decoration: none;
-  color: var(--white);
-  padding-bottom: 1px;
-  box-shadow: inset 0 -2px 0 var(--yellow);
-  transition: all .15s ease-in-out;
   text-shadow: 0 2px 0 var(--green), 1px 2px 0 var(--green), -1px 2px 0 var(--green), 2px 2px 0 var(--green), -2px 2px 0 var(--green); }
 
 #support a {
-  text-decoration: none;
-  color: var(--white);
-  padding-bottom: 1px;
-  box-shadow: inset 0 -2px 0 var(--yellow);
-  transition: all .15s ease-in-out;
   text-shadow: 0 2px 0 var(--blue), 1px 2px 0 var(--blue), -1px 2px 0 var(--blue), 2px 2px 0 var(--blue), -2px 2px 0 var(--blue); }
 
 #rubyconf a, #railsconf a, .static-content a {
-  text-decoration: none;
-  padding-bottom: 1px;
-  box-shadow: inset 0 -2px 0 var(--yellow);
-  transition: all .15s ease-in-out;
   text-shadow: 0 2px 0 var(--white), 1px 2px 0 var(--white), -1px 2px 0 var(--white), 2px 2px 0 var(--white), -2px 2px 0 var(--white); }
 
 @supports (font-variation-settings: normal) {
@@ -75,13 +51,20 @@ body {
   body p:last-child {
     margin: 0; }
   body a {
-  text-decoration: none;
-  color: inherit; }
+    text-decoration: none;
+    color: inherit;
+    text-decoration: none;
+    color: var(--white);
+    padding-bottom: 1px;
+    box-shadow: inset 0 -2px 0 var(--yellow);
+    transition: all .15s ease-in-out;
+  }
 
 header {
   text-align: center;
   padding: 100px 0; }
   header #main-logo {
+  box-shadow: none;
   width: 400px;
   margin: 0 auto;
   display: block; }
