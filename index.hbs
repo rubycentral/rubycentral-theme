@@ -1,10 +1,11 @@
 {{!< default}}
 
 <div class="static-content">
-  <a href="/" class="back">← Back Home</a>
+  {{#foreach posts}}
+    <h3><a href="{{url}}">{{title}}</a></h3>
+    <p><em>{{date published_at format="MMMM DD, YYYY"}}</em></p>
+  {{/foreach}}
 </div>
-
-<h1>News</h1>
 
 <div class="static-content">
   <a href="/" class="back">← Back Home</a>
