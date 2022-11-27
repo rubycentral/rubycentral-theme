@@ -272,81 +272,13 @@
       <div class="icon-box"></div>
       <h3>Directors</h3>
       <ul class="people">
-    {{#get "pages" limit="1" filter="tags:hash-director"}}
-      {{#foreach pages}}
-        <h3>{{title}}</h3>
-        {{content}}
-      {{else}}
-      <p>Create a page for each director, title the post with their name, set the featured image to their profile picture, and put an optional link in the page content. Add the tag <code>#director</code> for them to show up here.</p>
-      {{/foreach}}
-    {{/get}}
-        
-        {{#get "pages" limit="all" filter="primary_tag:hash-director"}}
-        PAGES
+      {{#get "pages" order="title asc" filter="tags:hash-director" limit="all"}}
         {{#foreach pages}}
-        PAGE
-          <li>
-            {{#if feature_image}}
-              <img src="{{img_url feature_image size="m"}}" alt="{{title}}"> 
-            {{/if}}
-            <strong>{{title}}</strong>
-            {{content}}
-          </li>
+          {{> "person"}}
+        {{else}}
+          <p>Create a page for each director, title the post with their name, set the featured image to their profile picture, and put an optional link in the page content. Add the tag <code>#director</code> for them to show up here.</p>
         {{/foreach}}
-        {{/get}}
-      </ul>
-    </div>
-
-    <div id="directors">
-      <div class="icon-box"></div>
-      <h3>Directors</h3>
-      <ul class="people">
-        <li>
-          <img src="/assets/images/adarsh.png" alt="Adarsh Pandit" />
-          <aside>
-            <strong>Adarsh Pandit</strong>
-            <a href="http://cylinder.consulting">Cylinder Consulting</a>
-          </aside>
-        </li>
-        <li>
-          <img src="/assets/images/allison.png" alt="Allison McMillan" />
-          <aside>
-            <strong>Allison McMillan</strong>
-          </aside>
-        </li>
-        <li>
-          <img src="/assets/images/jonan.png" alt="Jonan Scheffler" />
-          <aside>
-            <strong>Jonan Scheffler</strong>
-            <a href="https://rubycentral.org"></a>
-          </aside>
-        </li>
-        <li>
-          <img src="/assets/images/marty.png" alt="Marty Haught" />
-          <aside>
-            <strong>Marty Haught</strong>
-            <a href="https://hashicorp.com">Hashicorp</a>
-          </aside>
-        </li>
-        <li>
-          <img src="/assets/images/fable.png" alt="Fable Phippen" />
-          <aside>
-            <strong>Fable Phippen</strong>
-            <a href="https://stripe.com">Stripe</a>
-          </aside>
-        </li>
-        <li>
-          <img src="/assets/images/valerie.png" alt="Valerie Woolard" />
-          <aside>
-            <strong>Valerie Woolard</strong>
-          </aside>
-        </li>
-        <li>
-          <img src="/assets/images/chelsea.png" alt="Chelsea Kaufman" />
-          <aside>
-            <strong>Chelsea Kaufman</strong>
-          </aside>
-        </li>        
+      {{/get}}
       </ul>
     </div>
 
@@ -354,32 +286,18 @@
       <div class="icon-box"></div>
       <h3>Staff</h3>
       <ul class="people">
-        <li>
-          <img src="/assets/images/neil.png" alt="Neil McGovern" />
-          <aside>
-            <strong>Neil McGovern</strong>
-            <small>Executive Director</small>
-          </aside>
-        </li>  
-        <li>
-          <img src="/assets/images/shawntia.jpeg" alt="Dr. Shawntia Key" />
-          <aside>
-            <strong>Dr. Shawntia Key</strong>
-            <small>Events and Communications Manager</small>
-          </aside>
-        </li>
-        <li>
-          <img src="/assets/images/devon.png" alt="Devon St. Clair" />
-          <aside>
-            <strong>Devon St. Clair</strong>
-            <small>Designer</small>
-          </aside>
-        </li>
+      {{#get "pages" order="featured desc, title asc" filter="tags:hash-staff" limit="all"}}
+        {{#foreach pages}}
+          {{> "person"}}
+        {{else}}
+          <p>Create a page for each staff member, title the post with their name, set the featured image to their profile picture, and put an optional link in the page content. Add the tag <code>#staff</code> for them to show up here.</p>
+        {{/foreach}}
+      {{/get}}
       </ul>
     </div>
-
   </div>
 </div>
+
 <div id="history">
   <div class="content">
     <div class="icon-box"></div>
@@ -388,7 +306,7 @@
         <h3>{{title}}</h3>
         {{content}}
       {{else}}
-        <p>Create a page titled "History" and it will appear here!</p>
+        <p>Create a page titled "History" and its contents will appear here!</p>
       {{/foreach}}
     {{/get}}
   </div>
