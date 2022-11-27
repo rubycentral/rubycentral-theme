@@ -10,29 +10,28 @@ footer ul {
   font-size: var(--small);
 }
 
+footer {
+  padding: 130px 0;
+  text-align: center;
+}
 footer ul.nav {
   justify-content: center;
   margin: 0;
   padding: 0;
 }
-footer {
-  padding: 130px 0;
-  text-align: center;
-}
-footer a {
+footer ul.nav a {
   background: linear-gradient(to top, #df3434 0%, #fb5e55 100%);
   box-shadow: 0 15px 28px rgba(129, 0, 0, 0.2), 0 2px 5px rgba(137, 0, 0, 0.2);
   padding: 20px 25px 25px 25px;
-  display: inline-block;
   border-radius: 10px;
 }
-footer a span {
+footer ul.nav a span {
   color: #fff;
   font-weight: bold;
   padding-bottom: 5px;
   border-bottom: 3px solid var(--yellow);
 }
-.nav-contact-us > a > span {
+footer .nav .nav-contact-us > a > span {
   background-attachment: local;
   background-image: url("/assets/images/contact-icon.svg");
   background-clip: padding-box;
