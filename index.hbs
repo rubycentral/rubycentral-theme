@@ -1,13 +1,16 @@
 {{!< default}}
 
 <div class="upcoming">
-  {{#get "posts" limit="all" filter="featured:true"}}
+  {{#get "posts" limit="1" filter="featured:true"}}
     {{#foreach posts}}
       <div class="next-conf">
         <a href="{{slug}}">{{title}}</a>
       </div>
     {{/foreach}}
   {{/get}}
+  <div class="next-conf">
+      <a href="/news">Read the latest news and updates from Ruby Central about our work, including conferences and open source</a>
+  </div>
 
   <div class="next-conf">
     <span>

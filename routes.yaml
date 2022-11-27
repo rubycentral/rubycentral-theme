@@ -2,9 +2,10 @@ routes:
   /: index
 
 collections:
-  /:
-    permalink: /{slug}/
+  /news/:
+    permalink: /news/{slug}/
+    template: news
 
 taxonomies:
-  # tag: /tag/{slug}/
+  tag: /news/tag/{slug}/
   # author: /author/{slug}/
