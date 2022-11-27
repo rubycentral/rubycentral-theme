@@ -2,16 +2,16 @@
 
 <div class="upcoming">
   {{#get "posts" limit="all" filter="featured:true"}}
-  {{#foreach posts}}
-  <div class="next-conf">
-    <a href="{{slug}}">{{title}}</a>
-  </div>
-  {{/foreach}}
+    {{#foreach posts}}
+      <div class="next-conf">
+        <a href="{{slug}}">{{title}}</a>
+      </div>
+    {{/foreach}}
   {{/get}}
 
   <div class="next-conf">
     <span>
-      Our next conference is 
+      Our next conference is
       <a href="https://rubyconf.org" target="_blank">RubyConf</a> on November 29 - December 1, 2022 in Houston, TX.
     </span>
     <a href="https://rubyconf.org" target="_blank" class="next-conf-button">Let's go!</a>

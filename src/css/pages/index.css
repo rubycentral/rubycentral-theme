@@ -8,7 +8,7 @@
 
 @media (min-width: 576px) {
   .home-template article {
-    flex-wrap: initial;
+  flex-wrap: initial;
   }
 }
 
@@ -28,7 +28,7 @@
 
 @media (min-width: 786px) {
   .home-template article img {
-    width: 300px;
-    height: 300px;
+  width: 300px;
+  height: 300px;
   }
 }
