@@ -1,11 +1,10 @@
 routes:
-  /: index
+  /: home
 
 collections:
   /news/:
     permalink: /news/{slug}/
-    template: news
 
 taxonomies:
   tag: /news/tag/{slug}/
-  # author: /author/{slug}/
+  # author: /news/author/{slug}/
