@@ -9,10 +9,6 @@ def filter_html(html)
   html
     .gsub(/\A\n*<h1.*?>.*?<\/h1>\n+/, '')
     .gsub(/\A\n*<h2.*?>.*?<\/h2>\n+/, '')
-    .gsub(/<h3/, '<h4')
-    .gsub(/<\/h3/, '</h4')
-    .gsub(/<h2/, '<h4')
-    .gsub(/<\/h2/, '</h4')
 end
 
 require "yaml"
@@ -59,4 +55,4 @@ File.write outfile, JSON.pretty_generate(ghost_data)
 
 system("node json-to-ghost.js")
 
-puts "Import available at: ghost-posts.json"
+puts "Import available at: ruby-together-posts.json"

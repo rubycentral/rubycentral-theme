@@ -12,4 +12,4 @@ npm install
 ruby rt-to-ghost.rb
 ```
 
-Upload the resulting `ghost-posts.json` file to Ghost as an import.
+Upload the resulting `ruby-together-posts.json` file to Ghost as an import.

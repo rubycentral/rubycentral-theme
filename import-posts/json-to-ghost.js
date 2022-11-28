@@ -7,4 +7,4 @@ json.data.posts.forEach((post) => {
   delete post.html
 });
 
-fs.writeFileSync('ghost-posts.json', JSON.stringify(json, null, 2), 'utf8');
+fs.writeFileSync('ruby-together-posts.json', JSON.stringify(json, null, 2), 'utf8');
