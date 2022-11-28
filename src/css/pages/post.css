@@ -1,13 +1,32 @@
 /* These styles define the layout of the post (and page) */
 
 .post {
+  width: 50%;
+  margin: 0 auto;
   margin-block-end: 3rem;
 }
 
-.static-content.post ul {
+.post h1, .post h2, .post h3 {
+  font-family: Rubik;
+  margin-bottom: 0.25rem;
+}
+
+.post h1 {
+  font-size: 32px;
+}
+
+.post h2 {
+  font-size: 24px;
+}
+
+.post h3 {
+  font-size: 18px;
+}
+
+.post ul {
   margin-bottom: 2rem;
 }
 
-.static-content.post ul li {
-  line-height: 1rem;
+.post ul li {
+  line-height: 1.25rem;
 }
