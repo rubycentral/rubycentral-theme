@@ -4,7 +4,7 @@
   {{#get "posts" limit="1" filter="featured:true"}}
     {{#foreach posts}}
       <div class="next-conf">
-        <a href="{{slug}}">{{title}}</a>
+        <a href="{{url}}">{{title}}</a>
       </div>
     {{/foreach}}
   {{/get}}
@@ -15,9 +15,9 @@
   <div class="next-conf">
     <span>
       Our next conference is
-      <a href="https://rubyconf.org" target="_blank">RubyConf</a> on November 29 - December 1, 2022 in Houston, TX.
+      <a href="https://rubyconf.org">RubyConf</a> on November 29 - December 1, 2022 in Houston, TX.
     </span>
-    <a href="https://rubyconf.org" target="_blank" class="next-conf-button">Let's go!</a>
+    <a href="https://rubyconf.org" class="next-conf-button">Let's go!</a>
   </div>
 </div>
 
