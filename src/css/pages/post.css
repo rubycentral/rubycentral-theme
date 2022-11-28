@@ -3,3 +3,11 @@
 .post {
   margin-block-end: 3rem;
 }
+
+.static-content.post ul {
+  margin-bottom: 2rem;
+}
+
+.static-content.post ul li {
+  line-height: 1rem;
+}

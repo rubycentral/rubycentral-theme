@@ -14,7 +14,7 @@
 
 /* /1* Pages *1/ */
 /* @import './pages/index.css'; */
-/* @import './pages/post.css'; */
+@import './pages/post.css';
 /* @import './pages/content.css'; */
 
 @import './rubycentral.css';
