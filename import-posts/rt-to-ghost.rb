@@ -9,8 +9,8 @@ def filter_html(html)
   html
     .gsub(/\A\n*\<h1.*?>.*?<\/h1>\n+/, '')
     .gsub(/<h2 id="ruby-together-news">ruby together news<\/h2>/, '')
-    .gsub(/<h2/, '<h3')
-    .gsub(/<\/h2/, '</h3')
+    .gsub(/<h2/, '<h4')
+    .gsub(/<\/h2/, '</h4')
 end
 
 require "yaml"
