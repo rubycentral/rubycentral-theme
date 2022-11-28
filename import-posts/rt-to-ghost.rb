@@ -7,8 +7,10 @@ end
 
 def filter_html(html)
   html
-    .gsub(/\A\n*\<h1.*?>.*?<\/h1>\n+/, '')
-    .gsub(/<h2 id="ruby-together-news">ruby together news<\/h2>/, '')
+    .gsub(/\A\n*<h1.*?>.*?<\/h1>\n+/, '')
+    .gsub(/\A\n*<h2.*?>.*?<\/h2>\n+/, '')
+    .gsub(/<h3/, '<h4')
+    .gsub(/<\/h3/, '</h4')
     .gsub(/<h2/, '<h4')
     .gsub(/<\/h2/, '</h4')
 end
@@ -36,6 +38,12 @@ end
 #   puts post[:html].lines.grep(/h1|h2/)
 #   puts
 # end
+
+# ghost_posts = ghost_posts.find_all do |post|
+#   post[:title] =~ /Navigating RubyConf2022 As A Newcomer/i
+# end
+
+# ghost_posts = ghost_posts.sample(2)
 
 ghost_data = {
   meta: {
