@@ -1,24 +1,39 @@
 #!/usr/bin/env ruby
 
-if ARGV.empty?
-  puts "USAGE: #{File.basename(__FILE__)} [posts.yaml] [ghost-posts.json]"
+if (ARGV & %w[-h --help]).any?
+  puts "USAGE: #{File.basename(__FILE__)} [posts.yaml] [posts.json]"
   exit 1
+end
+
+def filter_html(html)
+  html
+    .gsub(/\A\n*\<h1.*?>.*?<\/h1>\n+/, '')
+    .gsub(/<h2 id="ruby-together-news">ruby together news<\/h2>/, '')
 end
 
 require "yaml"
 require "json"
+require "time"
 
 infile = ARGV[0] || "posts.yaml"
-outfile = ARGV[1] || "ghost-posts.json"
+outfile = ARGV[1] || "posts.json"
 
 posts = YAML.load_file(infile)
 ghost_posts = posts.map do |post|
   {
-    title: post["title"]
+    title: post["title"],
+    status: "published",
+    published_at: Time.parse(post["published_at"]).to_i*1000,
+    html: filter_html(post["content_cache"])
   }
 end
 
-p ghost_posts.last
+# pp posts.last
+# pp ghost_posts.last
+# ghost_posts.each do |post|
+#   puts post[:html].lines.grep(/h1|h2/)
+#   puts
+# end
 
 ghost_data = {
   meta: {
@@ -26,8 +41,12 @@ ghost_data = {
     "version": "5.32.0"
   },
   data: {
-    posts: posts
+    posts: ghost_posts
   }
 }
 
 File.write outfile, JSON.pretty_generate(ghost_data)
+
+system("node json-to-ghost.js")
+
+puts "Import available at: ghost-posts.json"

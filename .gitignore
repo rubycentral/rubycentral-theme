@@ -1,3 +1,5 @@
 /assets/dist/
 /dist/
-/node_modules/
+/import-posts/ghost-posts.json
+/import-posts/posts.json
+node_modules/
