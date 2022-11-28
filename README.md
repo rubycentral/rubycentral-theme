@@ -37,10 +37,10 @@ Finally, to seed your local Ghost install with directors, staff, and posts, you 
 
 1. Open your local Ghost experimental settings at [localhost:2368/ghost/#/settings/labs](http://localhost:2368/ghost/#/settings/labs)
 1. Click "Open Importer", and then upload both `ruby-central.json` and `images.zip`.
+    - _Optional:_ Also upload `ruby-together-posts.json` to add the full backlog of blog posts.
 1. Click "Upload redirects YAML/JSON" and choose `redirects.yaml`.
 1. Click "Upload routes YAML" and choose `routes.yaml`.
 1. Wait a few moments, then reload. You should now see images and content, including posts.
-
 
 ### Development
 
