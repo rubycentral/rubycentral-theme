@@ -37,8 +37,8 @@ end
 
 ghost_data = {
   meta: {
-    "exported_on": Time.now.to_i*1000,
-    "version": "5.32.0"
+    exported_on: Time.now.to_i*1000,
+    version: "5.23.0"
   },
   data: {
     posts: ghost_posts
