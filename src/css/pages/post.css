@@ -23,10 +23,11 @@
   font-size: 18px;
 }
 
-.post ul {
-  margin-bottom: 2rem;
+.post p, .post ul {
+  margin-bottom: 27px;
 }
 
 .post ul li {
   line-height: 1.25rem;
+  margin-bottom: 0.5em;
 }
