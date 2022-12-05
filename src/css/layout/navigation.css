@@ -5,9 +5,36 @@ footer {
 nav ul,
 footer ul {
   display: flex;
-  gap: 1rem;
+  gap: 2rem;
   list-style-type: none;
   font-size: var(--small);
+}
+
+nav, nav ul {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+}
+
+nav .logo-circle {
+  transition: transform .25s ease-in-out;
+  width: 30px;
+  height: 30px;
+  left: 20px;
+  top: 20px;
+  margin: 10px 0px 0 30px;
+  border-radius: 30px;
+  box-shadow: 0 9px 18px rgba(129, 0, 0, 0.3), 0 2px 5px rgba(137, 0, 0, 0.2);
+  background: no-repeat center 6px / 80% url(/assets/images/gem-logo.svg), linear-gradient(to top, #DF3434 0%, #FB5E55 100%);
+}
+
+nav .logo-circle {
+  transform: scale(1.05);
+}
+
+nav ul li:last-child {
+  margin-left: auto;
+  margin-right: 1.5rem;
 }
 
 footer {
@@ -19,17 +46,17 @@ footer ul.nav {
   margin: 0;
   padding: 0;
 }
-footer ul.nav a {
+footer ul.nav a,
+nav ul li:last-child a {
   background: linear-gradient(to top, #df3434 0%, #fb5e55 100%);
   box-shadow: 0 15px 28px rgba(129, 0, 0, 0.2), 0 2px 5px rgba(137, 0, 0, 0.2);
-  padding: 20px 25px 25px 25px;
+  padding: 10px 20px;
   border-radius: 10px;
-}
-footer ul.nav a span {
   color: #fff;
   font-weight: bold;
-  padding-bottom: 5px;
-  border-bottom: 3px solid var(--yellow);
+}
+footer ul.nav a {
+  padding: 15px 20px;
 }
 footer .nav .nav-contact-us > a > span {
   background-attachment: local;
