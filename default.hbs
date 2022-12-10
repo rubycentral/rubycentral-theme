@@ -42,23 +42,23 @@
       {{> "footer"}}
     </div>
 
-      <script>
-        let sections = document.querySelectorAll('.section-header');
-        function handleClick(event) {
-          const isActive = event.currentTarget.parentNode.classList.contains("active");
-          if (!isActive) {
-            event.currentTarget.parentNode.classList.add("active");
-          } else {
-            event.currentTarget.parentNode.classList.remove("active");
-          }
+    <script>
+      let sections = document.querySelectorAll('.section-header');
+      function handleClick(event) {
+        const isActive = event.currentTarget.parentNode.classList.contains("active");
+        if (!isActive) {
+          event.currentTarget.parentNode.classList.add("active");
+        } else {
+          event.currentTarget.parentNode.classList.remove("active");
         }
-        sections.forEach(function(section) {
-          section.addEventListener("click", handleClick);
-        });
-      </script>
-      <div id="particles" style="position: fixed; top: 0; z-index: -10"></div>
-      <script src="{{ asset "particles/hadron.d57b1908.js"}}"></script>
-      {{!-- Outputs important scripts - should always be included before closing body tag --}}
-      {{ghost_foot}}
-    </body>
+      }
+      sections.forEach(function(section) {
+        section.addEventListener("click", handleClick);
+      });
+    </script>
+    <div id="particles" style="position: fixed; top: 0; z-index: -10"></div>
+    <script src="{{ asset "particles/hadron.d57b1908.js"}}"></script>
+    {{!-- Outputs important scripts - should always be included before closing body tag --}}
+    {{ghost_foot}}
+  </body>
 </html>
