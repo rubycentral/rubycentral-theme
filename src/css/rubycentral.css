@@ -148,7 +148,6 @@ header h2 {
 }
 
 .upcoming {
-  width: 950px;
   margin: 0 auto 50px;
 }
 
@@ -322,7 +321,6 @@ header h2 {
 }
 
 .main-grid {
-  width: 950px;
   margin: 0 auto;
   display: grid;
   gap: 50px;
@@ -416,7 +414,6 @@ h3 {
 }
 
 #support {
-  width: 950px;
   padding: 50px 150px;
   margin: 50px auto;
   background-color: var(--blue);
@@ -510,7 +507,6 @@ h3 {
 }
 
 .content {
-  width: 950px;
   margin: 0 auto;
   position: relative;
 }
