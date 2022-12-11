@@ -28,7 +28,7 @@ nav .logo-circle {
   background: no-repeat center 6px / 80% url(/assets/images/gem-logo.svg), linear-gradient(to top, #DF3434 0%, #FB5E55 100%);
 }
 
-nav .logo-circle {
+nav .logo-circle:hover {
   transform: scale(1.05);
 }
 
