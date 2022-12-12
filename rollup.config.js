@@ -8,6 +8,22 @@ import postcss from 'rollup-plugin-postcss';
 import atImport from 'postcss-import';
 import postcssPresetEnv from 'postcss-preset-env';
 import cssnano from 'cssnano';
+import tailwindcss from 'tailwindcss';
+
+const tailwind = tailwindcss({
+  content: [
+    "./author.hbs",
+    "./default.hbs",
+    "./home.hbs",
+    "./index.hbs",
+    "./post.hbs",
+    "./partials/*.hbs",
+  ],
+  theme: {
+    extend: {},
+  },
+  plugins: [],
+});
 
 const postcssConfig = postcss({
   extract: true,
@@ -15,6 +31,7 @@ const postcssConfig = postcss({
   plugins: [
     atImport,
     postcssPresetEnv({ features: { 'nesting-rules': true } }),
+    tailwind,
     process.env.NODE_ENV === 'production' && cssnano({ preset: 'default' }),
   ],
 });

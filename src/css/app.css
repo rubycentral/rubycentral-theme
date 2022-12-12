@@ -1,3 +1,7 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
 /* /1* Variables *1/ */
 /* @import './abstracts/variables.css'; */
 
@@ -8,16 +12,16 @@
 /* @import './base/grid.css'; */
 
 /* /1* Layout *1/ */
-@import './layout/navigation.css';
+/* @import './layout/navigation.css'; */
 /* @import './layout/header.css'; */
 /* @import './layout/footer.css'; */
 
 /* /1* Pages *1/ */
 /* @import './pages/index.css'; */
-@import './pages/post.css';
+/* @import './pages/post.css'; */
 /* @import './pages/content.css'; */
 
-@import './rubycentral.css';
+/* @import './rubycentral.css'; */
 
 /* Vendor */
-@import './vendors/ghost.css';
+/* @import './vendors/ghost.css'; */
