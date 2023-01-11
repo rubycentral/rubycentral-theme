@@ -4,20 +4,20 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{meta_title}}</title>
-    <link rel="shortcut icon" type="image/png" href="/assets/images/favicon.png">
+    <link rel="shortcut icon" type="image/png" href="{{asset images/favicon.png}}">
     {{!-- CSS and JS with asset helper--}}
     <link rel="stylesheet" href="{{asset "dist/app.css"}}" />
     <script src="{{asset "dist/app.js"}}" defer></script>
 
     {{!-- contentFor/block scripts - use with defer --}}
     {{{block "scripts"}}}
-    
+
     {{!-- Outputs important meta data and settings, should always be in <head> --}}
     {{ghost_head}}
   </head>
 
   <body class="{{body_class}}">
-    
+
     <div class="grid">
       {{> "navbar" }}
     </div>
@@ -33,7 +33,7 @@
         </a>
         <h2>{{@site.description}}</h2>
       </header>
-      
+
       {{{body}}}
     </main>
 
