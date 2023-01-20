@@ -152,7 +152,7 @@ header h2 {
   margin: 0 auto 50px;
 }
 
-.upcoming .next-conf {
+.upcoming .homepage-featured {
   background: var(--red) 20px center no-repeat;
   border-radius: 20px;
   height: 60px;
@@ -162,15 +162,15 @@ header h2 {
   margin: 0 0 10px 0;
 }
 
-.upcoming .next-conf:nth-child(1) {
+.upcoming .homepage-featured:nth-child(1) {
   background: var(--blue) 20px center no-repeat;
 }
 
-.upcoming .next-conf:nth-child(2) {
+.upcoming .homepage-featured:nth-child(2) {
   background: var(--navy) 20px center no-repeat;
 }
 
-.upcoming .next-conf .next-conf-button {
+.upcoming .homepage-featured .homepage-featured-button {
   float: right;
   display: block;
   color: var(--red);
@@ -714,7 +714,7 @@ h3 {
     margin: 0 20px 50px;
   }
 
-  .upcoming .next-conf {
+  .upcoming .homepage-featured {
     background: var(--red) 20px 20px no-repeat;
     background-image: none;
     border-radius: 5px;
@@ -725,7 +725,7 @@ h3 {
     margin: 0 0 10px 0;
   }
 
-  .upcoming .next-conf .next-conf-button {
+  .upcoming .homepage-featured .homepage-featured-button {
     float: none;
     height: 40px;
     width: auto;
