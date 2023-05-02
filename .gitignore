@@ -3,3 +3,5 @@
 /import-posts/ghost-posts.json
 /import-posts/posts.json
 node_modules/
+*.DS_Store
+*.~undo-tree~

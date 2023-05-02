@@ -1,4 +1,5 @@
 import "../../css/app.css"
+import './dropdown.js'
 
 // LiveReload server
 if (ENV === 'development') {
