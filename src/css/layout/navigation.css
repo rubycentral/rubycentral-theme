@@ -32,7 +32,7 @@ nav .logo-circle {
   transform: scale(1.05);
 }
 
-nav ul li:last-child {
+nav > ul > li:last-child {
   margin-left: auto;
   margin-right: 1.5rem;
 }
@@ -47,7 +47,7 @@ footer ul.nav {
   padding: 0;
 }
 footer ul.nav a,
-nav ul li:last-child a {
+nav > ul > li:last-child > a {
   background: linear-gradient(to top, #df3434 0%, #fb5e55 100%);
   box-shadow: 0 15px 28px rgba(129, 0, 0, 0.2), 0 2px 5px rgba(137, 0, 0, 0.2);
   padding: 10px 20px;
@@ -55,6 +55,11 @@ nav ul li:last-child a {
   color: #fff;
   font-weight: bold;
 }
+
+nav li.subitem {
+    text-align: center;
+}
+
 footer ul.nav a {
   padding: 15px 20px;
 }
