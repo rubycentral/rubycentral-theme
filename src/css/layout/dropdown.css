@@ -39,7 +39,7 @@ ul.ghost-submenu li {
     list-style: none;
 }
 
-ul li {
+nav > ul.ghost-dropdown-menu > li {
     opacity: 0;
 }
 
