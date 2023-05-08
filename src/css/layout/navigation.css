@@ -1,7 +1,9 @@
 nav,
 footer {
-  padding: 1rem 0;
+  position: relative;
+  padding: 1rem 1.5rem;
 }
+
 nav ul,
 footer ul {
   display: flex;
@@ -18,11 +20,12 @@ nav, nav ul {
 
 nav .logo-circle {
   transition: transform .25s ease-in-out;
+  flex-shrink: 0;
   width: 30px;
   height: 30px;
   left: 20px;
   top: 20px;
-  margin: 10px 0px 0 30px;
+  margin: 10px 0 0 0;
   border-radius: 30px;
   box-shadow: 0 9px 18px rgba(129, 0, 0, 0.3), 0 2px 5px rgba(137, 0, 0, 0.2);
   background: no-repeat center 6px / 80% url(/assets/images/gem-logo.svg), linear-gradient(to top, #DF3434 0%, #FB5E55 100%);
@@ -72,4 +75,110 @@ footer .nav .nav-contact-us > a > span {
   background-position: top 2px left;
   background-size: 20px;
   padding-left: 25px;
+}
+
+nav .menu-icon {
+  display: none;
+  width: 30px;
+  height: 20px;
+  margin: auto 0;
+  box-shadow: none;
+}
+
+nav .menu-icon.open {
+  background: url(/assets/images/open-menu.svg) center no-repeat;
+}
+
+nav .menu-icon.close {
+  background: url(/assets/images/close-menu.svg) center no-repeat;
+}
+
+@media screen and (max-width: 1100px) and (orientation: portrait),
+(max-width: 1005px) and (orientation: landscape) {
+  nav {
+    overflow-x: hidden;
+  }
+
+  nav.closed .menu-icon.close,
+  nav.open .menu-icon.open {
+    display: none;
+  }
+
+  nav.open .menu-icon.close,
+  nav.closed .menu-icon.open {
+    display: inline-block;
+  }
+
+  nav.open {
+    overflow: visible;
+  }
+
+  nav.open ul {
+    right: 0;
+  }
+  nav.closed ul {
+    right: -100%;
+  }
+
+  nav ul {
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    justify-content: flex-start;
+    top: 0;
+    right: 0;
+    width: 33%;
+    padding: 1rem 2rem 8rem 1.5rem;
+    margin: 4.5rem 0px;
+    z-index: 2;
+    background: #fff;
+    border: 2px solid #F4EEE6;
+    border-top: none;
+    border-radius: 0 0 0 20px;
+    transition: right .4s ease-in-out;
+    box-shadow: -4px 4px 5px rgba(253, 204, 204, 0.3);
+  }
+
+  nav ul:before {
+    content: "";
+    position: absolute;
+    left: -203%;
+    top: 0;
+    border: 2px solid #F4EEE6;
+    border-left: none;
+    border-bottom: none;
+    border-radius: 0 20px 0 0;
+    box-shadow: 5px 0px #fff, inset -1px 1px 3px rgba(253, 204, 204, 0.3);
+    height: 15px;
+    width: 66vw;
+  }
+
+  nav.closed ul:before {
+    content: none;
+  }
+
+  nav > ul > li:last-child {
+    margin-right: 0px;
+    padding-right: 0px;
+  }
+}
+
+@media screen and (max-width: 600px) and (orientation: portrait),
+(max-width: 548px) and (orientation: landscape) {
+  footer ul {
+    flex-direction: column;
+  }
+  footer ul li {
+    margin: 1rem auto;
+  }
+
+  nav ul {
+    width: 50%
+  }
+
+  nav ul::before {
+    left: -102%;
+    width: 50vw;
+  }
 }
