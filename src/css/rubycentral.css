@@ -514,7 +514,7 @@ h3 {
 }
 
 .content {
-  width: 950px;
+  max-width: 950px;
   margin: 0 auto;
   position: relative;
 }
@@ -701,6 +701,21 @@ h3 {
   line-height: 40px;
   border-radius: 3px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) and (orientation: portrait),
+(max-width: 1097px) and (orientation: landscape) {
+
+  .people {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #about .icon-box,
+  #history .icon-box {
+    left: 0;
+    top: -84px;
+  }
+
 }
 
 @media screen and (max-width: 900px) and (orientation: portrait),
