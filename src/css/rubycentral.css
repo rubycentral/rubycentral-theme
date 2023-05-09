@@ -152,18 +152,18 @@ header h2 {
 }
 
 .upcoming {
-  width: 950px;
   margin: 0 auto 50px;
 }
 
 .upcoming .homepage-featured {
+  max-width: 950px;
   background: var(--red) 20px center no-repeat;
   border-radius: 20px;
   height: 60px;
   line-height: 60px;
   padding: 0 25px 0 47px;
   color: var(--white);
-  margin: 0 0 10px 0;
+  margin: 0 auto 10px ;
 }
 
 .upcoming .homepage-featured:nth-child(1) {
