@@ -1,48 +1,99 @@
 li.menu-item-has-children {
-    position: relative;
-    padding-right: 20px!important;
-    display: inline-block;
+  position: relative;
+  padding-right: 20px;
+  display: inline-block;
 }
+
 .menu-item-has-children svg {
-    position: absolute;
-    right: -6px;
-    top: 56%;
-    transform: translate(-0%, -50%) scale(1);
+  position: absolute;
+  right: -6px;
+  top: 56%;
+  transform: translate(-0%, -50%) scale(1);
 }
 
 ul.ghost-submenu {
-    background: #fff;
-    color: #000;
-    padding: 10px 20px;
-    border-radius: 5px;
-    width: 140px;
-    max-width: 200px;
-    position: absolute;
-    visibility: hidden;
-    line-height: 3;
-    z-index: 1;
-    opacity: 0;
-    top: 30px;
-    transition: 0.3s;
-    box-shadow: 0 1px 5px 0 rgb(0 0 0 / 14%);
-    left: 0;
-    display: block;
+  background: #fff;
+  color: #000;
+  padding: 10px 20px;
+  border-radius: 5px;
+  width: 140px;
+  max-width: 200px;
+  position: absolute;
+  visibility: hidden;
+  line-height: 3;
+  z-index: 1;
+  opacity: 0;
+  top: 30px;
+  transition: 0.3s;
+  box-shadow: 0 1px 5px 0 rgb(0 0 0 / 14%);
+  left: 0;
+  display: block;
 }
 
 li.menu-item-has-children:hover ul.ghost-submenu {
-    visibility: visible!important;
-    opacity: 1!important;
-    top: 45px!important;
+  visibility: visible!important;
+  opacity: 1!important;
+  top: 45px!important;
 }
 
 ul.ghost-submenu li {
-    list-style: none;
+  list-style: none;
 }
 
 nav > ul.ghost-dropdown-menu > li {
-    opacity: 0;
+  opacity: 0;
 }
 
 li.nav-item.menu-item-has-children.menu-item-has-megamenu ul.ghost-submenu {
-    width: 100vh;
+  width: 100vh;
+}
+
+@media screen and (max-width: 1100px) and (orientation: portrait),
+(max-width: 1005px) and (orientation: landscape) {
+
+  li.menu-item-has-children ul.ghost-submenu {
+    top: 0;
+    left: 0;
+    right: 0;
+    border: none;
+    box-shadow: none;
+    visibility: visible !important;
+    opacity: 1!important;
+    width: 100%;
+    min-width: initial;
+    max-width: none;
+  }
+
+  li.menu-item-has-children > a {
+    display: none;
+  }
+
+  li.menu-item-has-children {
+    position: relative;
+    width: 100%;
+    padding: 0 0;
+    display: block;
+    justify-content: flex-end;
+  }
+
+  li.menu-item-has-children ul.ghost-submenu {
+    position: absolute;
+    width: 100%;
+    right: 0;
+    padding: 0px 0px;
+    margin: 0px 0px;
+  }
+
+  li.menu-item-has-children ul.ghost-submenu::before {
+    content: none;
+  }
+
+  li.menu-item-has-children ul.ghost-submenu li {
+    text-align: right;
+    width: 100%;
+  }
+
+  li.menu-item-has-children:hover ul.ghost-submenu {
+    top: 0 !important;
+  }
 }

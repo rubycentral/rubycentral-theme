@@ -66,6 +66,10 @@ body {
   font-size: 16px;
 }
 
+.padded-container {
+  padding: calc(8px + 1.5625vw);
+}
+
 body p {
   line-height: 27px;
   margin: 0 0 27px 0;
@@ -148,18 +152,18 @@ header h2 {
 }
 
 .upcoming {
-  width: 950px;
   margin: 0 auto 50px;
 }
 
 .upcoming .homepage-featured {
+  max-width: 950px;
   background: var(--red) 20px center no-repeat;
   border-radius: 20px;
   height: 60px;
   line-height: 60px;
   padding: 0 25px 0 47px;
   color: var(--white);
-  margin: 0 0 10px 0;
+  margin: 0 auto 10px ;
 }
 
 .upcoming .homepage-featured:nth-child(1) {
@@ -322,7 +326,7 @@ header h2 {
 }
 
 .main-grid {
-  width: 950px;
+  max-width: 950px;
   margin: 0 auto;
   display: grid;
   gap: 50px;
@@ -416,7 +420,7 @@ h3 {
 }
 
 #support {
-  width: 950px;
+  max-width: 950px;
   padding: 50px 150px;
   margin: 50px auto;
   background-color: var(--blue);
@@ -510,7 +514,7 @@ h3 {
 }
 
 .content {
-  width: 950px;
+  max-width: 950px;
   margin: 0 auto;
   position: relative;
 }
@@ -697,6 +701,21 @@ h3 {
   line-height: 40px;
   border-radius: 3px;
   font-weight: 600;
+}
+
+@media screen and (max-width: 1200px) and (orientation: portrait),
+(max-width: 1097px) and (orientation: landscape) {
+
+  .people {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+
+  #about .icon-box,
+  #history .icon-box {
+    left: 0;
+    top: -84px;
+  }
+
 }
 
 @media screen and (max-width: 900px) and (orientation: portrait),
