@@ -66,8 +66,8 @@ body {
   font-size: 16px;
 }
 
-#theme-main {
-  padding: calc(8px + 1.5625vw)
+.padded-container {
+  padding: calc(8px + 1.5625vw);
 }
 
 body p {
