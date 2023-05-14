@@ -151,7 +151,7 @@ nav .menu-icon.close {
     border-radius: 0 20px 0 0;
     box-shadow: 5px 0px #fff, inset -1px 1px 3px rgba(253, 204, 204, 0.3);
     height: 15px;
-    width: 66vw;
+    width: 202.5%;
   }
 
   nav.closed ul:before {
