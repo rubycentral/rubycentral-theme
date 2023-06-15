@@ -20,11 +20,6 @@
   text-shadow: 0 2px 0 var(--red), 1px 2px 0 var(--red), -1px 2px 0 var(--red), 2px 2px 0 var(--red), -2px 2px 0 var(--red);
 }
 
-#community a {
-  color: var(--white);
-  text-shadow: 0 2px 0 var(--purple), 1px 2px 0 var(--purple), -1px 2px 0 var(--purple), 2px 2px 0 var(--purple), -2px 2px 0 var(--purple);
-}
-
 #rubygems a {
   color: var(--white);
   text-shadow: 0 2px 0 var(--green), 1px 2px 0 var(--green), -1px 2px 0 var(--green), 2px 2px 0 var(--green), -2px 2px 0 var(--green);
@@ -327,7 +322,7 @@ header h2 {
 
 .main-grid {
   max-width: 950px;
-  margin: 0 auto;
+  margin: 0 auto 50px auto;
   display: grid;
   gap: 50px;
   grid-template-columns: 1fr 1fr;
@@ -385,20 +380,13 @@ h3 {
   background: url(/assets/images/blurb-icon.svg) center center no-repeat, linear-gradient(to top, #DF3434 0%, #FB5E55 100%);
 }
 
-#community {
-  background-color: var(--purple);
+#support {
+  background-color: var(--blue);
 }
 
-#community h5 {
-  font-size: 16px;
-  font-family: 'Rubik';
-  margin: 0 0 5px 0;
-  font-weight: 600;
-}
-
-#community .icon-box {
-  box-shadow: 0 9px 18px rgba(77, 50, 89, 0.45), 0 1px 5px rgba(132, 69, 141, 0.21);
-  background: url(/assets/images/community-icon.svg) center center no-repeat, linear-gradient(to top, #6D4D7C 0%, #7E5B8D 100%);
+#support .icon-box {
+  box-shadow: 0 9px 18px rgba(15, 35, 63, 0.14), 0 1px 5px rgba(23, 43, 69, 0.12);
+  background: url(/assets/images/support-icon.svg) center center no-repeat, linear-gradient(to top, #5A81B7 0%, #6992CA 100%);
 }
 
 #rubygems {
@@ -417,18 +405,6 @@ h3 {
 
 #conferences h3 {
   margin: 0;
-}
-
-#support {
-  max-width: 950px;
-  padding: 50px 150px;
-  margin: 50px auto;
-  background-color: var(--blue);
-}
-
-#support .icon-box {
-  box-shadow: 0 9px 18px rgba(15, 35, 63, 0.14), 0 1px 5px rgba(23, 43, 69, 0.12);
-  background: url(/assets/images/support-icon.svg) center center no-repeat, linear-gradient(to top, #5A81B7 0%, #6992CA 100%);
 }
 
 #rubyconf .icon-box {
@@ -475,42 +451,6 @@ h3 {
   100% {
     background-position: 5px center;
   }
-}
-
-.conference-list {
-  list-style-type: none;
-  margin: 0;
-  padding: 0;
-}
-
-.conference-list li {
-  height: 48px;
-  line-height: 48px;
-  position: relative;
-  margin: 0;
-  padding: 0;
-  border-bottom: 1px solid var(--divider);
-}
-
-.conference-list li:last-child {
-  border: none;
-}
-
-.conference-list li a {
-  box-shadow: none !important;
-  position: absolute;
-  right: 0;
-  top: 13px;
-  height: 22px;
-  width: 27px;
-  border: 2px solid #5E83A7;
-  border-radius: 5px;
-  background: url(/assets/images/video-icon.svg) 5px center no-repeat;
-  animation: video_hover_out .2s linear;
-}
-
-.conference-list li a:hover {
-  animation: video_hover .2s linear;
 }
 
 .content {
@@ -836,6 +776,7 @@ h3 {
     width: auto;
     display: block;
     padding: 0 20px;
+    margin: unset;
   }
 
   .main-grid section {
@@ -909,11 +850,8 @@ h3 {
 
   #support {
     width: auto;
-    margin: 0 20px 20px 20px;
     padding: 25px;
     position: relative;
-    height: 114px;
-    max-height: 114px;
     overflow: hidden;
     transition: all .5s ease-in-out;
   }
