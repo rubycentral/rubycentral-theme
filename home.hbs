@@ -122,5 +122,19 @@
       {{/get}}
       </ul>
     </div>
+
+    <div id="oss-team">
+      <div class="icon-box"></div>
+      <h3>Open Source Team</h3>
+      <ul class="people">
+      {{#get "pages" order="featured desc, title asc" filter="tags:hash-oss-team" limit="all"}}
+        {{#foreach pages}}
+          {{> "person"}}
+        {{else}}
+          <p>Create a page for each staff member, title the post with their name, set the featured image to their profile picture, and put an optional link in the page content. Add the tag <code>#oss-team</code> for them to show up here.</p>
+        {{/foreach}}
+      {{/get}}
+      </ul>
+    </div>
   </div>
 </div>
