@@ -582,6 +582,10 @@ h3 {
   border-color: #3F6589;
 }
 
+#oss-team {
+  margin-top: 40px;
+}
+
 .static-content {
   width: 50%;
   margin: 0 auto;
