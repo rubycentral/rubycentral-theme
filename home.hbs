@@ -135,5 +135,18 @@
       {{/get}}
       </ul>
     </div>
+
+    <div id="oss-sponsors">
+      <h3>Open Source Sustaining Membership Sponsors</h3>
+      <ul class="people">
+      {{#get "pages" order="featured desc, title asc" filter="tags:hash-oss-sponsors" limit="all"}}
+        {{#foreach pages}}
+          {{> "person"}}
+        {{else}}
+          <p>Create a page for each open source major sponsor, title the post with the sponsor name, set the featured image to their profile picture (for logos, we need a square image for best results), and put an optional link in the page content. Add the tag <code>#oss-sponsors</code> for them to show up here.</p>
+        {{/foreach}}
+      {{/get}}
+      </ul>
+    </div>
   </div>
 </div>
