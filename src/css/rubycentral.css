@@ -526,6 +526,7 @@ h3 {
   height: 100px;
   width: 100px;
   box-shadow: 0 6px 14px rgba(39, 41, 45, 0.26);
+  background-color: #fff;
 }
 
 .people li aside {
