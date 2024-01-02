@@ -1,0 +1,35 @@
+{{!< default}}
+
+{{#post}}
+<div class="{{post_class}}">
+  {{#if feature_image}}
+    <img src="{{img_url feature_image size="m"}}" class="profile-image"> 
+  {{/if}}
+  <h1>{{title}}</h1>
+  <br>
+  {{content}}
+</div>
+{{/post}}
+
+<div class="{{post_class}}">
+  <div id="oss-sponsors">
+    <h2>Our Open Source Sustaining Membership Sponsors</h2>
+    <ul class="people">
+      {{#get "pages" order="featured desc, title asc" filter="tags:hash-oss-sponsors" limit="all"}}
+      {{#foreach pages}}
+      {{> "person"}}
+      {{else}}
+      <p>Create a page for each open source major sponsor, title the post with the sponsor name, set the featured image to their profile picture (for logos, we need a square image for best results), and put an optional link in the page content. Add the tag <code>#oss-sponsors</code> for them to show up here.</p>
+      {{/foreach}}
+      {{/get}}
+    </ul>
+  </div>
+</div>
+
+<div class="static-content">
+  <a href="/" class="back">← Back Home</a>
+</div>
+
+{{#contentFor 'scripts'}}
+  <script src="{{asset 'dist/post.js'}}" defer></script>
+{{/contentFor}}
