@@ -83,6 +83,11 @@ body a {
   transition: all .15s ease-in-out;
 }
 
+body a:hover {
+  box-shadow: inset 0 -2px 0 var(--red);
+  transition: all .15s ease-in-out;
+}
+
 header {
   text-align: center;
   padding: 50px 0 70px 0;
