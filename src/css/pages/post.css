@@ -38,6 +38,22 @@
   line-height: 1.25rem;
   margin-bottom: 0.5em;
 }
+
+/* tocbot stuff */
+.gh-toc > .toc-list {
+  position: relative;
+  margin-bottom: 1rem;
+}
+
+.toc-list {
+  overflow: hidden;
+  list-style: none;
+}
+
+.toc-list-item {
+  margin-bottom: 5px;
+}
+
 @media (min-width: 400px) {
   .post {
     width: 95%;
@@ -64,4 +80,20 @@
   .post {
     width: 800px;
   }
+
+  .gh-sidebar {
+    position: absolute;
+    left: 0;
+  }
+
+  .gh-toc {
+    position: sticky;
+    top: 4vmin;
+    max-width: calc((100vw - 800px) / 2);
+    padding-right: 2rem;
+  }
+}
+
+.gh-toc .is-active-link::before {
+  background-color: var(--ghost-accent-color);
 }

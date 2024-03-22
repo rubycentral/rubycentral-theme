@@ -22,3 +22,4 @@
 
 /* Vendor */
 @import './vendors/ghost.css';
+@import '../../node_modules/tocbot/dist/tocbot.css';
