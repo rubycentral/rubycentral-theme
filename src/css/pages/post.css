@@ -1,12 +1,18 @@
 /* These styles define the layout of the post (and page) */
 
 .post {
-  width: 50%;
+  width: 95%;
   margin: 0 auto;
   margin-block-end: 3rem;
 }
 
-.post h1, .post h2, .post h3 {
+.post p {
+  line-height: 1.4rem;
+}
+
+.post h1,
+.post h2,
+.post h3 {
   font-family: Rubik;
   margin-bottom: 0.25rem;
 }
@@ -23,11 +29,39 @@
   font-size: 18px;
 }
 
-.post p, .post ul {
+.post p,
+.post ul {
   margin-bottom: 27px;
 }
 
 .post ul li {
   line-height: 1.25rem;
   margin-bottom: 0.5em;
+}
+@media (min-width: 400px) {
+  .post {
+    width: 95%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 550px) {
+  .post {
+    width: 80%;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 700px) {
+  .post {
+    width: 60%;
+    max-width: 800px;
+    margin: 0 auto;
+  }
+}
+
+@media (min-width: 1350px) {
+  .post {
+    width: 800px;
+  }
 }
