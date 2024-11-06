@@ -19,6 +19,7 @@
 /* @import './pages/content.css'; */
 
 @import './rubycentral.css';
+@import './open-source.css';
 
 /* Vendor */
 @import './vendors/ghost.css';
