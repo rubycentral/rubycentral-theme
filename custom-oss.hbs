@@ -37,7 +37,7 @@
     <h1 class="title">Projects</h1>
     <h2>Learn more about our current and past efforts</h2>
     <div class="projects-list">
-      {{#get "posts" order="featured desc, title asc" filter="tag:[project]"}}
+      {{#get "posts" order="featured desc, title asc" filter="tag:[hash-oss-project]"}}
         {{#foreach posts}}
         <div class="{{post_class}} project">
             <h1>{{title}}</h1>
@@ -47,7 +47,7 @@
       {{/get}}
     </div>
     <div class="contribute">
-      {{#get "posts" filter="slug:contribute"}}
+      {{#get "posts" filter="tag:[hash-oss-contribute]"}}
       {{#foreach posts}}
       {{#if feature_image}}
       <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
@@ -79,7 +79,7 @@
     </div>
   </div>
     <div class="{{post_class}} program-support">
-      {{#get "pages" filter="slug:open-source-program-support"}}
+      {{#get "pages" filter="tag:[hash-oss-program-support]"}}
       {{#foreach pages}}
       <h1 class="title">{{title}}</h1>
       {{{content}}}
