@@ -1,0 +1,281 @@
+#open-source {
+    .post {
+        padding: 2.5rem;
+        padding-top: 0;
+    }
+
+    p,
+    ul {
+        line-height: 1.4rem;
+        font-size: 16px;
+    }
+    h1,
+    h2,
+    h3 {
+        font-family: Rubik;
+        margin-bottom: 1rem;
+        column-span: all !important;
+    }
+    h1 {
+        font-size: 26px;
+        text-transform: capitalize;
+    }
+    h2 {
+        font-size: 18px;
+        font-family: 'Inter var', sans-serif;
+        font-weight: 300;
+        font-style: italic;
+    }
+    @media (min-width: 700px) {
+        h1 {
+            font-size: 42px;
+        }
+        h1.title {
+            font-size: 50px;
+        }
+        h2 {
+            font-size: 26px;
+        }
+    }
+    @media (min-width: 1350px) {
+        h1.title {
+            font-size: 72px;
+        }
+        h2 {
+            font-size: 32px;
+        }
+        p {
+            font-size: 18px;
+        }
+    }
+
+    .title {
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 0.75rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            background-color: var(--yellow);
+            width: 70px;
+        }
+    }
+    .call-to-action.header {
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 0.75rem;
+        font-size: 26px;
+        margin-bottom: 1rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            background-color: var(--yellow);
+            width: 70px;
+        }
+    }
+
+    .mission-and-vision {
+        display: grid;
+        grid-template-columns: 1fr;
+        gap: 2.5rem;
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+    }
+
+    .post.mission-and-vision h1::after {
+        display: none;
+    }
+
+    .post .column img {
+        max-width: 100%;
+        height: 100%;
+        object-fit: cover;
+        border-radius: 0.75rem;
+    }
+
+    .program-support {
+        background-color: var(--lightblue);
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+        border-radius: 0.5rem;
+        padding-top: 1rem;
+    }
+
+    .program-support span {
+        background-color: var(--yellow);
+        padding: 1rem;
+        margin: 0 1rem 1rem 0;
+        font-size: 1.25rem;
+        font-weight: bold;
+        min-width: 200px;
+        white-space: nowrap;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        display: inline-block;
+    }
+    @media (min-width: 700px) {
+        .program-support span {
+            font-size: 1.5rem;
+            padding: 1rem 2.5rem;
+        }
+    }
+    .program-support span:nth-of-type(2) {
+        background-color: var(--red);
+        color: white;
+    }
+    .program-support span:nth-of-type(3) {
+        color: white;
+        background-color: var(--blue);
+    }
+    .program-support span:nth-of-type(4) {
+        background-color: var(--green);
+    }
+    .projects {
+        background-color: var(--darkred);
+        color: var(--white);
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+        border-radius: 0.5rem;
+        padding-top: 1rem;
+    }
+    .projects > h1.title {
+        margin-top: 1rem;
+    }
+
+    .project {
+        width: 100%;
+        background-color: var(--navy);
+        color: var(--white);
+        border-radius: 0.5rem;
+        padding: 1.5rem;
+        padding-bottom: 2rem;
+    }
+    .projects .projects-list {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 2.5rem;
+        width: 100%;
+        margin-bottom: 2.5rem;
+
+        h1 {
+            font-size: 20px;
+        }
+        @media (min-width: 700px) {
+            h1 {
+                font-size: 26px;
+            }
+        }
+        @media (min-width: 1024px) {
+            h1 {
+                font-size: 32px;
+            }
+        }
+    }
+    .project h1 {
+        font-weight: 400;
+    }
+    .project img {
+        object-fit: cover;
+    }
+
+    @media (min-width: 400px) {
+        .post {
+            width: 95%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 550px) {
+        .post {
+            width: 80%;
+            margin: 0 auto;
+        }
+    }
+
+    @media (min-width: 700px) {
+        .post {
+            width: 100%;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+        .post .two-up {
+            column-count: 2; /* Number of columns */
+            column-gap: 2.5rem; /* Spacing between columns */
+        }
+        .mission-and-vision {
+            grid-template-columns: 1fr 1fr;
+        }
+    }
+
+    @media (min-width: 1350px) {
+        .post {
+            width: 100% !important;
+            max-width: 1024px !important;
+        }
+
+        .gh-sidebar {
+            position: absolute;
+            left: 0;
+        }
+
+        .gh-toc {
+            position: sticky;
+            top: 4vmin;
+            max-width: calc((100vw - 800px) / 2);
+            padding-right: 2rem;
+        }
+    }
+
+    .gh-toc .is-active-link::before {
+        background-color: var(--ghost-accent-color);
+    }
+
+    .team {
+        text-align: center;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 2.5rem;
+        width: 100%;
+        margin-bottom: 2.5rem;
+    }
+    @media (min-width: 1350px) {
+        .grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+    }
+    .team-photo {
+        width: 100%;
+        height: auto;
+        border-radius: 0.5rem;
+        object-fit: cover;
+    }
+
+    .team-info {
+        margin-top: 0.5rem;
+    }
+
+    .team-name {
+        font-weight: bold;
+        font-size: 1.1rem;
+        margin-bottom: 0;
+    }
+
+    .team-title {
+        font-size: 0.9rem;
+    }
+}

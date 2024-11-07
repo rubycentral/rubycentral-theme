@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Rubik&display=swap");
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url("https://rsms.me/inter/inter.css");
 
 :root {
   --red: #E14943;
+  --darkred: #cf2821; /* For Contrast with white text */
   --purple: #755384;
   --blue: #6288BC;
   --green: #71C09E;

@@ -25,15 +25,18 @@
 
     <main id="theme-main">
       {{!-- All content gets inserted here, index.hbs, post.hbs, etc --}}
-      <header>
-        <a href="/" id="main-logo">
-          <div class="logo-square">
-            <div class="logo-circle"></div>
-          </div>
-          <h1>{{@site.title}}</h1>
-        </a>
-        <h2>{{@site.description}}</h2>
-      </header>
+
+      {{#is "home"}}
+        <header>
+          <a href="/" id="main-logo">
+            <div class="logo-square">
+              <div class="logo-circle"></div>
+            </div>
+            <h1>{{@site.title}}</h1>
+          </a>
+          <h2>{{@site.description}}</h2>
+        </header>
+      {{/is}}
 
       {{{body}}}
     </main>
