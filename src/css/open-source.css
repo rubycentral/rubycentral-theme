@@ -5,9 +5,10 @@
         padding-top: 0;
     }
 
-    p {
+    p,
+    ul {
         line-height: 1.4rem;
-        font-size: 14px;
+        font-size: 16px;
     }
     h1,
     h2,
@@ -21,22 +22,28 @@
         text-transform: capitalize;
     }
     h2 {
-        font-size: 26px;
+        font-size: 18px;
         font-family: 'Inter var', sans-serif;
         font-weight: 300;
         font-style: italic;
     }
     @media (min-width: 700px) {
         h1 {
+            font-size: 42px;
+        }
+        h1.title {
             font-size: 50px;
         }
         h2 {
-            font-size: 32px;
+            font-size: 26px;
         }
     }
     @media (min-width: 1350px) {
-        h1 {
+        h1.title {
             font-size: 72px;
+        }
+        h2 {
+            font-size: 32px;
         }
         p {
             font-size: 18px;
@@ -48,6 +55,25 @@
         font-weight: bold;
         position: relative;
         padding-bottom: 0.75rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            background-color: var(--yellow);
+            width: 70px;
+        }
+    }
+    .call-to-action.header {
+        text-transform: uppercase;
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 0.75rem;
+        font-size: 26px;
+        margin-bottom: 1rem;
 
         &::after {
             content: '';
@@ -80,13 +106,55 @@
         border-radius: 0.75rem;
     }
 
-    .projects {
+    .program-support {
+        background-color: var(--lightblue);
+        margin-bottom: 2.5rem;
+        margin-top: 2.5rem;
+        border-radius: 0.5rem;
+        padding-top: 1rem;
+    }
+
+    .program-support span {
+        background-color: var(--yellow);
+        padding: 1rem;
+        margin: 0 1rem 1rem 0;
+        font-size: 1.25rem;
+        font-weight: bold;
+        min-width: 200px;
+        white-space: nowrap;
+        border-radius: 0.5rem;
+        padding: 1rem;
+        display: inline-block;
+    }
+    @media (min-width: 700px) {
+        .program-support span {
+            font-size: 1.5rem;
+            padding: 1rem 2.5rem;
+        }
+    }
+    .program-support span:nth-of-type(2) {
         background-color: var(--red);
+        color: white;
+    }
+    .program-support span:nth-of-type(3) {
+        color: white;
+        background-color: var(--blue);
+    }
+    .program-support span:nth-of-type(4) {
+        background-color: var(--green);
+    }
+    .projects {
+        background-color: var(--darkred);
         color: var(--white);
         margin-bottom: 2.5rem;
         margin-top: 2.5rem;
-        padding: 2.5rem;
+        border-radius: 0.5rem;
+        padding-top: 1rem;
     }
+    .projects > h1.title {
+        margin-top: 1rem;
+    }
+
     .project {
         width: 100%;
         background-color: var(--navy);
@@ -95,10 +163,6 @@
         padding: 1.5rem;
         padding-bottom: 2rem;
     }
-    .project h1 {
-        margin: 0;
-    }
-
     .projects .projects-list {
         display: grid;
         grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
@@ -107,9 +171,14 @@
         margin-bottom: 2.5rem;
 
         h1 {
-            font-size: 26px;
+            font-size: 20px;
         }
         @media (min-width: 700px) {
+            h1 {
+                font-size: 26px;
+            }
+        }
+        @media (min-width: 1024px) {
             h1 {
                 font-size: 32px;
             }
@@ -117,15 +186,9 @@
     }
     .project h1 {
         font-weight: 400;
-        padding-bottom: 1rem;
     }
     .project img {
         object-fit: cover;
-    }
-
-    .projects .contribute h1 {
-        font-size: 32px;
-        margin-bottom: 1rem;
     }
 
     @media (min-width: 400px) {
@@ -186,12 +249,16 @@
 
     .grid {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
         gap: 2.5rem;
         width: 100%;
         margin-bottom: 2.5rem;
     }
-
+    @media (min-width: 1350px) {
+        .grid {
+            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        }
+    }
     .team-photo {
         width: 100%;
         height: auto;

@@ -7,39 +7,36 @@
     </div>
   {{/post}}
 
-  {{#get "posts" filter="slug:program-news" include="feature_image"}}
-    {{#foreach posts}}
-      <div class="{{post_class}} program-news">
-        <div class="column">
-          {{#if feature_image}}
-            <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
-          {{/if}}
-        </div>
-        <div class="column">
-          <h1>{{title}}</h1>
-          {{{html}}}
-        </div>
+  <div class="{{post_class}} program-news">
+    {{#get "posts" filter="slug:program-news"}}
+      {{#foreach posts}}
+        <h1 class="call-to-action header">Program News</h1>
+        <ul>
+          {{#get "posts" order="desc, title asc" filter="tag:[news]"}}
+            {{#foreach posts limit="3"}}
+              <li>{{#link href=(url)}}{{title}}{{/link}}</li>
+            {{/foreach}}
+          {{/get}}
+        </ul>
       </div>
     {{/foreach}}
   {{/get}}
 
-  {{#get "posts" filter="slug:[our-vision, our-mission]"}}
-    <div class="{{post_class}} mission-and-vision">
+  <div class="{{post_class}} mission-and-vision">
+    {{#get "posts" filter="slug:[our-vision, our-mission]"}}  
       {{#foreach posts}}
         <div class="column">
           <h1>{{title}}</h1>
           {{{html}}}
         </div>
       {{/foreach}}
-    </div>
-  {{/get}}
-  <div class="projects">
-  <div class="{{post_class}}">
+    {{/get}}
+  </div>
+
+  <div class="{{post_class}} projects">
     <h1 class="title">Projects</h1>
     <h2>Learn more about our current and past efforts</h2>
-
-    
-      <div class="projects-list">
+    <div class="projects-list">
       {{#get "posts" order="featured desc, title asc" filter="tag:[project]"}}
         {{#foreach posts}}
         <div class="{{post_class}} project">
@@ -48,18 +45,17 @@
         </div>
         {{/foreach}}
       {{/get}}
-      </div>
-      <div class="contribute">
-        {{#get "posts" filter="slug:contribute"}}
-        {{#foreach posts}}
-        {{#if feature_image}}
-        <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
-        {{/if}}
-        <h1 class="title">{{title}}</h1>
-        <div>{{content}}</div>
-        {{/foreach}}
-        {{/get}}
-      </div>
+    </div>
+    <div class="contribute">
+      {{#get "posts" filter="slug:contribute"}}
+      {{#foreach posts}}
+      {{#if feature_image}}
+      <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+      {{/if}}
+      <h1 class="call-to-action header">{{title}}</h1>
+      <div>{{content}}</div>
+      {{/foreach}}
+      {{/get}}
     </div>
   </div>
 
@@ -82,4 +78,17 @@
       {{/get}}
     </div>
   </div>
+    <div class="{{post_class}} program-support">
+      {{#get "pages" filter="slug:open-source-program-support"}}
+      {{#foreach pages}}
+      <h1 class="title">{{title}}</h1>
+      {{{content}}}
+      <span>Program-Specific Funding</span>
+      <span>Donated Services</span>
+      <span>Memberships</span>
+      <span>Program-Specific Funding</span>
+    </div>
+    {{/foreach}}
+    {{/get}}
+    </div>
 </div>
