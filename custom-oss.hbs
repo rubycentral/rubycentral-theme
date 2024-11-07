@@ -8,8 +8,8 @@
   {{/post}}
 
   <div class="{{post_class}} program-news">
-    {{#get "posts" filter="slug:program-news"}}
-      {{#foreach posts}}
+    {{#get "pages" filter="slug:program-news"}}
+      {{#foreach pages}}
         <h1 class="call-to-action header">Program News</h1>
         <ul>
           {{#get "posts" order="desc, title asc" filter="tag:[news]"}}
@@ -23,8 +23,8 @@
   {{/get}}
 
   <div class="{{post_class}} mission-and-vision">
-    {{#get "posts" filter="slug:[hash-oss-our-vision, hash-oss-our-mission]"}}
-      {{#foreach posts}}
+    {{#get "pages" filter="slug:[hash-oss-our-vision, hash-oss-our-mission]"}}
+      {{#foreach pages}}
         <div class="column">
           <h1>{{title}}</h1>
           {{{html}}}
@@ -37,8 +37,8 @@
     <h1 class="title">Projects</h1>
     <h2>Learn more about our current and past efforts</h2>
     <div class="projects-list">
-      {{#get "posts" order="featured desc, title asc" filter="tag:[hash-oss-project]"}}
-        {{#foreach posts}}
+      {{#get "pages" order="featured desc, title asc" filter="tag:[hash-oss-project]"}}
+        {{#foreach pages}}
         <div class="{{post_class}} project">
             <h1>{{title}}</h1>
             {{{html}}}
@@ -47,8 +47,8 @@
       {{/get}}
     </div>
     <div class="contribute">
-      {{#get "posts" filter="tag:[hash-oss-contribute]"}}
-      {{#foreach posts}}
+      {{#get "pages" filter="tag:[hash-oss-contribute]"}}
+      {{#foreach pages}}
       {{#if feature_image}}
       <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
       {{/if}}
