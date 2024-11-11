@@ -1,9 +1,15 @@
-{{!< default}} 
+{{!< default}}
+{{#post}}
 <div id="modern">
-  {{#post}} 
-    <div class="{{post_class}}">
-      <h1 class="title">{{title}}</h1>
-      {{content}}
+  <div class="{{post_class}}">
+    <h1 class="title">{{title}}</h1>
+      <aside class="gh-sidebar">
+        <div class="gh-toc"></div>
+      </aside>
+      <div class="post-content">{{content}}</div>
     </div>
-  {{/post}}
 </div>
+{{/post}}
+{{#contentFor 'scripts'}}
+<script src="{{asset 'dist/post.js'}}" defer></script>
+{{/contentFor}}

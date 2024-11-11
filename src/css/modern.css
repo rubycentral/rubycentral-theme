@@ -233,7 +233,7 @@
         .gh-toc {
             position: sticky;
             top: 4vmin;
-            max-width: calc((100vw - 800px) / 2);
+            max-width: calc((100vw - 900px) / 2);
             padding-right: 2rem;
         }
     }
