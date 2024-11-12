@@ -4,10 +4,8 @@
         padding-top: 0;
     }
 
-    p,
-    ul {
-        line-height: 1.4rem;
-        font-size: 16px;
+    h1 {
+        text-transform: uppercase;
     }
     h1,
     h2,
@@ -15,12 +13,31 @@
         font-family: Rubik;
         margin-bottom: 1rem;
         column-span: all !important;
+        > a {
+            text-decoration: none;
+        }
     }
-    h1 {
-        font-size: 26px;
-        text-transform: capitalize;
-    }
+    h1,
     h2 {
+        font-weight: bold;
+        position: relative;
+        padding-bottom: 0.75rem;
+
+        &::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            height: 3px;
+            background-color: var(--yellow);
+            width: 70px;
+        }
+    }
+    h3 {
+        font-size: 18px !important;
+    }
+    h6 {
         font-size: 18px;
         font-family: 'Inter var', sans-serif;
         font-weight: 300;
@@ -30,60 +47,29 @@
         h1 {
             font-size: 42px;
         }
-        h1.title {
-            font-size: 50px;
-        }
         h2 {
-            font-size: 26px;
+            font-size: 32px;
+        }
+        h3 {
+            font-size: 26px !important;
         }
     }
     @media (min-width: 1350px) {
-        h1.title {
+        h1 {
             font-size: 72px;
         }
         h2 {
-            font-size: 32px;
+            font-size: 60px;
         }
         p {
             font-size: 18px;
         }
     }
 
-    .title {
-        text-transform: uppercase;
-        font-weight: bold;
-        position: relative;
-        padding-bottom: 0.75rem;
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 3px;
-            background-color: var(--yellow);
-            width: 70px;
-        }
-    }
-    .call-to-action.header {
-        text-transform: uppercase;
-        font-weight: bold;
-        position: relative;
-        padding-bottom: 0.75rem;
-        font-size: 26px;
-        margin-bottom: 1rem;
-
-        &::after {
-            content: '';
-            position: absolute;
-            left: 0;
-            right: 0;
-            bottom: 0;
-            height: 3px;
-            background-color: var(--yellow);
-            width: 70px;
-        }
+    p,
+    ul {
+        line-height: 1.4rem;
+        font-size: 16px;
     }
 
     .mission-and-vision {
@@ -92,10 +78,11 @@
         gap: 2.5rem;
         margin-bottom: 2.5rem;
         margin-top: 2.5rem;
-    }
+        padding: 0 0 2.5rem 0;
 
-    .post.mission-and-vision h1::after {
-        display: none;
+        h3 {
+            font-size: 42px;
+        }
     }
 
     .post .column img {
@@ -150,10 +137,6 @@
         border-radius: 0.5rem;
         padding-top: 1rem;
     }
-    .projects > h1.title {
-        margin-top: 1rem;
-    }
-
     .project {
         width: 100%;
         background-color: var(--navy);

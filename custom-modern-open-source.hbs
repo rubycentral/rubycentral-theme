@@ -1,94 +1,97 @@
 {{!< default}} 
-<div id="modern">
-  {{#post}} 
+{{#post}}
+  <div id="modern">
     <div class="{{post_class}}">
-      <h1 class="title">{{title}}</h1>
+      <h1>{{title}}</h1>
       <div class="two-up">{{content}}</div>
     </div>
-  {{/post}}
 
-  <div class="{{post_class}} program-news">
-    {{#get "pages" filter="slug:program-news"}}
-      {{#foreach pages}}
-        <h1 class="call-to-action header">Program News</h1>
-        <ul>
-          {{#get "posts" order="desc, title asc" filter="tag:[news]"}}
-            {{#foreach posts limit="3"}}
-              <li>{{#link href=(url)}}{{title}}{{/link}}</li>
-            {{/foreach}}
-          {{/get}}
-        </ul>
-      </div>
-    {{/foreach}}
-  {{/get}}
-
-  <div class="{{post_class}} mission-and-vision">
-    {{#get "pages" filter="tag:[hash-oss-our-vision, hash-oss-our-mission]"}}
-      {{#foreach pages}}
-        <div class="column">
-          <h1>{{title}}</h1>
-          {{{html}}}
+    <div class="{{post_class}} program-news">
+      {{#get "pages" filter="slug:program-news"}}
+        {{#foreach pages}}
+          <h2>Program News</h2>
+          <ul>
+            {{#get "posts" order="desc, title asc" filter="tag:[news]"}}
+              {{#foreach posts limit="3"}}
+                <li>{{#link href=(url)}}{{title}}{{/link}}</li>
+              {{/foreach}}
+            {{/get}}
+          </ul>
         </div>
       {{/foreach}}
     {{/get}}
-  </div>
 
-  <div class="{{post_class}} projects">
-    <h1 class="title">Projects</h1>
-    <h2>Learn more about our current and past efforts</h2>
-    <div class="projects-list">
-      {{#get "pages" order="featured desc, title asc" filter="tag:[hash-oss-project]"}}
+    <div class="{{post_class}} mission-and-vision">
+      {{#get "pages" filter="tag:[hash-oss-our-vision, hash-oss-our-mission]"}}
         {{#foreach pages}}
-        <div class="{{post_class}} project">
-            <h1>{{title}}</h1>
+          <div class="column">
+            <h3>{{title}}</h3>
             {{{html}}}
-        </div>
+          </div>
         {{/foreach}}
       {{/get}}
     </div>
-    <div class="contribute">
-      {{#get "pages" filter="tag:[hash-oss-contribute]"}}
-      {{#foreach pages}}
-      {{#if feature_image}}
-      <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
-      {{/if}}
-      <h1 class="call-to-action header">{{title}}</h1>
-      <div>{{content}}</div>
+
+    <div class="{{post_class}} projects">
+      <h2>Projects</h2>
+      <h3>Learn more about our current and past efforts</h3>
+      <div class="projects-list">
+        {{#get "pages" order="featured desc, title asc" filter="tag:[hash-oss-project]"}}
+          {{#foreach pages}}
+          <div class="{{post_class}} project">
+              <h3>{{title}}</h1>
+              {{{html}}}
+          </div>
+          {{/foreach}}
+        {{/get}}
+      </div>
+      <div class="contribute">
+        {{#get "pages" filter="tag:[hash-oss-contribute]"}}
+        {{#foreach pages}}
+        {{#if feature_image}}
+        <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+        {{/if}}
+        <h3>{{title}}</h1>
+        <div>{{content}}</div>
+        {{/foreach}}
+        {{/get}}
+      </div>
+    </div>
+
+    <div class="post" aria-labelledby="team-heading">
+      <h2 id="team-heading">Team</h2>
+      <h3>Meet the people behind our program</h3>
+      <div class="grid">
+        {{#get "pages" order="featured desc, title asc" filter="tags:hash-oss-team" limit="all" include="feature_image"}}
+          {{#foreach pages}}
+            <figure>
+              {{#if feature_image}}
+                <img src="{{feature_image}}" alt="{{title}}" class="feature-image team-photo">
+              {{/if}}
+              <figcaption class="team-info">
+                <p class="team-name">{{title}}</p>
+                {{content}}
+              </figcaption>
+            </figure>
+          {{/foreach}}
+        {{/get}}
+      </div>
+    </div>
+      <div class="{{post_class}} program-support">
+        {{#get "pages" filter="tag:[hash-oss-program-support]"}}
+        {{#foreach pages}}
+        <h2>{{title}}</h2>
+        {{{content}}}
+        <span>Program-Specific Funding</span>
+        <span>Donated Services</span>
+        <span>Memberships</span>
+        <span>Corporate Sponsorships</span>
+      </div>
       {{/foreach}}
       {{/get}}
-    </div>
+      </div>
   </div>
-
-  <div class="post" aria-labelledby="team-heading">
-    <h1 id="team-heading" class="title">Team</h1>
-    <h2>Meet the people behind our program</h2>
-    <div class="grid">
-      {{#get "pages" order="featured desc, title asc" filter="tags:hash-oss-team" limit="all" include="feature_image"}}
-        {{#foreach pages}}
-          <figure>
-            {{#if feature_image}}
-              <img src="{{feature_image}}" alt="{{title}}" class="feature-image team-photo">
-            {{/if}}
-            <figcaption class="team-info">
-              <p class="team-name">{{title}}</p>
-              {{content}}
-            </figcaption>
-          </figure>
-        {{/foreach}}
-      {{/get}}
-    </div>
-  </div>
-    <div class="{{post_class}} program-support">
-      {{#get "pages" filter="tag:[hash-oss-program-support]"}}
-      {{#foreach pages}}
-      <h1 class="title">{{title}}</h1>
-      {{{content}}}
-      <span>Program-Specific Funding</span>
-      <span>Donated Services</span>
-      <span>Memberships</span>
-      <span>Corporate Sponsorships</span>
-    </div>
-    {{/foreach}}
-    {{/get}}
-    </div>
-</div>
+{{/post}}
+{{#contentFor 'scripts'}}
+<script src="{{asset 'dist/post.js'}}" defer></script>
+{{/contentFor}}
