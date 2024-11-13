@@ -199,6 +199,7 @@
         }
         .mission-and-vision {
             grid-template-columns: 1fr 1fr;
+            padding: 0 2.5rem 4rem 2.5rem;
         }
     }
 
