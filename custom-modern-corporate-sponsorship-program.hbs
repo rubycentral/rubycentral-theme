@@ -1,0 +1,79 @@
+{{!< default}} 
+{{#post}}
+  <div id="modern">
+    <div class="{{post_class}}">
+      <h1>{{title}}</h1>
+      <div>{{content}}</div>
+    </div>
+    <div class="{{post_class}} corporate-sponsors">
+      <div class="level ruby">
+        <div class="name"><h3>Ruby</h3></div>
+        <div class="bucket">
+          {{#get "pages" filter="tag:hash-corporate-sponsor-ruby" include="feature_image"}}
+            {{#foreach pages}}
+              {{#if feature_image}}
+                <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+              {{/if}}
+            {{/foreach}}
+          {{/get}}
+        </div>
+      </div>
+      <div class="level gold">
+        <div class="name"><h3>Gold</h3></div>
+        <div class="bucket">
+          {{#get "pages" filter="tag:hash-corporate-sponsor-gold" include="feature_image"}}
+            {{#foreach pages}}
+              {{#if feature_image}}
+                <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+              {{/if}}
+            {{/foreach}}
+          {{/get}}
+        </div>
+      </div>
+      <div class="level silver">
+        <div class="name"><h3>Silver</h3></div>
+        <div class="bucket">
+          {{#get "pages" filter="tag:hash-corporate-sponsor-silver" include="feature_image"}}
+            {{#foreach pages}}
+              {{#if feature_image}}
+                <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+              {{/if}}
+            {{/foreach}}
+          {{/get}}
+        </div>
+      </div>
+    </div>
+    <div class="{{post_class}}">
+      {{#get "pages" filter="slug:benefits-of-supporting-ruby-central"}}
+      {{#foreach pages}}
+        <h3>{{title}}</h3>
+        <div>{{content}}</div>
+      {{/foreach}}
+      {{/get}}
+    </div>
+
+    <div class="{{post_class}} program-news">
+      {{#get "pages" filter="slug:program-news"}}
+      {{#foreach pages}}
+        <h3>Program News</h3>
+        <ul>
+          {{#get "posts" order="desc, title asc" filter="tag:[news]"}}
+          {{#foreach posts limit="3"}}
+          <li>{{#link href=(url)}}{{title}}{{/link}}</li>
+          {{/foreach}}
+          {{/get}}
+        </ul>
+      {{/foreach}}
+    {{/get}}
+    </div>
+    <div class="{{post_class}}">
+      {{#get "pages" filter="slug:more-corporate-sponsorship-details"}}
+      {{#foreach pages}}
+        <div>{{content}}</div>
+      {{/foreach}}
+      {{/get}}
+    </div>
+{{/post}}
+{{#contentFor 'scripts'}}
+<script src="{{asset 'dist/post.js'}}" defer></script>
+{{/contentFor}}
