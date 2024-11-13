@@ -59,7 +59,7 @@
             font-size: 72px;
         }
         h2 {
-            font-size: 60px;
+            font-size: 48px;
         }
         p {
             font-size: 18px;
@@ -199,6 +199,7 @@
         }
         .mission-and-vision {
             grid-template-columns: 1fr 1fr;
+            padding: 0 2.5rem 4rem 2.5rem;
         }
     }
 
