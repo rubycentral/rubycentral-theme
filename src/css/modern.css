@@ -237,9 +237,9 @@
         margin-bottom: 2.5rem;
     }
     @media (min-width: 1350px) {
-        .grid {
-            grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-        }
+      .grid {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+      }
     }
     .team-photo {
         width: 100%;
@@ -260,5 +260,67 @@
 
     .team-title {
         font-size: 0.9rem;
+    }
+    .level {
+        margin-bottom: 2.5rem;
+        box-shadow: 5px 5px 15px rgba(120, 120, 120, 0.1);
+    }
+    .level.silver, .level.major {
+        width: 45%;
+    }
+    .level .name {
+        text-align: center;
+        padding: 1rem 0 0.25rem 0;
+        margin: auto;
+        border-top-left-radius: .75rem;
+        border-top-right-radius: .75rem;
+    }
+
+    .corporate-sponsors {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        gap: 1rem;
+    }
+    .level.ruby, .level.gold {
+        flex: 1 1 100%;
+    }
+    .level.silver, .level.major {
+        flex: 1 1 100%;
+    }
+    @media (min-width: 1024px) {
+        .level.silver, .level.major {
+            flex: 1 1 auto;
+            /* flex-basis: calc(50% - 8px); */
+        }
+    }
+    .level.ruby .name {
+        background-color: var(--red);
+        color: var(--white);
+    }
+    .level.gold .name {
+        background-color: var(--yellow);
+    }
+    .level.silver .name {
+        background-color: var(--blue);
+        color: var(--white);
+    }
+    .level.major .name {
+        background-color: var(--green);
+        color: var(--white);
+    }
+    .level .bucket {
+        border-bottom-left-radius: .75rem;
+        border-bottom-right-radius: .75rem;
+        display: flex;
+        justify-content: space-evenly;
+        padding: 1rem;
+        flex-direction: row;
+        flex-wrap: wrap;
+
+        img {
+            height: 66px;
+            margin: 2.5rem;
+        }
     }
 }
