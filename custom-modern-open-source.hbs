@@ -9,7 +9,7 @@
     <div class="{{post_class}} program-news">
       {{#get "pages" filter="slug:program-news"}}
         {{#foreach pages}}
-          <h2>Program News</h2>
+          <h3>Program News</h3>
           <ul>
             {{#get "posts" order="desc, title asc" filter="tag:[news]"}}
               {{#foreach posts limit="3"}}
