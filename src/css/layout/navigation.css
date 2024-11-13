@@ -12,14 +12,18 @@ footer ul {
   font-size: var(--small);
 }
 
-nav, nav ul {
+nav,
+nav ul {
   display: flex;
   width: 100%;
+  align-items: center;
+  max-width: 1024px;
   justify-content: space-between;
+  margin: 0 auto;
 }
 
 nav .logo-circle {
-  transition: transform .25s ease-in-out;
+  transition: transform 0.25s ease-in-out;
   flex-shrink: 0;
   width: 30px;
   height: 30px;
@@ -28,16 +32,12 @@ nav .logo-circle {
   margin: 10px 0 0 0;
   border-radius: 30px;
   box-shadow: 0 9px 18px rgba(129, 0, 0, 0.3), 0 2px 5px rgba(137, 0, 0, 0.2);
-  background: no-repeat center 6px / 80% url(/assets/images/gem-logo.svg), linear-gradient(to top, #DF3434 0%, #FB5E55 100%);
+  background: no-repeat center 6px / 80% url(/assets/images/gem-logo.svg),
+    linear-gradient(to top, #df3434 0%, #fb5e55 100%);
 }
 
 nav .logo-circle {
   transform: scale(1.05);
-}
-
-nav > ul > li:last-child {
-  margin-left: auto;
-  margin-right: 1.5rem;
 }
 
 footer {
@@ -60,7 +60,7 @@ nav > ul > li:last-child > a {
 }
 
 nav li.subitem {
-    text-align: center;
+  text-align: center;
 }
 
 footer ul.nav a {
@@ -68,7 +68,7 @@ footer ul.nav a {
 }
 footer .nav .nav-contact-us > a > span {
   background-attachment: local;
-  background-image: url("/assets/images/contact-icon.svg");
+  background-image: url('/assets/images/contact-icon.svg');
   background-clip: padding-box;
   background-origin: padding-box;
   background-repeat: no-repeat;
@@ -133,19 +133,19 @@ nav .menu-icon.close {
     margin: 4.5rem 0px;
     z-index: 2;
     background: #fff;
-    border: 2px solid #F4EEE6;
+    border: 2px solid #f4eee6;
     border-top: none;
     border-radius: 0 0 0 20px;
-    transition: right .4s ease-in-out;
+    transition: right 0.4s ease-in-out;
     box-shadow: -4px 4px 5px rgba(253, 204, 204, 0.3);
   }
 
   nav ul:before {
-    content: "";
+    content: '';
     position: absolute;
     left: -203%;
     top: 0;
-    border: 2px solid #F4EEE6;
+    border: 2px solid #f4eee6;
     border-left: none;
     border-bottom: none;
     border-radius: 0 20px 0 0;
@@ -174,7 +174,7 @@ nav .menu-icon.close {
   }
 
   nav ul {
-    width: 50%
+    width: 50%;
   }
 
   nav ul::before {
