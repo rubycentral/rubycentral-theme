@@ -1,0 +1,15 @@
+{{!< default}} 
+{{#post}}
+  <div id="modern">
+    <div class="{{post_class}}">
+      <h1>{{title}}</h1>
+      <div>{{content}}</div>
+    </div>
+    <section class="{{post_class}} light-background">
+      <div class="pipedriveWebForms" data-pd-webforms="https://webforms.pipedrive.com/f/bXGEbZmA58kJPCiTvLK4jx85rVeg5797ayI37xIHpUtbD7h6xf4Qinv5iYxFZ8GZOj"><script src="https://webforms.pipedrive.com/f/loader"></script></div>
+    </div>
+  </div>
+{{/post}}
+{{#contentFor 'scripts'}}
+<script src="{{asset 'dist/post.js'}}" defer></script>
+{{/contentFor}}

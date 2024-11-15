@@ -324,4 +324,19 @@
             margin: 2.5rem;
         }
     }
+
+    .pipedriveWebForms {
+        max-width: 100%; /* Ensure the form doesn't exceed the container width */
+        padding: 1em; /* Add some padding for spacing */
+        box-sizing: border-box; /* Include padding in width calculations */
+        margin: 1.5rem 0 0 0;
+      }
+
+      .pipedriveWebForms iframe {
+        width: 100%; /* Ensure the iframe scales to the container */
+        max-width: 600px; /* Set a reasonable max width */
+        height: auto; /* Adjust height proportionally */
+        display: block; /* Ensure it behaves like a block-level element */
+        margin: 1.5rem auto; /* Center the form on the page */
+      }
 }
