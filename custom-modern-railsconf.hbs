@@ -2,6 +2,9 @@
 {{#post}}
   <div id="modern">
     <div class="{{post_class}}">
+      {{#if feature_image}}
+        <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+      {{/if}}
       <h1>{{title}}</h1>
       <div>{{content}}</div>
     </div>
