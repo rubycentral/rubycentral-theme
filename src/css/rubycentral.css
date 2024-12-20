@@ -504,7 +504,7 @@ h3 {
   height: 200px;
   margin: 0 auto 1rem;
   width: 200px;
-  object-fit: fill;
+  object-fit: cover;
 }
 
 .people {
