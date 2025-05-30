@@ -7,6 +7,9 @@
 /* @import './base/typography.css'; */
 /* @import './base/grid.css'; */
 
+/* /1* Components *1/ */
+@import './components/button.css';
+
 /* /1* Layout *1/ */
 @import './layout/navigation.css';
 @import './layout/dropdown.css';
@@ -16,6 +19,7 @@
 /* /1* Pages *1/ */
 /* @import './pages/index.css'; */
 @import './pages/post.css';
+@import './pages/home.css';
 /* @import './pages/content.css'; */
 
 @import './rubycentral.css';

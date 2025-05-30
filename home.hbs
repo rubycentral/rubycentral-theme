@@ -1,1 +1,15 @@
 {{!< default}}
+<header class='home-template__hero'>
+    {{#get 'pages' filter="title:'Home::Hero - Body'" limit='1'}}
+        {{#foreach pages}}
+            {{content}}
+        {{/foreach}}
+    {{/get}}
+    <section class='kg-button-card__group'>
+        {{#get 'pages' filter='tag:hash-home-hero-cta' limit='2'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+    </section>
+</header>

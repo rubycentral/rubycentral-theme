@@ -25,7 +25,11 @@
   },
   "license": "private",
   "config": {
-    "card_assets": true,
+    "card_assets": {
+      "exclude": [
+        "button"
+      ]
+    },
     "posts_per_page": 15,
     "image_sizes": {
       "xxs": {
