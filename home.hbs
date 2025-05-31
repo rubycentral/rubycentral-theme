@@ -13,3 +13,54 @@
         {{/get}}
     </section>
 </header>
+<section class='home-template__pillars'>
+    <section class='home-template__pillars__inner'>
+        <h2>Pillars of Ruby Central</h2>
+        <hr />
+        <section class='home-template__pillars__details'>
+            <section class='home-template__pillars__details--content'>
+                {{#get 'pages' filter="title:'Home::Pillars - Conferences'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+                {{#get 'pages' filter="title:'Home::Pillars - Button'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </section>
+            <section class='home-template__pillars__details--image-grid'>
+                <img
+                    class='home-template__pillars__details--image-grid_item--one'
+                    src='/assets/images/home__pillars-image-grid-01.jpg'
+                    alt='Conference room with numerous attendees and a main stage'
+                />
+                <img
+                    class='home-template__pillars__details--image-grid_item--two'
+                    src='/assets/images/home__pillars-image-grid-02.jpg'
+                    alt='RailsConf 2025 flyer with event dates and times'
+                />
+                <img
+                    class='home-template__pillars__details--image-grid_item--three'
+                    src='/assets/images/home__pillars-image-grid-03.jpg'
+                    alt='Young man in plaid shirt giving a hug to a person with a backpack'
+                />
+            </section>
+            <aside class='home-template__pillars__details--stats'>
+                <section>
+                    <h3>5,000</h3>
+                    <p>attendees</p>
+                </section>
+                <section>
+                    <h3>100</h3>
+                    <p>speakers from 10 countries</p>
+                </section>
+                <section>
+                    <h3>275</h3>
+                    <p>sponsors</p>
+                </section>
+            </aside>
+        </section>
+    </section>
+</section>
