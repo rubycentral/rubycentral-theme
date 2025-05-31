@@ -64,3 +64,31 @@
         </section>
     </section>
 </section>
+<section class='home-template__open-source'>
+    <section class='home-template__open-source__content'>
+        {{#get 'pages' filter="title:'Home::OpenSource'" limit='1'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+        {{#get 'pages' filter="title:'Home::OpenSource - Button'" limit='1'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+    </section>
+    <aside class='home-template__open-source__stats'>
+        <section>
+            <h3>199 Billion</h3>
+            <p>gem downloads served</p>
+        </section>
+        <section>
+            <h3>Over 200K</h3>
+            <p>users and 180K gems</p>
+        </section>
+        <section>
+            <h3>100% Uptime</h3>
+            <p>since 2013 with 24/7 on call</p>
+        </section>
+    </aside>
+</section>

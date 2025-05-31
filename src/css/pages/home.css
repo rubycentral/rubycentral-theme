@@ -187,6 +187,78 @@
         }
     }
 
+    .home-template__open-source {
+        display: grid;
+        gap: 48px;
+        grid-template-areas: 'open-source-content' 'open-source-stats';
+        grid-template-columns: 1fr;
+        margin: auto;
+        max-width: 900px;
+        padding: 70px 40px;
+    }
+
+    .home-template__open-source__content {
+        color: var(--navy);
+        display: flex;
+        flex-direction: column;
+        gap: 16px;
+        grid-area: open-source-content;
+
+        h2 {
+            margin-bottom: 0;
+        }
+
+        p {
+            margin-bottom: 0;
+        }
+
+        p:first-of-type {
+            flex-grow: 1;
+        }
+
+        p:last-of-type {
+            font-size: 0.875rem;
+            line-height: 1.5rem;
+        }
+
+        hr {
+            margin: 0;
+        }
+    }
+
+    .home-template__open-source__stats {
+        display: flex;
+        background-color: var(--red);
+        border-radius: 8px;
+        flex-direction: column;
+        justify-content: space-between;
+        gap: 16px;
+        grid-area: open-source-stats;
+        padding: 48px 20px;
+
+        section {
+            display: flex;
+            flex-direction: column;
+            gap: 8px;
+
+            h3,
+            p {
+                text-align: center;
+            }
+
+            h3 {
+                font-size: 2rem;
+                line-height: 3rem;
+                text-transform: uppercase;
+            }
+
+            p {
+                font-size: 0.875rem;
+                line-height: 1rem;
+            }
+        }
+    }
+
     @media (min-width: 834px) {
         h2 {
             font-size: 4.5rem;
@@ -243,6 +315,16 @@
             gap: 0;
             grid-template-columns: repeat(3, minmax(0, 1fr));
         }
+
+        .home-template__open-source {
+            grid-template-areas: 'open-source-stats open-source-content';
+            grid-template-columns: 275px 1fr;
+            padding: 70px;
+        }
+
+        .home-template__open-source__stats {
+            gap: 55px;
+        }
     }
 
     @media (min-width: 1440px) {
@@ -280,6 +362,25 @@
         }
 
         .home-template__pillars__details--stats {
+            section {
+                h3 {
+                    font-size: 2.625rem;
+                    line-height: 3rem;
+                }
+
+                p {
+                    font-size: 1rem;
+                }
+            }
+        }
+
+        .home-template__open-source {
+            gap: 96px;
+            grid-template-columns: 330px 1fr;
+            padding: 70px 0;
+        }
+
+        .home-template__open-source__stats {
             section {
                 h3 {
                     font-size: 2.625rem;
