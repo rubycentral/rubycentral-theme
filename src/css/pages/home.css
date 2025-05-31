@@ -332,6 +332,8 @@
             padding: 96px 0;
 
             h3 {
+                font-size: 1.5rem;
+                line-height: 1.75rem;
                 max-width: 693px;
             }
         }
