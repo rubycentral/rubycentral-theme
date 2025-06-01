@@ -92,3 +92,40 @@
         </section>
     </aside>
 </section>
+<section class='home-template__community'>
+    <section class='home-template__community__inner'>
+        <section class='home-template__community__details'>
+            <section class='home-template__community__details--content'>
+                {{#get 'pages' filter="title:'Home::Community'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+                {{#get 'pages' filter="title:'Home::Community - Button'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </section>
+            <img
+                class='home-template__community__details--image'
+                src='/assets/images/home__community__details--image.jpg'
+                alt='Group of developers hugging and smiling together'
+            />
+            <aside class='home-template__community__details--stats'>
+                <section>
+                    <h3>200</h3>
+                    <p>local meetup grants in 36 countries</p>
+                </section>
+                <section>
+                    <h3>100</h3>
+                    <p>scholars</p>
+                </section>
+                <section>
+                    <h3>37,000</h3>
+                    <p>members</p>
+                </section>
+            </aside>
+        </section>
+    </section>
+</section>
