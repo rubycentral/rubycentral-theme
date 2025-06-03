@@ -10,6 +10,9 @@
 /* /1* Components *1/ */
 @import './components/button.css';
 
+/* /1* Partials *1/ */
+@import './partials/get-involved.css';
+
 /* /1* Layout *1/ */
 @import './layout/navigation.css';
 @import './layout/dropdown.css';
