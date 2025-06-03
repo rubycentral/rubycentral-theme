@@ -129,3 +129,22 @@
         </section>
     </section>
 </section>
+<section class='home-template__support'>
+    {{#get 'pages' filter="title:'Home::Support'" limit='1'}}
+        {{#foreach pages}}
+            {{content}}
+        {{/foreach}}
+    {{/get}}
+    <section class='home-template__support__sponsors'>
+        <p>A special thanks to our supporters, you make this possible!</p>
+        <div class='home-template__support__sponsors__inner'>
+            {{#get "pages" filter="tag:hash-corporate-sponsor-ruby" include="feature_image"}}
+                {{#foreach pages}}
+                  {{#if feature_image}}
+                    <img src="{{feature_image}}" alt="{{title}}" />
+                  {{/if}}
+                {{/foreach}}
+              {{/get}}
+        </div>
+    </section>
+</section>
