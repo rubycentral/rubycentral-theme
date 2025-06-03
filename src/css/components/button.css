@@ -1,9 +1,9 @@
-.kg-button-card a.kg-btn,
-.kg-button-card a.kg-btn-accent {
+.kg-button-card .kg-btn,
+.kg-button-card .kg-btn-accent {
     background: linear-gradient(0deg, #e14943 0%, #fa5d54 100%);
     border: none;
     border-radius: 12px;
-    box-shadow: 0px 4px 13px 0px #fa5d54;
+    box-shadow: 0px 4px 13px 0px rgba(250, 93, 84, 0.3);
     color: white;
     cursor: pointer;
     display: flex;
@@ -16,10 +16,10 @@
     width: 100%;
 }
 
-.kg-button-card a.kg-btn:hover,
-.kg-button-card a.kg-btn-accent:hover {
+.kg-button-card .kg-btn:hover,
+.kg-button-card .kg-btn-accent:hover {
     background: linear-gradient(0deg, #e14943 0%, #fa5d54 100%);
-    box-shadow: 0px 2px 13px 0px #fa5d54;
+    box-shadow: 0px 4px 13px 0px rgba(250, 93, 84, 0.4);
 }
 
 .kg-button-card__group {
@@ -36,8 +36,8 @@
 }
 
 @media (min-width: 834px) {
-    .kg-button-card a.kg-btn,
-    .kg-button-card a.kg-btn-accent {
+    .kg-button-card .kg-btn,
+    .kg-button-card .kg-btn-accent {
         font-size: 1rem;
         padding: 20px;
         width: fit-content;
