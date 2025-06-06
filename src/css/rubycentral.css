@@ -1,7 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-#blurb a,
 .people li aside a {
   color: var(--white);
   text-shadow: 0 2px 0 var(--red), 1px 2px 0 var(--red), -1px 2px 0 var(--red), 2px 2px 0 var(--red), -2px 2px 0 var(--red);
@@ -354,22 +353,6 @@ h3 {
   height: 64px;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.3);
-}
-
-#blurb {
-  padding-bottom: 82px;
-  background-color: var(--red);
-}
-
-#blurb h4 {
-  line-height: 27px;
-  font-weight: 600;
-  margin: 0 0 27px 0;
-}
-
-#blurb .icon-box {
-  box-shadow: 0 9px 18px rgba(156, 25, 20, 0.33), 0 1px 5px rgba(141, 69, 69, 0.21);
-  background: url(/assets/images/blurb-icon.svg) center center no-repeat, linear-gradient(to top, #DF3434 0%, #FB5E55 100%);
 }
 
 #support {
@@ -797,12 +780,6 @@ h3 {
   .main-grid section .section-header {
     padding: 25px;
     margin: -25px;
-  }
-
-  .main-grid section#blurb {
-    height: auto;
-    max-height: 2000px;
-    background-image: none;
   }
 
   .main-grid section:last-child {
