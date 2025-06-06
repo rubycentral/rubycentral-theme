@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-.people li aside a {
-  color: var(--white);
-  text-shadow: 0 2px 0 var(--red), 1px 2px 0 var(--red), -1px 2px 0 var(--red), 2px 2px 0 var(--red), -2px 2px 0 var(--red);
-}
-
 #rubygems a {
   color: var(--white);
   text-shadow: 0 2px 0 var(--green), 1px 2px 0 var(--green), -1px 2px 0 var(--green), 2px 2px 0 var(--green), -2px 2px 0 var(--green);
@@ -476,64 +471,6 @@ h3 {
   object-fit: cover;
 }
 
-.people {
-  margin: 25px 0 0 0;
-  padding: 0;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  gap: 22px;
-  list-style-type: none;
-}
-
-.people li {
-  border-radius: 10px;
-  background: var(--white);
-  margin: 60px 0 0 0;
-  padding: 60px 0 0 0;
-  position: relative;
-}
-
-.people li img {
-  position: absolute;
-  left: 20px;
-  top: -50px;
-  border-radius: 50px;
-  height: 100px;
-  width: 100px;
-  box-shadow: 0 6px 14px rgba(39, 41, 45, 0.26);
-  background-color: #fff;
-}
-
-.people li aside {
-  padding: 10px 20px 12px;
-  border-bottom-left-radius: 10px;
-  border-bottom-right-radius: 10px;
-  border-top: 3px solid #BC2822;
-  background: var(--red);
-  color: var(--white);
-  height: 100%;
-  font-size: 14px;
-}
-
-.people li aside p {
-  font-size: 14px;
-  margin-top: 5px;
-  line-height: 18px;
-  font-style: italic;
-}
-
-.people li aside strong {
-  font-family: 'Rubik';
-  font-weight: 600;
-  font-size: 16px;
-  display: block;
-}
-
-.people li aside a {
-  display: inline-block;
-  font-size: 14px;
-}
-
 #directors {
   margin: 0 0 150px 0;
   position: relative;
@@ -551,11 +488,6 @@ h3 {
 #staff .icon-box {
   box-shadow: 0 9px 18px rgba(191, 204, 214, 0.12), 0 1px 5px rgba(205, 231, 252, 0.3);
   background: url(/assets/images/staff-icon.svg) center center no-repeat, linear-gradient(to top, #F6FBFE 0%, #fff 100%);
-}
-
-#staff .people li aside {
-  background: #5E83A7;
-  border-color: #3F6589;
 }
 
 #oss-team, #oss-sponsors {
@@ -624,11 +556,6 @@ h3 {
 
 @media screen and (max-width: 1200px) and (orientation: portrait),
 (max-width: 1097px) and (orientation: landscape) {
-
-  .people {
-    grid-template-columns: 1fr 1fr 1fr;
-  }
-
   #about .icon-box,
   #history .icon-box {
     left: 0;
@@ -874,64 +801,6 @@ h3 {
   #directors {
     margin: 0 0 50px 0;
     padding-top: 80px;
-  }
-
-  .people {
-    display: block;
-  }
-
-  .people li {
-    margin: 0 0 10px 0;
-    height: 74px;
-    padding: 0 0 0 30px;
-    background: var(--red);
-  }
-
-  .people li img {
-    top: 5px;
-    left: -10px;
-    width: 64px;
-    height: 64px;
-  }
-
-  .people li aside {
-    border-bottom-left-radius: 0;
-    border-top-right-radius: 10px;
-    border-top: 0;
-    border-left: 3px solid #BC2822;
-    padding: 17px 0 0 30px;
-    background: var(--white);
-    color: var(--text);
-  }
-
-  .people li aside a {
-    color: var(--text);
-    text-decoration: none;
-    padding-bottom: 1px;
-    box-shadow: inset 0 -2px 0 var(--yellow);
-    transition: all .15s ease-in-out;
-    text-shadow: 0 2px 0 var(--white), 1px 2px 0 var(--white), -1px 2px 0 var(--white), 2px 2px 0 var(--white), -2px 2px 0 var(--white);
-  }
-
-  .people li:last-child {
-    margin-bottom: 0;
-  }
-
-  #staff {
-    padding-top: 80px;
-  }
-
-  #staff .people li {
-    background: var(--blue);
-  }
-
-  #staff .people li aside {
-    border-color: #3F6589;
-    background: var(--white);
-  }
-
-  #staff .people li aside small {
-    color: var(--blue);
   }
 
   .static-content {

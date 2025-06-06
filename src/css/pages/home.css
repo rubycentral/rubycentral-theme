@@ -301,33 +301,6 @@
         }
     }
 
-    .home-template__support__sponsors {
-        background-color: white;
-        box-shadow: 0px 4px 13px 0px rgba(167, 167, 167, 0.3);
-        border-radius: 0 0 12px 12px;
-
-        p {
-            background-color: var(--red);
-            border-radius: 12px 12px 0 0;
-            color: white;
-            margin: 0;
-            padding: 36px 20px;
-        }
-    }
-
-    .home-template__support__sponsors__inner {
-        display: flex;
-        flex-direction: column;
-        gap: 60px;
-        padding: 60px 20px;
-
-        img {
-            height: 60px;
-            max-width: 100%;
-            object-fit: contain;
-        }
-    }
-
     @media (min-width: 834px) {
         h2 {
             font-size: 4.5rem;
@@ -405,19 +378,6 @@
 
         .home-template__support {
             padding: 96px 56px 0;
-        }
-
-        .home-template__support__sponsors {
-            p {
-                font-size: 1.125rem;
-                line-height: 1.75rem;
-            }
-        }
-
-        .home-template__support__sponsors__inner {
-            flex-direction: row;
-            flex-wrap: wrap;
-            justify-content: center;
         }
     }
 
@@ -503,12 +463,6 @@
 
         .home-template__support {
             padding: 96px 0;
-        }
-
-        .home-template__support__sponsors {
-            p {
-                font-size: 1.5rem;
-            }
         }
     }
 }

@@ -4,6 +4,7 @@
 /* /1* Components *1/ */
 @import './components/button.css';
 @import './components/get-involved.css';
+@import './components/sponsors.css';
 
 /* /1* Layout *1/ */
 @import './layout/navigation.css';
@@ -14,6 +15,7 @@
 /* /1* Pages *1/ */
 @import './pages/post.css';
 @import './pages/home.css';
+@import './pages/support.css';
 
 @import './rubycentral.css';
 @import './modern.css';

@@ -135,9 +135,9 @@
             {{content}}
         {{/foreach}}
     {{/get}}
-    <section class='home-template__support__sponsors'>
-        <p>A special thanks to our supporters, you make this possible!</p>
-        <div class='home-template__support__sponsors__inner'>
+    <section class='sponsors'>
+        <p class='sponsors__title'>A special thanks to our supporters, you make this possible!</p>
+        <div class='sponsors__inner'>
             {{#get "pages" filter="tag:hash-corporate-sponsor-ruby" include="feature_image"}}
                 {{#foreach pages}}
                   {{#if feature_image}}
