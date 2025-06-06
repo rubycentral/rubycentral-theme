@@ -28,6 +28,19 @@
     gap: 16px;
 }
 
+.kg-button-card.kg-align-left,
+.kg-button-card.kg-align-center {
+    display: flex;
+}
+
+.kg-button-card.kg-align-left {
+    justify-content: flex-start;
+}
+
+.kg-button-card.kg-align-center {
+    justify-content: center;
+}
+
 @media (min-width: 768px) {
     .kg-button-card__group {
         grid-template-columns: repeat(2, minmax(0, 1fr));
