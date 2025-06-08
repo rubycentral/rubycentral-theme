@@ -49,24 +49,6 @@ h3 {
   margin: 0 0 5px 0;
 }
 
-#about,
-#history {
-  padding: 150px 0;
-}
-
-#about {
-  margin: 150px 0 0 0;
-  background: var(--lightblue);
-  border-bottom: 10px solid #C7D2DB;
-  border-top: 10px solid var(--yellow);
-}
-
-#history {
-  background: var(--navy);
-  border-bottom: 10px solid var(--yellow);
-  color: var(--white);
-}
-
 .profile-image {
   border: 2px solid var(--white);
   border-radius: 100%;
@@ -176,15 +158,6 @@ h3 {
     top: 52px;
     transition: all .25s ease-in-out;
     transition-delay: .25s;
-  }
-
-  #about {
-    margin: 50px 0 0 0;
-    padding: 50px 25px;
-  }
-
-  #history {
-    padding: 50px 25px;
   }
 
   #directors {
