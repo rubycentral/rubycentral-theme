@@ -49,14 +49,6 @@ h3 {
   margin: 0 0 5px 0;
 }
 
-.icon-box {
-  margin: 0 0 30px 0;
-  width: 64px;
-  height: 64px;
-  border-radius: 15px;
-  background: rgba(0, 0, 0, 0.3);
-}
-
 #conferences {
   background-color: var(--yellow);
 }
@@ -112,14 +104,6 @@ h3 {
   padding: 150px 0;
 }
 
-#about .icon-box,
-#history .icon-box {
-  top: 0;
-  left: -84px;
-  margin: 0;
-  position: absolute;
-}
-
 #about {
   margin: 150px 0 0 0;
   background: var(--lightblue);
@@ -131,11 +115,6 @@ h3 {
   background: var(--navy);
   border-bottom: 10px solid var(--yellow);
   color: var(--white);
-}
-
-#history .icon-box {
-  box-shadow: 0 9px 18px rgba(17, 24, 38, 0.1), 0 1px 5px rgba(26, 30, 36, 0.2);
-  background: url(/assets/images/history-icon.svg) center center no-repeat, linear-gradient(to top, #292F3A 0%, #313743 100%);
 }
 
 .profile-image {
@@ -154,18 +133,8 @@ h3 {
   position: relative;
 }
 
-#directors .icon-box {
-  box-shadow: 0 9px 18px rgba(191, 204, 214, 0.12), 0 1px 5px rgba(205, 231, 252, 0.3);
-  background: url(/assets/images/directors-icon.svg) center center no-repeat, linear-gradient(to top, #F6FBFE 0%, #fff 100%);
-}
-
 #staff {
   position: relative;
-}
-
-#staff .icon-box {
-  box-shadow: 0 9px 18px rgba(191, 204, 214, 0.12), 0 1px 5px rgba(205, 231, 252, 0.3);
-  background: url(/assets/images/staff-icon.svg) center center no-repeat, linear-gradient(to top, #F6FBFE 0%, #fff 100%);
 }
 
 #oss-team, #oss-sponsors {
@@ -234,12 +203,6 @@ h3 {
 
 @media screen and (max-width: 1200px) and (orientation: portrait),
 (max-width: 1097px) and (orientation: landscape) {
-  #about .icon-box,
-  #history .icon-box {
-    left: 0;
-    top: -84px;
-  }
-
 }
 
 @media screen and (max-width: 900px) and (orientation: portrait),
@@ -254,11 +217,6 @@ h3 {
 
   h3 {
     font-size: 20px;
-  }
-
-  .icon-box {
-    margin-bottom: 25px;
-    transform: translateY(0) !important;
   }
 
   .arrow {
@@ -279,22 +237,12 @@ h3 {
     padding: 50px 25px;
   }
 
-  #about .icon-box {
-    left: 0;
-    top: 0;
-  }
-
   #history {
     padding: 50px 25px;
   }
 
   #history .content {
     padding-top: 80px;
-  }
-
-  #history .icon-box {
-    left: 0;
-    top: 0;
   }
 
   #directors {
