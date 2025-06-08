@@ -11,6 +11,7 @@
 @import './components/back.css';
 
 /* /1* Layout *1/ */
+@import './layout/reset.css';
 @import './layout/navigation.css';
 @import './layout/dropdown.css';
 /* @import './layout/header.css'; */
@@ -22,7 +23,6 @@
 @import './pages/support.css';
 @import './pages/conferences.css';
 
-@import './rubycentral.css';
 @import './modern.css';
 
 /* Vendor */
