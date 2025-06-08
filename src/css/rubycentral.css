@@ -42,17 +42,6 @@ body a:hover {
   transition: all .15s ease-in-out;
 }
 
-section {
-  padding: 50px;
-  border-radius: 20px;
-  color: var(--white);
-  margin: 0 0 50px 0;
-}
-
-section:last-child {
-  margin: 0;
-}
-
 h3 {
   font-size: 24px;
   font-weight: 600;
