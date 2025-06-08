@@ -5,6 +5,7 @@
 @import './components/button.css';
 @import './components/get-involved.css';
 @import './components/sponsors.css';
+@import './components/profile-image.css';
 
 /* /1* Layout *1/ */
 @import './layout/navigation.css';
