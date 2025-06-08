@@ -6,6 +6,7 @@
 @import './components/get-involved.css';
 @import './components/sponsors.css';
 @import './components/profile-image.css';
+@import './components/static-content.css';
 
 /* /1* Layout *1/ */
 @import './layout/navigation.css';

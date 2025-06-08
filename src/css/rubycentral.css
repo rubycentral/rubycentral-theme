@@ -49,32 +49,6 @@ h3 {
   margin: 0 0 5px 0;
 }
 
-.static-content {
-  width: 50%;
-  margin: 0 auto;
-}
-
-.static-content.upcoming-conference-container {
-  margin-top: -100px;
-}
-
-.static-content h3 {
-  color: var(--red);
-}
-
-.static-content ul {
-  margin: 0;
-  padding: 0;
-}
-
-.static-content ul li {
-  line-height: 27px;
-  margin: 0 0 15px 0;
-  padding: 0 0 0 20px;
-  background: url(/assets/images/bullet.svg) 0 8px no-repeat;
-  list-style-type: none;
-}
-
 .back {
   font-size: 16px;
   display: inline-block;
@@ -134,14 +108,5 @@ h3 {
     top: 52px;
     transition: all .25s ease-in-out;
     transition-delay: .25s;
-  }
-
-  .static-content {
-    width: auto;
-    padding: 0 20px;
-  }
-
-  .static-content.upcoming-conference-container {
-    margin-top: -5px;
   }
 }
