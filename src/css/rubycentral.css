@@ -49,10 +49,6 @@ h3 {
   margin: 0 0 5px 0;
 }
 
-.arrow {
-  display: none;
-}
-
 .apply {
   display: grid;
   grid-template-columns: 1fr 200px;
@@ -93,14 +89,5 @@ h3 {
 
   h3 {
     font-size: 20px;
-  }
-
-  .arrow {
-    position: absolute;
-    display: block;
-    right: 25px;
-    top: 52px;
-    transition: all .25s ease-in-out;
-    transition-delay: .25s;
   }
 }
