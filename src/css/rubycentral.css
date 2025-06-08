@@ -49,14 +49,6 @@ h3 {
   margin: 0 0 5px 0;
 }
 
-#conferences {
-  background-color: var(--yellow);
-}
-
-#conferences h3 {
-  margin: 0;
-}
-
 @keyframes video_hover {
   0% {
     background-position: 5px center;
