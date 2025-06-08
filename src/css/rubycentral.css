@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-#support a {
-  color: var(--white);
-  text-shadow: 0 2px 0 var(--blue), 1px 2px 0 var(--blue), -1px 2px 0 var(--blue), 2px 2px 0 var(--blue), -2px 2px 0 var(--blue);
-}
-
 @supports (font-variation-settings: normal) {
   html {
     font-family: 'Inter var', sans-serif;
@@ -337,15 +332,6 @@ h3 {
   height: 64px;
   border-radius: 15px;
   background: rgba(0, 0, 0, 0.3);
-}
-
-#support {
-  background-color: var(--blue);
-}
-
-#support .icon-box {
-  box-shadow: 0 9px 18px rgba(15, 35, 63, 0.14), 0 1px 5px rgba(23, 43, 69, 0.12);
-  background: url(/assets/images/support-icon.svg) center center no-repeat, linear-gradient(to top, #5A81B7 0%, #6992CA 100%);
 }
 
 #conferences {
@@ -715,29 +701,6 @@ h3 {
     top: 52px;
     transition: all .25s ease-in-out;
     transition-delay: .25s;
-  }
-
-  #support {
-    width: auto;
-    padding: 25px;
-    position: relative;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-  }
-
-  #support.active {
-    max-height: 700px;
-    height: auto;
-  }
-
-  #support.active .arrow {
-    transform: rotate(90deg);
-  }
-
-  #support h3 {
-    position: absolute;
-    left: 100px;
-    top: 45px;
   }
 
   .content {
