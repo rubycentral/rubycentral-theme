@@ -42,69 +42,6 @@ body a:hover {
   transition: all .15s ease-in-out;
 }
 
-header {
-  text-align: center;
-  padding: 50px 0 70px 0;
-}
-
-header #main-logo {
-  box-shadow: none;
-  width: 400px;
-  margin: 0 auto;
-  display: block;
-}
-
-header #main-logo .logo-square {
-  width: 120px;
-  height: 120px;
-  margin: 0 auto;
-  border-radius: 25px;
-  box-shadow: 0 2px 9px rgba(255, 186, 186, 0.3), 0px 16px 29px rgba(239, 70, 70, 0.12);
-  line-height: 120px;
-  position: relative;
-  display: block;
-  background: linear-gradient(to top, #FDF1F1 0%, #FFFFFF 100%);
-  transition: box-shadow .25s ease-in-out, transform .25s ease-in-out;
-}
-
-header #main-logo .logo-square .logo-circle {
-  transition: transform .25s ease-in-out;
-  position: absolute;
-  width: 80px;
-  height: 80px;
-  left: 20px;
-  top: 20px;
-  border-radius: 40px;
-  box-shadow: 0 9px 18px rgba(129, 0, 0, 0.3), 0 2px 5px rgba(137, 0, 0, 0.2);
-  background: url(/assets/images/gem-logo.svg) no-repeat center 10px, linear-gradient(to top, #DF3434 0%, #FB5E55 100%);
-}
-
-header #main-logo:hover .logo-square {
-  box-shadow: 0 4px 12px rgba(255, 186, 186, 0.4), 0px 25px 35px rgba(232, 10, 10, 0.15);
-  transform: translateY(-3px);
-}
-
-header #main-logo:hover .logo-square .logo-circle {
-  transform: scale(1.05);
-}
-
-header #main-logo h1 {
-  color: var(--text);
-  font-family: 'Rubik';
-  font-weight: 600;
-  font-size: 48px;
-  letter-spacing: -2px;
-  margin: 25px 0 10px;
-  display: block;
-}
-
-header h2 {
-  color: var(--red);
-  font-size: 24px;
-  font-weight: 400;
-  margin: 0;
-}
-
 .upcoming {
   margin: 0 auto 50px;
 }
@@ -598,24 +535,6 @@ h3 {
     font-size: 14px;
     right: 19px;
     bottom: 19px;
-  }
-
-  header {
-    padding: 50px 20px;
-  }
-
-  header #main-logo {
-    width: auto;
-  }
-
-  header #main-logo h1 {
-    font-size: 36px;
-    letter-spacing: -1px;
-  }
-
-  header h2 {
-    font-size: 20px;
-    line-height: 32px;
   }
 
   h3 {
