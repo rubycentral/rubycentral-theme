@@ -1,11 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:ital,wght@0,300..900;1,300..900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
-#rubygems a {
-  color: var(--white);
-  text-shadow: 0 2px 0 var(--green), 1px 2px 0 var(--green), -1px 2px 0 var(--green), 2px 2px 0 var(--green), -2px 2px 0 var(--green);
-}
-
 #support a {
   color: var(--white);
   text-shadow: 0 2px 0 var(--blue), 1px 2px 0 var(--blue), -1px 2px 0 var(--blue), 2px 2px 0 var(--blue), -2px 2px 0 var(--blue);
@@ -357,16 +352,6 @@ h3 {
 #support .icon-box {
   box-shadow: 0 9px 18px rgba(15, 35, 63, 0.14), 0 1px 5px rgba(23, 43, 69, 0.12);
   background: url(/assets/images/support-icon.svg) center center no-repeat, linear-gradient(to top, #5A81B7 0%, #6992CA 100%);
-}
-
-#rubygems {
-  background-color: var(--green);
-  padding-bottom: 82px;
-}
-
-#rubygems .icon-box {
-  box-shadow: 0 9px 18px rgba(54, 147, 107, 0.4), 0 1px 5px rgba(78, 146, 117, 0.21);
-  background: url(/assets/images/rubygems-icon.svg) center center no-repeat, linear-gradient(to top, #6BB998 0%, #78CAA6 100%);
 }
 
 #conferences {
