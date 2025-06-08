@@ -53,16 +53,6 @@ section:last-child {
   margin: 0;
 }
 
-section.light-background {
-  background: #fff;
-  border: 2px solid #F4EEE6;
-  color: var(--text);
-}
-
-section.light-background h3 {
-  color: var(--red);
-}
-
 h3 {
   font-size: 24px;
   font-weight: 600;

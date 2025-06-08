@@ -54,6 +54,12 @@
   margin-bottom: 5px;
 }
 
+#railsconf-interest {
+  background: #fff;
+  border: 2px solid #f4eee6;
+  color: var(--text);
+}
+
 @media (min-width: 400px) {
   .post {
     width: 95%;
