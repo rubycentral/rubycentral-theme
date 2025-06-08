@@ -49,42 +49,6 @@ h3 {
   margin: 0 0 5px 0;
 }
 
-@keyframes video_hover {
-  0% {
-    background-position: 5px center;
-  }
-
-  49% {
-    background-position: 15px center;
-  }
-
-  50% {
-    background-position: -15px center;
-  }
-
-  100% {
-    background-position: 5px center;
-  }
-}
-
-@keyframes video_hover_out {
-  0% {
-    background-position: 5px center;
-  }
-
-  49% {
-    background-position: -15px center;
-  }
-
-  50% {
-    background-position: 15px center;
-  }
-
-  100% {
-    background-position: 5px center;
-  }
-}
-
 .content {
   max-width: 950px;
   margin: 0 auto;
