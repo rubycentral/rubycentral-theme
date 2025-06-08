@@ -15,7 +15,6 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Inter', sans-serif;
-  background: linear-gradient(to top, #FFFDF9 0%, #FFFDFD 100%);
   color: var(--text);
   font-size: 16px;
 }
