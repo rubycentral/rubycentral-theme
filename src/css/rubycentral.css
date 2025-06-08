@@ -49,11 +49,6 @@ h3 {
   margin: 0 0 5px 0;
 }
 
-#directors {
-  margin: 0 0 150px 0;
-  position: relative;
-}
-
 #staff {
   position: relative;
 }
@@ -147,11 +142,6 @@ h3 {
     top: 52px;
     transition: all .25s ease-in-out;
     transition-delay: .25s;
-  }
-
-  #directors {
-    margin: 0 0 50px 0;
-    padding-top: 80px;
   }
 
   .static-content {
