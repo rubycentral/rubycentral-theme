@@ -42,14 +42,6 @@ body a:hover {
   transition: all .15s ease-in-out;
 }
 
-.main-grid {
-  max-width: 950px;
-  margin: 0 auto 50px auto;
-  display: grid;
-  gap: 50px;
-  grid-template-columns: 1fr 1fr;
-}
-
 section {
   padding: 50px;
   border-radius: 20px;
@@ -283,62 +275,6 @@ h3 {
 
   h3 {
     font-size: 20px;
-  }
-
-  .main-grid {
-    width: auto;
-    display: block;
-    padding: 0 20px;
-    margin: unset;
-  }
-
-  .main-grid section {
-    padding: 25px;
-    margin: 0 0 20px 0;
-    position: relative;
-    max-height: 114px;
-    overflow: hidden;
-    transition: all .5s ease-in-out;
-  }
-
-  .main-grid section.active {
-    max-height: 2500px;
-    height: auto;
-  }
-
-  .main-grid section.active .arrow {
-    transform: rotate(90deg);
-    transition-delay: 0s;
-  }
-
-  .main-grid section .section-header {
-    padding: 25px;
-    margin: -25px;
-  }
-
-  .main-grid section:last-child {
-    margin: 0 0 20px 0;
-  }
-
-  .main-grid section h3 {
-    position: absolute;
-    left: 100px;
-    top: 45px;
-  }
-
-  .main-grid section#conferences {
-    height: auto;
-    max-height: 114px;
-    min-height: 114px;
-    position: relative;
-  }
-
-  .main-grid section#conferences h3 {
-    line-height: 30px;
-    position: absolute;
-    left: 25px;
-    top: 50%;
-    transform: translate(0, -50%);
   }
 
   .icon-box {
