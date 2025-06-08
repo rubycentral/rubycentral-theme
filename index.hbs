@@ -2,7 +2,7 @@
 
 <div class="static-content">
   {{#foreach posts}}
-    <h3><a href="{{url}}">{{title}}</a></h3>
+    <a class="post__list__item" href="{{url}}">{{title}}</a>
     <p><em>{{date published_at format="MMMM DD, YYYY"}}</em></p>
   {{/foreach}}
 
