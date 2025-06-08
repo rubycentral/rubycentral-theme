@@ -1,8 +1,4 @@
 .home-template {
-    h3#conferences {
-        background: none;
-    }
-
     hr {
         border: 3px solid var(--yellow);
         width: 70px;
@@ -20,7 +16,7 @@
             color: var(--red);
             font-size: 2rem;
             font-weight: 700;
-            line-height: auto;
+            line-height: normal;
             text-transform: uppercase;
         }
 
@@ -43,6 +39,14 @@
     .home-template__pillars {
         color: white;
         background-image: url('/assets/images/home__pillars--background.jpg');
+    }
+
+    .home-template__pillars,
+    .home-template__open-source,
+    .home-template__support {
+        h2 {
+            text-transform: uppercase;
+        }
     }
 
     .home-template__community {
@@ -200,14 +204,6 @@
         flex-direction: column;
         gap: 16px;
         grid-area: open-source-content;
-
-        h2 {
-            margin-bottom: 0;
-        }
-
-        p {
-            margin-bottom: 0;
-        }
 
         p:first-of-type {
             flex-grow: 1;
@@ -397,10 +393,6 @@
                     font-size: 2.625rem;
                     line-height: 3rem;
                 }
-
-                p {
-                    font-size: 1rem;
-                }
             }
         }
 
@@ -415,10 +407,6 @@
                 h3 {
                     font-size: 2.625rem;
                     line-height: 3rem;
-                }
-
-                p {
-                    font-size: 1rem;
                 }
             }
         }
