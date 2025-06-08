@@ -8,7 +8,7 @@
         display: flex;
         flex-direction: column;
         gap: 14px;
-        padding: 40px;
+        padding: 20px 40px 40px;
         max-width: 1135px;
         margin: auto;
 
@@ -271,7 +271,7 @@
     @media (min-width: 834px) {
         .home-template__hero {
             gap: 24px;
-            padding: 96px 56px;
+            padding: 48px 56px 96px;
 
             h1 {
                 font-size: 4.5rem;
@@ -341,7 +341,7 @@
 
     @media (min-width: 1440px) {
         .home-template__hero {
-            padding: 96px 0;
+            padding: 48px 0 96px;
 
             h3 {
                 font-size: 1.5rem;
