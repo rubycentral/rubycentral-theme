@@ -49,44 +49,12 @@ h3 {
   margin: 0 0 5px 0;
 }
 
-.apply {
-  display: grid;
-  grid-template-columns: 1fr 200px;
-  gap: 25px;
-  margin: 25px 0 0 0;
-}
-
-.apply strong {
-  display: block;
-  margin: 0 0 10px 0;
-}
-
-.apply-btn {
-  display: block;
-  width: 200px;
-  text-align: center;
-  color: var(--white);
-  background: var(--red);
-  height: 40px;
-  line-height: 40px;
-  border-radius: 3px;
-  font-weight: 600;
-}
-
 @media screen and (max-width: 1200px) and (orientation: portrait),
 (max-width: 1097px) and (orientation: landscape) {
 }
 
 @media screen and (max-width: 900px) and (orientation: portrait),
 (max-width: 823px) and (orientation: landscape) {
-  .apply {
-    display: block;
-  }
-
-  .apply-btn {
-    width: auto;
-  }
-
   h3 {
     font-size: 20px;
   }
