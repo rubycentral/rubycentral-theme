@@ -3,6 +3,7 @@
     box-shadow: 0px 4px 13px 0px rgba(167, 167, 167, 0.3);
     border-radius: 0 0 12px 12px;
     padding: 0;
+    margin: 30px 0;
 
     .sponsors__title {
         background-color: var(--red);

@@ -42,9 +42,9 @@
     }
 
     .home-template__pillars,
-    .home-template__open-source,
     .home-template__support {
         h2 {
+            margin-bottom: 16px;
             text-transform: uppercase;
         }
     }
@@ -196,6 +196,10 @@
         margin: auto;
         max-width: 900px;
         padding: 70px 40px;
+
+        h2 {
+            text-transform: uppercase;
+        }
     }
 
     .home-template__open-source__content {
@@ -412,7 +416,7 @@
         }
 
         .home-template__support {
-            padding: 96px 0;
+            padding: 96px 0 66px;
         }
     }
 }
