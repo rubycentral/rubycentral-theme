@@ -1,12 +1,12 @@
 {{!-- This template is used to render the precise layout of /corporate-sponsorship --}}
-{{!< default}} 
+{{!< default}}
 {{#post}}
   <div id="modern">
-    <div class="{{post_class}}">
+    <div class="container">
       <h1>{{title}}</h1>
       <div>{{content}}</div>
     </div>
-    <div class="{{post_class}} corporate-sponsors">
+    <div class="container corporate-sponsors">
       <div class="level ruby">
         <div class="name"><h3>Ruby</h3></div>
         <div class="bucket">
@@ -44,7 +44,7 @@
         </div>
       </div>
     </div>
-    <div class="{{post_class}}">
+    <div class="container">
       {{#get "pages" filter="slug:benefits-of-supporting-ruby-central"}}
       {{#foreach pages}}
         <h3>{{title}}</h3>
@@ -53,7 +53,7 @@
       {{/get}}
     </div>
 
-    <div class="{{post_class}} program-news">
+    <div class="container program-news">
       {{#get "pages" filter="slug:program-news"}}
       {{#foreach pages}}
         <h3>Program News</h3>
@@ -67,7 +67,7 @@
       {{/foreach}}
     {{/get}}
     </div>
-    <div class="{{post_class}}">
+    <div class="container">
       {{#get "pages" filter="slug:more-corporate-sponsorship-details"}}
       {{#foreach pages}}
         <div>{{content}}</div>
