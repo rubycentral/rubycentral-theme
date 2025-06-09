@@ -1,0 +1,18 @@
+.page-open-source {
+    .page-open-source__team {
+        display: grid;
+        grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 834px) {
+        .page-open-source__team {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .page-open-source__team {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+}
