@@ -13,7 +13,6 @@
 .post h1,
 .post h2,
 .post h3 {
-  font-family: Rubik;
   margin-bottom: 0.25rem;
 }
 
@@ -39,11 +38,24 @@
   margin-bottom: 0.5em;
 }
 
+.post__list {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+}
+
 .post__list__item {
-  color: var(--red);
-  font-size: 1.5rem;
-  font-weight: 700;
-  line-height: 2rem;
+  a {
+    color: var(--red);
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: 2rem;
+  }
+
+  p {
+    font-style: italic;
+    margin-top: 8px;
+  }
 }
 
 /* tocbot stuff */
