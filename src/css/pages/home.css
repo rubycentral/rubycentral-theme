@@ -1,9 +1,4 @@
 .home-template {
-    hr {
-        border: 3px solid var(--yellow);
-        width: 70px;
-    }
-
     .home-template__hero {
         display: flex;
         flex-direction: column;
@@ -68,10 +63,6 @@
     .home-template__community__inner {
         max-width: 1135px;
         margin: auto;
-
-        hr {
-            margin: 0 0 30px;
-        }
     }
 
     .home-template__pillars__details,
@@ -268,7 +259,7 @@
         }
 
         hr {
-            margin-bottom: 30px;
+            margin: 0 auto 30px;
         }
     }
 
@@ -295,13 +286,6 @@
         .home-template__pillars,
         .home-template__community {
             padding: 96px 56px;
-        }
-
-        .home-template__pillars__inner,
-        .home-template__community__inner {
-            hr {
-                margin: 0 0 60px 0;
-            }
         }
 
         .home-template__pillars__details,

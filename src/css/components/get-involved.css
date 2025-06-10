@@ -10,9 +10,7 @@
     }
 
     hr {
-        border: 3px solid var(--yellow);
-        margin-bottom: 32px;
-        width: 70px;
+        margin: 0 auto 30px;
     }
 
     span[data-members-error],
@@ -39,6 +37,7 @@
         font-weight: 500;
         line-height: 3rem;
         text-align: center;
+        margin-bottom: 16px;
     }
 
     .get-involved__row {
@@ -113,10 +112,6 @@
 
     @media (min-width: 1440px) {
         padding: 96px 0;
-
-        hr {
-            margin-bottom: 48px;
-        }
 
         .get-involved__row {
             grid-template-columns: repeat(2, minmax(0, 1fr));

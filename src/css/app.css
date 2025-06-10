@@ -2,15 +2,16 @@
 @import './base/typography.css';
 @import './base/colors.css';
 
-/* /1* Components *1/ */
+/* Components */
 @import './components/button.css';
 @import './components/get-involved.css';
 @import './components/sponsors.css';
 @import './components/profile-image.css';
 @import './components/static-content.css';
 @import './components/back.css';
+@import './components/divider.css';
 
-/* /1* Layout *1/ */
+/* Layout */
 @import './layout/reset.css';
 @import './layout/navigation.css';
 @import './layout/dropdown.css';
@@ -18,7 +19,7 @@
 /* @import './layout/header.css'; */
 /* @import './layout/footer.css'; */
 
-/* /1* Pages *1/ */
+/* Pages */
 @import './pages/post.css';
 @import './pages/home.css';
 @import './pages/conferences.css';
@@ -26,6 +27,6 @@
 
 @import './modern.css';
 
-/* Vendor */
+/* Vendors */
 @import './vendors/ghost.css';
 @import '../../node_modules/tocbot/dist/tocbot.css';

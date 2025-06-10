@@ -1,0 +1,5 @@
+hr {
+    border: 3px solid var(--yellow);
+    width: 70px;
+    margin: 0 0 30px;
+}
