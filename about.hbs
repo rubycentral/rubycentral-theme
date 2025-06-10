@@ -1,2 +1,16 @@
 {{!< default}}
+<header class='page-about__hero'>
+    {{#get 'pages' filter="title:'About::Hero - Body'" limit='1'}}
+        {{#foreach pages}}
+            {{content}}
+        {{/foreach}}
+    {{/get}}
+    <section class='kg-button-card__group'>
+        {{#get 'pages' filter='tag:hash-about-hero-cta' limit='2'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+    </section>
+</header>
 {{> 'get-involved' }}
