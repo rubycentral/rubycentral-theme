@@ -1,5 +1,5 @@
 .get-involved {
-    max-width: 1135px;
+    max-width: var(--layout-inner-max-width);
     margin: auto;
     padding: 70px 40px;
 

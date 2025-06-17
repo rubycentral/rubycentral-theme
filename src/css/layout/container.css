@@ -4,7 +4,7 @@
 }
 
 .container {
-    max-width: 1135px;
+    max-width: var(--layout-inner-max-width);
     padding: 0 20px;
     width: 100%;
 }
