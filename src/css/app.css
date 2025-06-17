@@ -1,6 +1,6 @@
 /* Base */
 @import './base/typography.css';
-@import './base/colors.css';
+@import './base/variables.css';
 
 /* Components */
 @import './components/button.css';

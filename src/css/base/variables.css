@@ -1,4 +1,5 @@
 :root {
+    /* Colors */
     --red: #e14943;
     --darkred: #cf2821;
     --purple: #755384;
@@ -11,4 +12,7 @@
     --navy: #292e37;
     --mutednavy: #444d5c;
     --divider: #f6f3f0;
+
+    /* Layout */
+    --layout-inner-max-width: 1135px;
 }
