@@ -6,7 +6,7 @@
     h2,
     p,
     a {
-        color: var(--navy);
+        color: var(--color-navy);
     }
 
     hr {
@@ -23,7 +23,7 @@
     }
 
     .error span[data-members-error] {
-        color: var(--darkred);
+        color: var(--color-darkred);
         display: block;
     }
 
@@ -71,7 +71,7 @@
             border: 1px solid rgba(220, 233, 250, 1);
             border-radius: 8px;
             box-shadow: 3px 3px 10px 0px rgba(0, 0, 0, 0.07);
-            color: var(--navy);
+            color: var(--color-navy);
             min-height: 50px;
             font-size: 1rem;
             padding: 12px 20px;

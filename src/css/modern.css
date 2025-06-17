@@ -24,7 +24,7 @@
             right: 0;
             bottom: 0;
             height: 3px;
-            background-color: var(--yellow);
+            background-color: var(--color-yellow);
             width: 70px;
         }
     }
@@ -48,7 +48,7 @@
     }
 
     .program-support {
-        background-color: var(--lightblue);
+        background-color: var(--color-lightblue);
         margin-bottom: 2.5rem;
         margin-top: 2.5rem;
         border-radius: 0.5rem;
@@ -56,7 +56,7 @@
     }
 
     .program-support span {
-        background-color: var(--yellow);
+        background-color: var(--color-yellow);
         padding: 1rem;
         margin: 0 1rem 1rem 0;
         font-size: 1.25rem;
@@ -74,19 +74,19 @@
         }
     }
     .program-support span:nth-of-type(2) {
-        background-color: var(--red);
+        background-color: var(--color-red);
         color: white;
     }
     .program-support span:nth-of-type(3) {
         color: white;
-        background-color: var(--blue);
+        background-color: var(--color-blue);
     }
     .program-support span:nth-of-type(4) {
-        background-color: var(--green);
+        background-color: var(--color-green);
     }
     .projects {
-        background-color: var(--darkred);
-        color: var(--white);
+        background-color: var(--color-darkred);
+        color: var(--color-white);
         margin-bottom: 2.5rem;
         margin-top: 2.5rem;
         border-radius: 0.5rem;
@@ -94,8 +94,8 @@
     }
     .project {
         width: 100%;
-        background-color: var(--navy);
-        color: var(--white);
+        background-color: var(--color-navy);
+        color: var(--color-white);
         border-radius: 0.5rem;
         padding: 1.5rem;
         padding-bottom: 2rem;
@@ -247,19 +247,19 @@
         }
     }
     .level.ruby .name {
-        background-color: var(--red);
-        color: var(--white);
+        background-color: var(--color-red);
+        color: var(--color-white);
     }
     .level.gold .name {
-        background-color: var(--yellow);
+        background-color: var(--color-yellow);
     }
     .level.silver .name {
-        background-color: var(--blue);
-        color: var(--white);
+        background-color: var(--color-blue);
+        color: var(--color-white);
     }
     .level.major .name {
-        background-color: var(--green);
-        color: var(--white);
+        background-color: var(--color-green);
+        color: var(--color-white);
     }
     .level .bucket {
         border-bottom-left-radius: .75rem;

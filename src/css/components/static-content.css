@@ -8,7 +8,7 @@
 }
 
 .static-content h3 {
-    color: var(--red);
+    color: var(--color-red);
 }
 
 .static-content ul {

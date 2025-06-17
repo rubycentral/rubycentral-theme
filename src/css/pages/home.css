@@ -8,7 +8,7 @@
         margin: auto;
 
         h1 {
-            color: var(--red);
+            color: var(--color-red);
             font-size: 2rem;
             font-weight: 700;
             line-height: normal;
@@ -16,7 +16,7 @@
         }
 
         h2 {
-            color: var(--navy);
+            color: var(--color-navy);
             font-size: 1.5rem;
             font-weight: 500;
             line-height: 2.25rem;
@@ -24,7 +24,7 @@
         }
 
         h3 {
-            color: var(--navy);
+            color: var(--color-navy);
             font-size: 0.875rem;
             font-weight: 400;
             line-height: 1.125rem;
@@ -68,7 +68,7 @@
     .home-template__pillars__details,
     .home-template__community__details {
         display: grid;
-        background-color: var(--navy);
+        background-color: var(--color-navy);
         border-radius: 8px;
         gap: 48px;
         grid-template-columns: 1fr;
@@ -146,7 +146,7 @@
 
     .home-template__pillars__details--stats,
     .home-template__community__details--stats {
-        background-color: var(--mutednavy);
+        background-color: var(--color-mutednavy);
         border-radius: 8px;
         display: grid;
         grid-template-columns: 1fr;
@@ -194,7 +194,7 @@
     }
 
     .home-template__open-source__content {
-        color: var(--navy);
+        color: var(--color-navy);
         display: flex;
         flex-direction: column;
         gap: 16px;
@@ -216,7 +216,7 @@
 
     .home-template__open-source__stats {
         color: white;
-        background-color: var(--red);
+        background-color: var(--color-red);
         border-radius: 8px;
         display: flex;
         flex-direction: column;

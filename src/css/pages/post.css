@@ -46,7 +46,7 @@
 
 .post__list__item {
   a {
-    color: var(--red);
+    color: var(--color-red);
     font-size: 1.5rem;
     font-weight: 700;
     line-height: 2rem;
@@ -76,7 +76,7 @@
 #railsconf-interest {
   background: #fff;
   border: 2px solid #f4eee6;
-  color: var(--text);
+  color: var(--color-text);
 }
 
 @media (min-width: 400px) {

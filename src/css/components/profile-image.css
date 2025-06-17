@@ -1,5 +1,5 @@
 .profile-image {
-    border: 2px solid var(--white);
+    border: 2px solid var(--color-white);
     border-radius: 100%;
     box-shadow: 0 6px 14px rgb(39 41 45 / 26%);
     display: block;

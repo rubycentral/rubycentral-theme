@@ -2,7 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 
 body {
-    color: var(--text);
+    color: var(--color-text);
     font-family: 'Inter', sans-serif;
     font-size: 1rem;
     line-height: 1.5rem;
@@ -43,7 +43,7 @@ h6 {
 }
 
 a {
-    box-shadow: inset 0 -2px 0 var(--yellow);
+    box-shadow: inset 0 -2px 0 var(--color-yellow);
     color: inherit;
     padding-bottom: 1px;
     text-decoration: none;
@@ -51,7 +51,7 @@ a {
 }
 
 a:hover {
-    box-shadow: inset 0 -2px 0 var(--red);
+    box-shadow: inset 0 -2px 0 var(--color-red);
 }
 
 @media (min-width: 834px) {

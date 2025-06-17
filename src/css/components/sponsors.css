@@ -6,7 +6,7 @@
     margin: 30px 0;
 
     .sponsors__title {
-        background-color: var(--red);
+        background-color: var(--color-red);
         border-radius: 12px 12px 0 0;
         color: white;
         margin: 0;
