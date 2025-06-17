@@ -33,7 +33,7 @@
     }
 
     .page-about__position {
-        background: rgba(247, 249, 252, 1);
+        background: var(--offwhite);
         margin: auto;
     }
 
@@ -65,6 +65,79 @@
         width: 100%;
     }
 
+    .page-about__history {
+        background-color: var(--navy);
+        margin: auto;
+    }
+
+    .page-about__history__inner {
+        margin: auto;
+        max-width: 1135px;
+        padding: 70px 40px;
+    }
+
+    .page-about__history__title {
+        color: white;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+
+    .page-about__history__section-one,
+    .page-about__history__section-two {
+        margin-bottom: 48px;
+    }
+
+    .page-about__history__section-one,
+    .page-about__history__section-three {
+        display: grid;
+        gap: 48px;
+        grid-template-columns: 1fr;
+    }
+
+    .page-about__history__section-one--content,
+    .page-about__history__section-three--content {
+        color: white;
+
+        p:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .page-about__history__section-one--image,
+    .page-about__history__section-three--image {
+        border-radius: 8px;
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .page-about__history__section-two {
+        background-color: var(--offwhite);
+        border-radius: 8px;
+        display: grid;
+        gap: 48px;
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+
+    .page-about__history__section-two--content,
+    .page-about__history__section-three--content {
+        p:first-child {
+            margin-top: 0;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .page-about__history__section-two--image {
+        border-radius: 8px;
+        height: 150px;
+        object-fit: cover;
+        width: 100%;
+    }
+
     @media (min-width: 834px) {
         .page-about__hero {
             min-height: 834px;
@@ -91,6 +164,26 @@
         .page-about__position--image {
             height: 100%;
         }
+
+        .page-about__history__section-one,
+        .page-about__history__section-two {
+            margin-bottom: 96px;
+        }
+
+        .page-about__history__section-one,
+        .page-about__history__section-three {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .page-about__history__section-one--image,
+        .page-about__history__section-three--image {
+            height: 100%;
+            max-height: 550px;
+        }
+
+        .page-about__history__section-two--image {
+            height: 300px;
+        }
     }
 
     @media (min-width: 1440px) {
@@ -113,6 +206,20 @@
         .page-about__position--image {
             max-height: 500px;
             max-width: 100%;
+        }
+
+        .page-about__history__section-one,
+        .page-about__history__section-three {
+            grid-template-columns: 450px 1fr;
+        }
+
+        .page-about__history__section-one--image,
+        .page-about__history__section-three--image {
+            max-height: 350px;
+        }
+
+        .page-about__history__section-two--image {
+            height: 375px;
         }
     }
 }

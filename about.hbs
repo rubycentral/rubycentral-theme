@@ -27,4 +27,57 @@
         </div>
     </div>
 </section>
+<section class='page-about__history'>
+    <div class='page-about__history__inner'>
+        <h2 class='page-about__history__title'>History</h2>
+        <hr />
+        <section class='page-about__history__section-one'>
+            <img
+                alt='Group of developers hugging and smiling together'
+                class='page-about__history__section-one--image'
+                src={{asset 'images/home__community__details--image.jpg'}}
+            />
+            <div class='page-about__history__section-one--content'>
+                {{#get 'pages' filter="title:'About::History::SectionOne - Body'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+                {{#get 'pages' filter="title:'About::History::SectionOne - Button'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </div>
+        </section>
+        <section class='page-about__history__section-two'>
+            <img
+                alt='Seated conference participants talking with one another'
+                class='page-about__history__section-two--image'
+                src={{asset 'images/about__history__section-two--image.jpg'}}
+            />
+            <div class='page-about__history__section-two--content'>
+                {{#get 'pages' filter="title:'About::History::SectionTwo - Body'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </div>
+        </section>
+        <section class='page-about__history__section-three'>
+            <img
+                alt='Crowded lobby with conference participants entering workshop rooms'
+                class='page-about__history__section-three--image'
+                src={{asset 'images/about__history__section-three--image.jpg'}}
+            />
+            <div class='page-about__history__section-three--content'>
+                {{#get 'pages' filter="title:'About::History::SectionThree - Body'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </div>
+        </section>
+    </div>
+</section>
 {{> 'get-involved' }}
