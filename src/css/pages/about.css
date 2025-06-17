@@ -33,7 +33,7 @@
     }
 
     .page-about__position {
-        background: var(--offwhite);
+        background: var(--color-offwhite);
         margin: auto;
     }
 
@@ -66,7 +66,7 @@
     }
 
     .page-about__history {
-        background-color: var(--navy);
+        background-color: var(--color-navy);
         margin: auto;
     }
 
@@ -112,7 +112,7 @@
     }
 
     .page-about__history__section-two {
-        background-color: var(--offwhite);
+        background-color: var(--color-offwhite);
         border-radius: 8px;
         display: grid;
         gap: 48px;
@@ -149,7 +149,7 @@
 
     .page-about__team__header {
         h2 {
-            color: var(--red);
+            color: var(--color-red);
             margin-bottom: 16px;
             text-transform: uppercase;
         }
@@ -193,7 +193,7 @@
 
     .page-about__team__staff,
     .page-about__team__directors {
-        background-color: var(--offwhite);
+        background-color: var(--color-offwhite);
         border-radius: 8px;
         padding: 36px;
     }
