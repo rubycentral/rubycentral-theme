@@ -17,7 +17,7 @@
 @import './layout/dropdown.css';
 @import './layout/container.css';
 /* @import './layout/header.css'; */
-/* @import './layout/footer.css'; */
+@import './layout/footer.css';
 
 /* Pages */
 @import './pages/post.css';
