@@ -38,7 +38,7 @@
         background-image: url('/assets/images/icon__burger.svg');
     }
 
-    .navigation__mobile-menu-trigger.open {
+    .navigation__mobile-menu-trigger.opened {
         background-image: url('/assets/images/icon__close.svg');
     }
 

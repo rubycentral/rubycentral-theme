@@ -1,6 +1,5 @@
 import "../../css/app.css"
-import './dropdown.js'
-import './responsive-nav.js'
+import './navigation-top';
 
 // LiveReload server
 if (ENV === 'development') {
