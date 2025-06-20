@@ -186,6 +186,10 @@
     }
 
     @media (min-width: 1440px) {
+        .footer__inner {
+            padding: 40px 0;
+        }
+
         .footer__bottom {
             gap: 0;
             grid-template-columns: repeat(2, 1fr);
