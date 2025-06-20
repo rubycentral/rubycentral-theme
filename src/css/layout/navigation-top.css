@@ -13,7 +13,9 @@
 
     .navigation__logo {
         box-shadow: none;
+        display: flex;
         grid-area: logo;
+        max-width: fit-content;
 
         img {
             height: 75px;
@@ -47,11 +49,22 @@
 
     .navigation__list {
         background-color: white;
+        border-color: rgba(0, 0, 0, 0.1);
+        border-radius: 0 0 8px 8px;
+        border-style: solid;
+        border-width: 0 1px 1px 1px;
+        box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.04);
         display: none;
         flex-direction: column;
         gap: 20px;
+        left: 25%;
         list-style: none;
+        margin: 0;
+        min-width: 275px;
         padding: 16px 30px;
+        position: absolute;
+        top: 61.5px;
+        transform: translateX(-50%);
         z-index: 1;
     }
 
@@ -60,20 +73,7 @@
     }
 
     .navigation__list--mobile-opened {
-        background-color: white;
-        border-color: rgba(0, 0, 0, 0.1);
-        border-radius: 0 0 8px 8px;
-        border-style: solid;
-        border-width: 0 1px 1px 1px;
-        box-shadow: 0px 10px 30px 0 rgba(0, 0, 0, 0.04);
         display: flex;
-        flex-direction: column;
-        left: 25%;
-        margin-top: 0;
-        min-width: 275px;
-        position: absolute;
-        top: 65px;
-        transform: translateX(-50%);
     }
 
     .navigation__list--mobile-opened::before {
@@ -104,16 +104,6 @@
         }
     }
 
-    .navigation__item.current {
-        a {
-            background-color: var(--color-yellow);
-        }
-
-        a:hover {
-            background-color: var(--color-lightblue);
-        }
-    }
-
     .navigation__membership {
         grid-area: membership;
     }
@@ -123,8 +113,35 @@
             display: none;
         }
 
-        .navigation__list--mobile-closed,
-        .navigation__list--mobile-opened {
+        .navigation__inner {
+            grid-template-columns: max-content 1fr max-content;
+            padding: 0;
+        }
+
+        .navigation__logo {
+            margin-left: -8px;
+        }
+
+        .navigation__mobile-menu-trigger {
+            display: none;
+        }
+
+        .navigation__list {
+            border: none;
+            box-shadow: none;
+            display: flex;
+            flex-direction: row;
+            gap: 0;
+            justify-self: center;
+            left: auto;
+            min-width: unset;
+            padding: 0;
+            position: relative;
+            top: auto;
+            transform: unset;
+        }
+
+        .navigation__list::before {
             display: none;
         }
     }
