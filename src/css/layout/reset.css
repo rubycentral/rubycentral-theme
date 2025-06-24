@@ -1,0 +1,24 @@
+* {
+    box-sizing: border-box;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    padding: 20px 0;
+}
+
+@media (min-width: 834px) {
+    main {
+        padding: 48px 0;
+    }
+}

@@ -1,9 +1,11 @@
 {{!< default}}
 
-<div class="static-content">
+<div class="static-content post__list">
   {{#foreach posts}}
-    <h3><a href="{{url}}">{{title}}</a></h3>
-    <p><em>{{date published_at format="MMMM DD, YYYY"}}</em></p>
+    <article class="post__list__item">
+      <a href="{{url}}">{{title}}</a>
+      <p>{{date published_at format="MMMM DD, YYYY"}}</p>
+    </article>
   {{/foreach}}
 
   {{pagination}}

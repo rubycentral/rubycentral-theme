@@ -1,0 +1,20 @@
+<nav class='navigation--top'>
+    <div class='navigation__inner'>
+        <a class='navigation__logo' href='/'>
+            <img src={{asset 'images/gem-logo--badge.svg'}} />
+        </a>
+        <div class='navigation__list__wrapper'>
+            <button
+                aria-controls='navigation__mobile-menu-trigger'
+                aria-haspopup='true'
+                class='navigation__mobile-menu-trigger closed'
+                id='navigation__mobile-menu-trigger'
+            >
+            </button>
+            {{navigation}}
+        </div>
+        <div class='navigation__membership kg-button-card'>
+            <a class='kg-btn' href='#/portal/signup'>Membership</a>
+        </div>
+    </div>
+</nav>

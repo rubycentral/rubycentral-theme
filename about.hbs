@@ -1,0 +1,162 @@
+{{!< default}}
+<header class='page-about__hero'>
+    <div class='page-about__hero__inner'>
+        {{#get 'pages' filter="title:'About::Hero - Body'" limit='1'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+        <section class='kg-button-card__group'>
+            {{#get 'pages' filter='tag:hash-about-hero-cta' limit='2'}}
+                {{#foreach pages}}
+                    {{content}}
+                {{/foreach}}
+            {{/get}}
+        </section>
+    </div>
+</header>
+<section class='page-about__position'>
+    <div class='page-about__position__inner'>
+        <img
+            alt="Female software engineer sitting at a laptop and holding a coffee cup"
+            class='page-about__position--image'
+            src={{asset 'images/about__position.jpg'}}
+        />
+        <div class='page-about__position--content'>
+            {{#get 'pages' filter="title:'About::Position - Body'" limit='1'}}
+                {{#foreach pages}}
+                    {{content}}
+                {{/foreach}}
+            {{/get}}
+        </div>
+    </div>
+</section>
+<section class='page-about__history'>
+    <div class='page-about__history__inner'>
+        <h2 class='page-about__history__title'>History</h2>
+        <hr />
+        <section class='page-about__history__section-one'>
+            <img
+                alt='Group of developers hugging and smiling together'
+                class='page-about__history__section-one--image'
+                src={{asset 'images/home__community__details--image.jpg'}}
+            />
+            <div class='page-about__history__section-one--content'>
+                {{#get 'pages' filter="title:'About::History::SectionOne - Body'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+                {{#get 'pages' filter="title:'About::History::SectionOne - Button'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </div>
+        </section>
+        <section class='page-about__history__section-two'>
+            <img
+                alt='Seated conference participants talking with one another'
+                class='page-about__history__section-two--image'
+                src={{asset 'images/about__history__section-two--image.jpg'}}
+            />
+            <div class='page-about__history__section-two--content'>
+                {{#get 'pages' filter="title:'About::History::SectionTwo - Body'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </div>
+        </section>
+        <section class='page-about__history__section-three'>
+            <img
+                alt='Crowded lobby with conference participants entering workshop rooms'
+                class='page-about__history__section-three--image'
+                src={{asset 'images/about__history__section-three--image.jpg'}}
+            />
+            <div class='page-about__history__section-three--content'>
+                {{#get 'pages' filter="title:'About::History::SectionThree - Body'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </div>
+        </section>
+    </div>
+</section>
+<section class='page-about__team'>
+    <header class='page-about__team__header'>
+        {{#get 'pages' filter="title:'About::Team - Header'" limit='1'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+    </header>
+    <section class='page-about__team__staff'>
+        <header class='page-about__team__staff__header'>
+            {{#get 'pages' filter="title:'About::Team::Staff - Header'" limit='1'}}
+                {{#foreach pages}}
+                    {{content}}
+                {{/foreach}}
+            {{/get}}
+        </header>
+        <section class='page-about__team__staff__inner'>
+            {{#get "pages" order="featured desc, title asc" filter="tags:hash-staff" limit="all"}}
+                {{#foreach pages}}
+                    <figure class='page-about__team__member'>
+                        {{#if feature_image}}
+                            <img
+                                alt="{{title}}"
+                                class='page-about__team__member__image'
+                                src="{{feature_image}}"
+                            />
+                        {{else}}
+                            <img
+                                alt='White Ruby Central logo on red background'
+                                class='page-about__team__member__image'
+                                src={{asset 'images/global__placeholder.svg'}}
+                            />
+                        {{/if}}
+                        <div class='page-about__team__member--details'>
+                            <h4>{{title}}</h4>
+                            {{content}}
+                        </div>
+                    </figure>
+                {{/foreach}}
+            {{/get}}
+        </section>
+    </section>
+    <section class='page-about__team__directors'>
+        <header class='page-about__team__directors__header'>
+            {{#get 'pages' filter="title:'About::Team::Directors - Header'" limit='1'}}
+                {{#foreach pages}}
+                    {{content}}
+                {{/foreach}}
+            {{/get}}
+        </header>
+        <section class='page-about__team__directors__inner'>
+            {{#get "pages" order="featured desc, title asc" filter="tags:hash-director" limit="all"}}
+                {{#foreach pages}}
+                    <figure class='page-about__team__member'>
+                        {{#if feature_image}}
+                            <img
+                                alt="{{title}}"
+                                class='page-about__team__member__image'
+                                src="{{feature_image}}"
+                            />
+                        {{else}}
+                            <img
+                                alt='White Ruby Central logo on red background'
+                                class='page-about__team__member__image'
+                                src={{asset 'images/global__placeholder.svg'}}
+                            />
+                        {{/if}}
+                        <h4>{{title}}</h4>
+                        {{content}}
+                    </figure>
+                {{/foreach}}
+            {{/get}}
+        </section>
+    </section>
+</section>
+{{> 'get-involved' }}

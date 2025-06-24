@@ -1,0 +1,341 @@
+.page-about {
+    main {
+        padding-top: 0;
+    }
+
+    .page-about__hero {
+        align-items: center;
+        background-image: url('/assets/images/about__hero--background.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        color: white;
+        display: flex;
+        justify-content: center;
+    }
+
+    .page-about__hero__inner {
+        max-width: 1135px;
+        padding: 96px 40px;
+
+        h2,
+        p {
+            margin-bottom: 32px;
+        }
+
+        h1 {
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        h2 {
+            font-size: 2rem;
+        }
+    }
+
+    .page-about__position {
+        background: var(--color-offwhite);
+        margin: auto;
+    }
+
+    .page-about__position__inner {
+        display: grid;
+        gap: 48px;
+        grid-template-areas: 'image' 'content';
+        grid-template-columns: 1fr;
+        justify-content: center;
+        margin: auto;
+        max-width: 1135px;
+        padding: 70px 40px;
+    }
+
+    .page-about__position--content {
+        font-family: 'Rubik', sans-serif;
+        font-size: 1rem;
+        grid-area: content;
+        line-height: 1.75rem;
+    }
+
+    .page-about__position--image {
+        border-radius: 8px;
+        grid-area: image;
+        height: 400px;
+        margin: auto;
+        max-width: 345px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .page-about__history {
+        background-color: var(--color-navy);
+        margin: auto;
+    }
+
+    .page-about__history__inner {
+        margin: auto;
+        max-width: 1135px;
+        padding: 70px 40px;
+    }
+
+    .page-about__history__title {
+        color: white;
+        margin-bottom: 16px;
+        text-transform: uppercase;
+    }
+
+    .page-about__history__section-one,
+    .page-about__history__section-two {
+        margin-bottom: 48px;
+    }
+
+    .page-about__history__section-one,
+    .page-about__history__section-three {
+        display: grid;
+        gap: 48px;
+        grid-template-columns: 1fr;
+    }
+
+    .page-about__history__section-one--content,
+    .page-about__history__section-three--content {
+        color: white;
+
+        p:first-child {
+            margin-top: 0;
+        }
+    }
+
+    .page-about__history__section-one--image,
+    .page-about__history__section-three--image {
+        border-radius: 8px;
+        height: 400px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .page-about__history__section-two {
+        background-color: var(--color-offwhite);
+        border-radius: 8px;
+        display: grid;
+        gap: 48px;
+        grid-template-columns: 1fr;
+        padding: 40px;
+    }
+
+    .page-about__history__section-two--content,
+    .page-about__history__section-three--content {
+        p:first-child {
+            margin-top: 0;
+        }
+
+        p:last-child {
+            margin-bottom: 0;
+        }
+    }
+
+    .page-about__history__section-two--image {
+        border-radius: 8px;
+        height: 150px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .page-about__team {
+        display: flex;
+        flex-direction: column;
+        gap: 24px;
+        margin: auto;
+        max-width: 1135px;
+        padding: 96px 40px;
+    }
+
+    .page-about__team__header {
+        h2 {
+            color: var(--color-red);
+            margin-bottom: 16px;
+            text-transform: uppercase;
+        }
+
+        hr {
+            margin-bottom: 16px;
+        }
+
+        p {
+            font-family: 'Rubik', sans-serif;
+            font-size: 1.5rem;
+            font-style: italic;
+            font-weight: 300;
+            line-height: 3rem;
+            margin: 0;
+        }
+    }
+
+    .page-about__team__member {
+        margin: 0;
+
+        h4,
+        p {
+            margin: 0;
+        }
+    }
+
+    .page-about__team__member__image {
+        border-radius: 8px;
+        height: 300px;
+        margin-bottom: 16px;
+        object-fit: cover;
+        width: 100%;
+    }
+
+    .page-about__team__member--details {
+        display: flex;
+        flex-direction: column;
+        gap: 8px;
+    }
+
+    .page-about__team__staff,
+    .page-about__team__directors {
+        background-color: var(--color-offwhite);
+        border-radius: 8px;
+        padding: 36px;
+    }
+
+    .page-about__team__staff__header,
+    .page-about__team__directors__header {
+        margin-bottom: 36px;
+
+        h3 {
+            margin-bottom: 8px;
+        }
+
+        p {
+            margin: 0;
+        }
+    }
+
+    .page-about__team__staff__inner,
+    .page-about__team__directors__inner {
+        display: grid;
+        gap: 24px;
+        grid-template-columns: 1fr;
+    }
+
+    @media (min-width: 600px) {
+        .page-about__team__staff__inner,
+        .page-about__team__directors__inner {
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+    }
+
+    @media (min-width: 834px) {
+        .page-about__hero {
+            min-height: 834px;
+        }
+
+        .page-about__hero__inner {
+            padding: 0 56px;
+
+            h2 {
+                font-size: 2rem;
+            }
+        }
+
+        .page-about__position__inner {
+            align-items: center;
+            grid-template-areas: 'image content';
+            grid-template-columns: repeat(2, minmax(0, 1fr));
+        }
+
+        .page-about__position--content {
+            font-size: 1.125rem;
+        }
+
+        .page-about__position--image {
+            height: 100%;
+        }
+
+        .page-about__history__section-one,
+        .page-about__history__section-two {
+            margin-bottom: 96px;
+        }
+
+        .page-about__history__section-one,
+        .page-about__history__section-three {
+            grid-template-columns: 1fr 1fr;
+        }
+
+        .page-about__history__section-one--image,
+        .page-about__history__section-three--image {
+            height: 100%;
+            max-height: 550px;
+        }
+
+        .page-about__history__section-two--image {
+            height: 300px;
+        }
+
+        .page-about__team {
+            gap: 48px;
+        }
+
+        .page-about__team__header {
+            p {
+                font-size: 2rem;
+            }
+        }
+
+        .page-about__team__staff__inner,
+        .page-about__team__directors__inner {
+            grid-template-columns: repeat(3, minmax(0, 1fr));
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .page-about__hero {
+            min-height: 980px;
+        }
+
+        .page-about__hero__inner {
+            padding: 0;
+        }
+
+        .page-about__position__inner {
+            grid-template-columns: 352px 1fr;
+        }
+
+        .page-about__position--content {
+            font-size: 1.5rem;
+        }
+
+        .page-about__position--image {
+            max-height: 500px;
+            max-width: 100%;
+        }
+
+        .page-about__history__section-one,
+        .page-about__history__section-three {
+            grid-template-columns: 450px 1fr;
+        }
+
+        .page-about__history__section-one--image,
+        .page-about__history__section-three--image {
+            max-height: 350px;
+        }
+
+        .page-about__history__section-two--image {
+            height: 375px;
+        }
+
+        .page-about__team {
+            gap: 96px;
+            padding: 96px 0;
+        }
+
+        .page-about__team__header {
+            margin-bottom: -24px;
+        }
+
+        .page-about__team__staff__inner,
+        .page-about__team__directors__inner {
+            grid-template-columns: repeat(4, minmax(0, 1fr));
+        }
+    }
+}

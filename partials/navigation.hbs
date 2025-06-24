@@ -1,8 +1,7 @@
-{{#if isSecondary}}{{else}}<a href="/" class="logo-circle"><span class="visually-hidden">Home</span></a>{{/if}}
-<ul class="nav">
-  {{#foreach navigation}}
-    <li class="nav-{{slug}}{{#if current}} nav-current{{/if}}">
-      <a href="{{url absolute="true"}}"><span>{{label}}</span></a>
-    </li>
-  {{/foreach}}
+<ul class='navigation__list'>
+    {{#foreach navigation}}
+        <li class='navigation__item'>
+            <a href="{{url absolute='true'}}">{{label}}</a>
+        </li>
+    {{/foreach}}
 </ul>

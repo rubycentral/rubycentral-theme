@@ -1,0 +1,16 @@
+:root {
+    --color-blue: #6288bc;
+    --color-darkred: #cf2821;
+    --color-divider: #f6f3f0;
+    --color-green: #71c09e;
+    --color-lightblue: #eff4f8;
+    --color-mutednavy: #444d5c;
+    --color-navy: #292e37;
+    --color-offwhite: #f0f4fd;
+    --color-purple: #755384;
+    --color-red: #e14943;
+    --color-text: #3b3e44;
+    --color-white: #fffdf9;
+    --color-yellow: #ffd065;
+    --layout-inner-max-width: 1135px;
+}

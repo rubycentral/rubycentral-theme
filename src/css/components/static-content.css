@@ -1,0 +1,43 @@
+.static-content {
+    width: 50%;
+    margin: 0 auto;
+    max-width: var(--layout-inner-max-width);
+}
+
+.static-content.upcoming-conference-container {
+    margin-top: -100px;
+}
+
+.static-content h3 {
+    color: var(--color-red);
+}
+
+.static-content ul {
+    margin: 0;
+    padding: 0;
+}
+
+.static-content ul li {
+    line-height: 27px;
+    margin: 0 0 15px 0;
+    padding: 0 0 0 20px;
+    background: url(/assets/images/bullet.svg) 0 8px no-repeat;
+    list-style-type: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
+}
+
+@media screen and (max-width: 900px) and (orientation: portrait),
+    (max-width: 823px) and (orientation: landscape) {
+    .static-content {
+        width: auto;
+        padding: 0 20px;
+    }
+
+    .static-content.upcoming-conference-container {
+        margin-top: -5px;
+    }
+}
