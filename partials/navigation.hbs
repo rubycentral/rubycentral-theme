@@ -1,7 +1,7 @@
-<ul class="navigation__list">
-  {{#foreach navigation}}
-    <li class="navigation__item{{#if current}} current{{/if}}">
-      <a href="{{url absolute="true"}}">{{label}}</a>
-    </li>
-  {{/foreach}}
+<ul class='navigation__list'>
+    {{#foreach navigation}}
+        <li class='navigation__item'>
+            <a href="{{url absolute='true'}}">{{label}}</a>
+        </li>
+    {{/foreach}}
 </ul>
