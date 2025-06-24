@@ -1,5 +1,8 @@
 routes:
   /: home
+  /about/:
+    data: page.about
+    template: about
 
 collections:
   /news/:
