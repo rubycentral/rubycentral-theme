@@ -1,3 +1,42 @@
-<footer>
-  {{navigation type="secondary"}}
+<footer class='footer'>
+    <div class='footer__inner'>
+        <section class='footer__top'>
+            <img class='footer__logo' src={{asset 'images/full-logo.png'}} />
+            <div class='kg-button-card'>
+                <a class='kg-btn' href='#/portal/signup'>Membership</a>
+            </div>
+        </section>
+        <section class='footer__links'>
+            {{navigation type='secondary'}}
+        </section>
+        <section class='footer__bottom'>
+            <form class='footer__form' data-members-form='subscribe'>
+                <div class='footer__form__row'>
+                    <input
+                        data-members-email
+                        name='email'
+                        id='get-involved-email'
+                        placeholder='Enter your email...'
+                        required='true'
+                        type='email'
+                    />
+                    <div class='kg-button-card'>
+                        <button class='kg-btn' type='submit'>Sign Up</button>
+                    </div>
+                </div>
+                <span data-members-error></span>
+                <span data-members-success></span>
+            </form>
+            <div class='footer__bottom__socials'>
+                <div class='footer__bottom__socials__links'>
+                    {{#get 'pages' filter="title:'Footer - Socials'" limit='1'}}
+                        {{#foreach pages}}
+                            {{content}}
+                        {{/foreach}}
+                    {{/get}}
+                </div>
+                <small>©{{date format='YYYY'}} Ruby Central. All Rights Reserved.</small>
+            </div>
+        </section>
+    </div>
 </footer>
