@@ -13,10 +13,9 @@
 
 /* Layout */
 @import './layout/reset.css';
-@import './layout/navigation.css';
 @import './layout/dropdown.css';
 @import './layout/container.css';
-/* @import './layout/header.css'; */
+@import './layout/navigation-top.css';
 @import './layout/footer.css';
 
 /* Pages */

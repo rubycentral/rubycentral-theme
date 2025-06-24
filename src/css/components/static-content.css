@@ -1,6 +1,7 @@
 .static-content {
     width: 50%;
     margin: 0 auto;
+    max-width: var(--layout-inner-max-width);
 }
 
 .static-content.upcoming-conference-container {
@@ -22,6 +23,11 @@
     padding: 0 0 0 20px;
     background: url(/assets/images/bullet.svg) 0 8px no-repeat;
     list-style-type: none;
+}
+
+.pagination {
+    display: flex;
+    justify-content: space-between;
 }
 
 @media screen and (max-width: 900px) and (orientation: portrait),
