@@ -17,7 +17,11 @@
 </header>
 <section class='page-about__position'>
     <div class='page-about__position__inner'>
-        <img class='page-about__position--image' src={{asset 'images/about__position.jpg'}} />
+        <img
+            alt="Female software engineer sitting at a laptop and holding a coffee cup"
+            class='page-about__position--image'
+            src={{asset 'images/about__position.jpg'}}
+        />
         <div class='page-about__position--content'>
             {{#get 'pages' filter="title:'About::Position - Body'" limit='1'}}
                 {{#foreach pages}}
