@@ -8,5 +8,8 @@
   },
   "keywords": [],
   "author": "Ruby Central",
-  "license": "private"
+  "license": "private",
+  "dependencies": {
+    "dotenv": "^16.5.0"
+  }
 }
