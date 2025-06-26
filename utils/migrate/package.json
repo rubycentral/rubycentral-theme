@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "migrate": "echo \"Running migration from staging to production...\n\n\" && node index.js"
   },
   "keywords": [],
   "author": "Ruby Central",
