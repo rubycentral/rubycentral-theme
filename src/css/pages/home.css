@@ -146,18 +146,20 @@
 
     .home-template__pillars__details--stats,
     .home-template__community__details--stats {
+        align-items: start;
         background-color: var(--color-mutednavy);
         border-radius: 8px;
         display: grid;
         grid-template-columns: 1fr;
-        gap: 12px;
+        gap: 8px;
         grid-area: stats;
         padding: 20px;
 
         section {
-            display: grid;
-            justify-content: center;
+            display: flex;
+            flex-direction: column;
             gap: 12px;
+            justify-content: center;
             padding: 12px;
 
             h3,
@@ -173,8 +175,9 @@
             }
 
             p {
-                font-size: 0.75rem;
-                line-height: 1rem;
+                font-size: 1rem;
+                line-height: 1.25rem;
+                margin: 0;
             }
         }
     }
@@ -204,7 +207,7 @@
             flex-grow: 1;
         }
 
-       small {
+        small {
             font-size: 0.875rem;
             line-height: 1.5rem;
         }
@@ -242,8 +245,9 @@
             }
 
             p {
-                font-size: 0.875rem;
+                font-size: 1rem;
                 line-height: 1rem;
+                margin: 0;
             }
         }
     }
