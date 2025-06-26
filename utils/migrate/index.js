@@ -29,11 +29,11 @@ const getPages = (target) => {
     const settings = JSON.parse(readFileSync(settingsPath));
     const targetSlugs = settings.slugs.join(',');
 
-    console.log(`Fetching data from ${normalizedTarget} ...\n`);
+    console.log(`Fetching data from ${normalizedTarget} ...\n\n`);
 
     return new Promise((resolve, reject) => {
         client.pages
-            .browse({ filter: `slug:[${targetSlugs}]` })
+            .browse({ filter: `slug:[${targetSlugs}]`, limit: 1000 })
             .then((pages) => {
                 const jsonString = `{ "pages": ${JSON.stringify(pages)} }`;
                 writeFileSync(dataPath, jsonString, { flag: 'a' });
@@ -46,16 +46,31 @@ const getPages = (target) => {
 const cleanTmpFile = (target) => {
     const relativePath = `tmp/${target.toLowerCase()}.json`;
 
-    console.log(`Removing "${relativePath}"...\n`);
+    console.log(`Removing "${relativePath}"...\n\n`);
     rmSync(join(process.cwd(), relativePath));
 };
 
-getPages(STAGING).then(() => {
-    getPages(PRODUCTION)
-        .then(() => {
-            cleanTmpFile(STAGING);
-        })
-        .then(() => {
-            cleanTmpFile(PRODUCTION);
+const moveToProduction = () => {
+    const stagingDataPath = join(process.cwd(), 'tmp/staging.json');
+    const stagingData = JSON.parse(readFileSync(stagingDataPath)).pages;
+
+    console.log(`Adding page copies from ${STAGING} to ${PRODUCTION}...\n\n`);
+
+    return new Promise((resolve) => {
+        stagingData.forEach((stagingPage) => {
+            clientProduction.pages.add({
+                lexical: stagingPage.lexical,
+                status: 'published',
+                title: stagingPage.title,
+                published_at: stagingPage.published_at,
+            });
+            resolve();
         });
+    });
+};
+
+getPages(STAGING).then(() => {
+    moveToProduction().then(() => {
+        cleanTmpFile(STAGING);
+    });
 });
