@@ -10,6 +10,7 @@
   "author": "Ruby Central",
   "license": "private",
   "dependencies": {
+    "@tryghost/admin-api": "^1.13.17",
     "dotenv": "^16.5.0"
   }
 }
