@@ -9,6 +9,7 @@
   "keywords": [],
   "author": "Ruby Central",
   "license": "private",
+  "type": "module",
   "dependencies": {
     "@tryghost/admin-api": "^1.13.17",
     "dotenv": "^16.5.0"
