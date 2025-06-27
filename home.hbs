@@ -1,140 +1,151 @@
 {{!< default}}
-<div class="padded-container">
-  <div class="upcoming">
-    {{#get "posts" limit="3" filter="featured:true"}}
-      {{#foreach posts}}
-        <div class="homepage-featured">
-          <a href="{{url}}">{{title}}</a>
-        </div>
-      {{/foreach}}
+<header class='home-template__hero'>
+    {{#get 'pages' filter="title:'Home::Hero - Body'" limit='1'}}
+        {{#foreach pages}}
+            {{content}}
+        {{/foreach}}
     {{/get}}
-  </div>
-  <div class="main-grid">
-    <div>
-      <section id="blurb">
-        <div class="icon-box"></div>
-        <p>
-          Ruby Central is a non-profit organization dedicated to supporting the worldwide Ruby community. We organize the annual RubyConf and RailsConf software conferences, support community growth, and provide vital infrastructure for the Ruby programming language. 
-        </p>
-        <p>{{#link href="/history"}}Learn more about us.{{/link}}</p>
-      </section>
-      <section id="rubygems">
-        <div class="section-header">
-          <div class="icon-box"></div>
-          <h3>RubyGems</h3>
-          <img src="{{asset "images/arrow.svg"}}" class="arrow">
-        </div>
-        <p>
-          RubyGems is the code-packaging system for the Ruby community.
-          Started as a project in 2004 by the directors of Ruby Central and
-          friends, RubyGems has grown into an invaluable and wide-ranging
-          resource for the sharing of code among all members of the community.
-          With hosting support by Ruby Central, more information can be found
-          at <a href="https://rubygems.org">rubygems.org</a>.
-        </p>
-      </section>
-    </div>
-    <div>
-       <section id="support">
-        <div class="section-header">
-          <div class="icon-box"></div>
-          <h3>Supporting Ruby Central, Inc</h3>
-          <img src="{{asset "images/arrow.svg"}}" class="arrow">
-        </div>
-        <p>
-          The Ruby language could only have developed so robustly with its dedicated community. Our community consists of talented and passionate individual developers and many dynamic companies that recognize the value of helping foster a strong, sustainable environment for Ruby development. Join our {{#link href="/#/portal/signup"}}Member Community{{/link}}, <strong>Become a Sponsor</strong>, or {{#link href="/leadership"}}donate your time{{/link}} – there are numerous ways to {{#link href="/support"}}Support Us{{/link}}!
-        </p>
-        <br>
-        <p>
-          If you are looking for ways to help or have questions, please contact us at {{#link href="mailto:contact@rubycentral.org"}}contact@rubycentral.org{{/link}}.
-        </p>
-      </section>
-
-      <section id="conferences">
-        <h3>42 Conferences and counting.</h3>
-      </section>
-    </div>
-  </div>
-  <div class="main-grid">
-    <div>
-      <section id="rubyconf" class="light-background">
-        <div class="section-header">
-          <div class="icon-box"></div>
-          <h3>RubyConf</h3>
-          <img src="{{asset "images/darkarrow.svg"}}" class="arrow">
-        </div>
-        <p>
-          <a href="https://rubyconf.org">RubyConf</a> is the Ruby community’s
-          annual celebration of all things Ruby! Every fall, we gather Ruby
-          enthusiasts together to enjoy detailed talks about exciting new
-          projects; meet and network with other Ruby developers; and hear from
-          the community’s leading minds, including Yukihiro Matsumoto
-          ("Matz"), the creator of the Ruby language.
-        </p>
-        <p>{{#link href="/conferences"}}Learn more{{/link}}</p>
-      </section>
-    </div>
-    <div>
-      <section id="railsconf" class="light-background">
-        <div class="section-header">
-          <div class="icon-box"></div>
-          <h3>RailsConf</h3>
-          <img src="{{asset "images/darkarrow.svg"}}" class="arrow">
-        </div>
-        <p>
-          <a href="https://railsconf.org">RailsConf</a> is the world’s largest
-          gathering of Rails developers, brought together to further
-          discussion and learning about building, managing, and testing Rails
-          applications. With a specific focus on Rails, conference topics can
-          range from new users to administration to advanced techniques.
-        </p>
-        <p>{{#link href="/conferences"}}Learn more{{/link}}</p>
-      </section>
-    </div>
-  </div>
-</div>
-<div id="about">
-  <div class="content padded-container">
-    <div id="directors">
-      <div class="icon-box"></div>
-      <h3>Directors</h3>
-      <ul class="people">
-      {{#get "pages" order="title asc" filter="tags:hash-director" limit="all"}}
+    <section class='kg-button-card__group'>
+        {{#get 'pages' filter='tag:hash-home-hero-cta' limit='2'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+    </section>
+</header>
+<section class='home-template__pillars'>
+    <section class='home-template__pillars__inner'>
+        <h2>Pillars of Ruby Central</h2>
+        <hr />
+        <section class='home-template__pillars__details'>
+            <section class='home-template__pillars__details--content'>
+                {{#get 'pages' filter="title:'Home::Pillars - Conferences'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+                {{#get 'pages' filter="title:'Home::Pillars - Button'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </section>
+            <section class='home-template__pillars__details--image-grid'>
+                <img
+                    class='home-template__pillars__details--image-grid_item--one'
+                    src={{asset 'images/home__pillars-image-grid-01.jpg'}}
+                    alt='Conference room with numerous attendees and a main stage'
+                />
+                <img
+                    class='home-template__pillars__details--image-grid_item--two'
+                    src={{asset 'images/home__pillars-image-grid-02.jpg'}}
+                    alt='RailsConf 2025 flyer with event dates and times'
+                />
+                <img
+                    class='home-template__pillars__details--image-grid_item--three'
+                    src={{asset 'images/home__pillars-image-grid-03.jpg'}}
+                    alt='Young man in plaid shirt giving a hug to a person with a backpack'
+                />
+            </section>
+            <aside class='home-template__pillars__details--stats'>
+                <section>
+                    <h3>42</h3>
+                    <p>conferences hosted since 2001</p>
+                </section>
+                <section>
+                    <h3>18,000+</h3>
+                    <p>attendees</p>
+                </section>
+                <section>
+                    <h3>2,000+</h3>
+                    <p>speakers who have graced our stages</p>
+                </section>
+            </aside>
+        </section>
+    </section>
+</section>
+<section class='home-template__open-source'>
+    <section class='home-template__open-source__content'>
+        {{#get 'pages' filter="title:'Home::OpenSource'" limit='1'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+        {{#get 'pages' filter="title:'Home::OpenSource - Button'" limit='1'}}
+            {{#foreach pages}}
+                {{content}}
+            {{/foreach}}
+        {{/get}}
+    </section>
+    <aside class='home-template__open-source__stats'>
+        <section>
+            <h3>Over 210 Billion</h3>
+            <p>gem downloads served</p>
+        </section>
+        <section>
+            <h3>Over 230K</h3>
+            <p>users and 185K gems</p>
+        </section>
+        <section>
+            <h3>100% Uptime</h3>
+            <p>since 2013 with 24/7 on call</p>
+        </section>
+    </aside>
+</section>
+<section class='home-template__community'>
+    <section class='home-template__community__inner'>
+        <section class='home-template__community__details'>
+            <section class='home-template__community__details--content'>
+                {{#get 'pages' filter="title:'Home::Community'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+                {{#get 'pages' filter="title:'Home::Community - Button'" limit='1'}}
+                    {{#foreach pages}}
+                        {{content}}
+                    {{/foreach}}
+                {{/get}}
+            </section>
+            <img
+                class='home-template__community__details--image'
+                src={{asset 'images/home__community__details--image.jpg'}}
+                alt='Group of developers hugging and smiling together'
+            />
+            <aside class='home-template__community__details--stats'>
+                <section>
+                    <h3>26</h3>
+                    <p>local meetup grants spanning 5 continents</p>
+                </section>
+                <section>
+                    <h3>330+</h3>
+                    <p>scholars</p>
+                </section>
+                <section>
+                    <h3>1,575</h3>
+                    <p>members</p>
+                </section>
+            </aside>
+        </section>
+    </section>
+</section>
+<section class='home-template__support'>
+    {{#get 'pages' filter="title:'Home::Support'" limit='1'}}
         {{#foreach pages}}
-          {{> "person"}}
-        {{else}}
-          <p>Create a page for each director, title the post with their name, set the featured image to their profile picture, and put an optional link in the page content. Add the tag <code>#director</code> for them to show up here.</p>
+            {{content}}
         {{/foreach}}
-      {{/get}}
-      </ul>
-    </div>
-
-    <div id="staff">
-      <div class="icon-box"></div>
-      <h3>Staff</h3>
-      <ul class="people">
-      {{#get "pages" order="featured desc, title asc" filter="tags:hash-staff" limit="all"}}
-        {{#foreach pages}}
-          {{> "person"}}
-        {{else}}
-          <p>Create a page for each staff member, title the post with their name, set the featured image to their profile picture, and put an optional link in the page content. Add the tag <code>#staff</code> for them to show up here.</p>
-        {{/foreach}}
-      {{/get}}
-      </ul>
-    </div>
-
-    <div id="oss-team">
-      <h3>Open Source Team</h3>
-      <ul class="people">
-      {{#get "pages" order="featured desc, title asc" filter="tags:hash-oss-team" limit="all"}}
-        {{#foreach pages}}
-          {{> "person"}}
-        {{else}}
-          <p>Create a page for each open source team member, title the post with their name, set the featured image to their profile picture, and put an optional link in the page content. Add the tag <code>#oss-team</code> for them to show up here.</p>
-        {{/foreach}}
-      {{/get}}
-      </ul>
-    </div>
-
-  </div>
-</div>
+    {{/get}}
+    <section class='sponsors'>
+        <p class='sponsors__title'>A special thanks to our supporters, you make this possible!</p>
+        <div class='sponsors__inner'>
+            {{#get "pages" filter="tag:hash-corporate-sponsor-ruby" include="feature_image"}}
+                {{#foreach pages}}
+                  {{#if feature_image}}
+                    <img src="{{feature_image}}" alt="{{title}}" />
+                  {{/if}}
+                {{/foreach}}
+              {{/get}}
+        </div>
+    </section>
+</section>
+{{> 'get-involved' }}

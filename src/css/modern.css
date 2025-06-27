@@ -3,14 +3,9 @@
         padding: 2.5rem;
         padding-top: 0;
     }
-
-    h1 {
-        text-transform: uppercase;
-    }
     h1,
     h2,
     h3 {
-        font-family: Rubik;
         margin-bottom: 1rem;
         column-span: all !important;
         > a {
@@ -19,7 +14,6 @@
     }
     h1,
     h2 {
-        font-weight: bold;
         position: relative;
         padding-bottom: 0.75rem;
 
@@ -30,46 +24,12 @@
             right: 0;
             bottom: 0;
             height: 3px;
-            background-color: var(--yellow);
+            background-color: var(--color-yellow);
             width: 70px;
         }
     }
-    h3 {
-        font-size: 18px !important;
-    }
-    h6 {
-        font-size: 18px;
-        font-family: 'Inter var', sans-serif;
-        font-weight: 300;
-        font-style: italic;
-    }
-    @media (min-width: 700px) {
-        h1 {
-            font-size: 42px;
-        }
-        h2 {
-            font-size: 32px;
-        }
-        h3 {
-            font-size: 26px !important;
-        }
-    }
-    @media (min-width: 1350px) {
-        h1 {
-            font-size: 72px;
-        }
-        h2 {
-            font-size: 48px;
-        }
-        p {
-            font-size: 18px;
-        }
-    }
-
-    p,
-    ul {
-        line-height: 1.4rem;
-        font-size: 16px;
+    h1 {
+        text-transform: uppercase;
     }
 
     .mission-and-vision {
@@ -78,11 +38,6 @@
         gap: 2.5rem;
         margin-bottom: 2.5rem;
         margin-top: 2.5rem;
-        padding: 0 0 2.5rem 0;
-
-        h3 {
-            font-size: 42px;
-        }
     }
 
     .post .column img {
@@ -93,15 +48,15 @@
     }
 
     .program-support {
-        background-color: var(--lightblue);
+        background-color: var(--color-lightblue);
         margin-bottom: 2.5rem;
         margin-top: 2.5rem;
         border-radius: 0.5rem;
-        padding-top: 1rem;
+        padding: 20px;
     }
 
     .program-support span {
-        background-color: var(--yellow);
+        background-color: var(--color-yellow);
         padding: 1rem;
         margin: 0 1rem 1rem 0;
         font-size: 1.25rem;
@@ -119,28 +74,28 @@
         }
     }
     .program-support span:nth-of-type(2) {
-        background-color: var(--red);
+        background-color: var(--color-red);
         color: white;
     }
     .program-support span:nth-of-type(3) {
         color: white;
-        background-color: var(--blue);
+        background-color: var(--color-blue);
     }
     .program-support span:nth-of-type(4) {
-        background-color: var(--green);
+        background-color: var(--color-green);
     }
     .projects {
-        background-color: var(--darkred);
-        color: var(--white);
+        background-color: var(--color-darkred);
+        color: var(--color-white);
         margin-bottom: 2.5rem;
         margin-top: 2.5rem;
         border-radius: 0.5rem;
-        padding-top: 1rem;
+        padding: 20px;
     }
     .project {
         width: 100%;
-        background-color: var(--navy);
-        color: var(--white);
+        background-color: var(--color-navy);
+        color: var(--color-white);
         border-radius: 0.5rem;
         padding: 1.5rem;
         padding-bottom: 2rem;
@@ -199,7 +154,6 @@
         }
         .mission-and-vision {
             grid-template-columns: 1fr 1fr;
-            padding: 0 2.5rem 4rem 2.5rem;
         }
     }
 
@@ -220,6 +174,10 @@
             max-width: calc((100vw - 900px) / 2);
             padding-right: 2rem;
         }
+
+        .projects, .program-support {
+            padding: 60px;
+        }
     }
 
     .gh-toc .is-active-link::before {
@@ -230,18 +188,6 @@
         text-align: center;
     }
 
-    .grid {
-        display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-        gap: 2.5rem;
-        width: 100%;
-        margin-bottom: 2.5rem;
-    }
-    @media (min-width: 1350px) {
-      .grid {
-        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
-      }
-    }
     .team-photo {
         width: 100%;
         height: auto;
@@ -270,11 +216,15 @@
         width: 45%;
     }
     .level .name {
-        text-align: center;
         padding: 1rem 0 0.25rem 0;
         margin: auto;
         border-top-left-radius: .75rem;
         border-top-right-radius: .75rem;
+
+        h3 {
+            text-align: center;
+
+        }
     }
 
     .corporate-sponsors {
@@ -282,6 +232,7 @@
         flex-wrap: wrap;
         justify-content: space-between;
         gap: 1rem;
+        margin-top: 48px;
     }
     .level.ruby, .level.gold {
         flex: 1 1 100%;
@@ -296,19 +247,19 @@
         }
     }
     .level.ruby .name {
-        background-color: var(--red);
-        color: var(--white);
+        background-color: var(--color-red);
+        color: var(--color-white);
     }
     .level.gold .name {
-        background-color: var(--yellow);
+        background-color: var(--color-yellow);
     }
     .level.silver .name {
-        background-color: var(--blue);
-        color: var(--white);
+        background-color: var(--color-blue);
+        color: var(--color-white);
     }
     .level.major .name {
-        background-color: var(--green);
-        color: var(--white);
+        background-color: var(--color-green);
+        color: var(--color-white);
     }
     .level .bucket {
         border-bottom-left-radius: .75rem;

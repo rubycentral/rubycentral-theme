@@ -1,1 +1,61 @@
-/* You would enter button styles here */
+.kg-button-card .kg-btn,
+.kg-button-card .kg-btn-accent {
+    background: linear-gradient(0deg, #e14943 0%, #fa5d54 100%);
+    border: none;
+    border-radius: 12px;
+    box-shadow: 0px 4px 13px 0px rgba(250, 93, 84, 0.3);
+    color: white;
+    cursor: pointer;
+    display: flex;
+    font-family: 'Rubik', sans-serif;
+    font-size: 0.875rem;
+    font-weight: 700;
+    justify-content: center;
+    padding: 15px;
+    text-transform: uppercase;
+    width: 100%;
+}
+
+.kg-button-card .kg-btn:hover,
+.kg-button-card .kg-btn-accent:hover {
+    background: linear-gradient(0deg, #e14943 0%, #fa5d54 100%);
+    box-shadow: 0px 4px 13px 0px rgba(250, 93, 84, 0.4);
+}
+
+.kg-button-card__group {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 16px;
+}
+
+.kg-button-card.kg-align-left,
+.kg-button-card.kg-align-center {
+    display: flex;
+}
+
+.kg-button-card.kg-align-left {
+    justify-content: flex-start;
+}
+
+.kg-button-card.kg-align-center {
+    justify-content: center;
+}
+
+@media (min-width: 768px) {
+    .kg-button-card__group {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        gap: 24px;
+    }
+}
+
+@media (min-width: 834px) {
+    .kg-button-card .kg-btn,
+    .kg-button-card .kg-btn-accent {
+        font-size: 1rem;
+        width: fit-content;
+    }
+
+    .kg-button-card__group {
+        grid-template-columns: repeat(2, max-content);
+    }
+}
