@@ -13,25 +13,6 @@
         margin: 0 auto 30px;
     }
 
-    span[data-members-error],
-    span[data-members-success] {
-        display: none;
-        font-size: 0.875rem;
-        font-weight: 700;
-        line-height: 1rem;
-        padding: 16px 0;
-    }
-
-    .error span[data-members-error] {
-        color: var(--color-darkred);
-        display: block;
-    }
-
-    .success span[data-members-success] {
-        color: green;
-        display: block;
-    }
-
     .get-involved__title {
         font-size: 2rem;
         font-weight: 500;
@@ -92,11 +73,6 @@
 
     @media (min-width: 834px) {
         padding: 96px 56px 0;
-
-        span[data-members-error],
-        span[data-members-success] {
-            text-align: center;
-        }
 
         .get-involved__title {
             font-size: 2.625rem;
