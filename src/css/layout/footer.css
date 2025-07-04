@@ -64,25 +64,6 @@
         align-items: center;
         display: flex;
         flex-direction: column;
-
-        span[data-members-error],
-        span[data-members-success] {
-            display: none;
-            font-size: 0.875rem;
-            font-weight: 700;
-            line-height: 1rem;
-            padding: 16px 0;
-        }
-    }
-
-    .error span[data-members-error] {
-        color: var(--color-darkred);
-        display: block;
-    }
-
-    .success span[data-members-success] {
-        color: green;
-        display: block;
     }
 
     .footer__form__row {
