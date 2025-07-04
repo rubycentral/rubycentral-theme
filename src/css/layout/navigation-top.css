@@ -108,14 +108,14 @@
         grid-area: membership;
     }
 
-    @media (min-width: 1440px) {
+    @media (min-width: 1080px) {
         .navigation__mobile-menu-trigger {
             display: none;
         }
 
         .navigation__inner {
             grid-template-columns: max-content 1fr max-content;
-            padding: 0;
+            padding: 0 20px 0 10px;
         }
 
         .navigation__logo {
@@ -143,6 +143,12 @@
 
         .navigation__list::before {
             display: none;
+        }
+    }
+
+    @media (min-width: 1440px) {
+        .navigation__inner {
+            padding: 0;
         }
     }
 }
