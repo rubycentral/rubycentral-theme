@@ -1,0 +1,24 @@
+{
+    "slugs": [
+        "about-hero-body",
+        "about-hero-button",
+        "about-history-sectionone-body",
+        "about-history-sectionone-button",
+        "about-history-sectionthree-body",
+        "about-history-sectiontwo-body",
+        "about-position-body",
+        "about-team-directors-header",
+        "about-team-header",
+        "about-team-staff-header",
+        "footer-socials",
+        "home-community",
+        "home-hero-body",
+        "home-hero-button-left",
+        "home-hero-button-right",
+        "home-opensource",
+        "home-opensource-button",
+        "home-pillars-button",
+        "home-pillars-conferences",
+        "home-support"
+    ]
+}
