@@ -7,42 +7,48 @@
       <div>{{content}}</div>
     </div>
     <div class="container corporate-sponsors">
-      <div class="level ruby">
-        <div class="name"><h3>Ruby</h3></div>
-        <div class="bucket">
-          {{#get "pages" filter="tag:hash-corporate-sponsor-ruby" include="feature_image"}}
-            {{#foreach pages}}
-              {{#if feature_image}}
-                <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
-              {{/if}}
-            {{/foreach}}
-          {{/get}}
-        </div>
-      </div>
-      <div class="level gold">
-        <div class="name"><h3>Gold</h3></div>
-        <div class="bucket">
-          {{#get "pages" filter="tag:hash-corporate-sponsor-gold" include="feature_image"}}
-            {{#foreach pages}}
-              {{#if feature_image}}
-                <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
-              {{/if}}
-            {{/foreach}}
-          {{/get}}
-        </div>
-      </div>
-      <div class="level silver">
-        <div class="name"><h3>Silver</h3></div>
-        <div class="bucket">
-          {{#get "pages" filter="tag:hash-corporate-sponsor-silver" include="feature_image"}}
-            {{#foreach pages}}
-              {{#if feature_image}}
-                <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
-              {{/if}}
-            {{/foreach}}
-          {{/get}}
-        </div>
-      </div>
+      {{#get "pages" filter="tag:hash-corporate-sponsor-ruby" include="feature_image"}}
+        {{#if pages}}
+          <div class="level ruby">
+            <div class="name"><h3>Ruby</h3></div>
+            <div class="bucket">
+              {{#foreach pages}}
+                {{#if feature_image}}
+                  <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+                {{/if}}
+              {{/foreach}}
+            </div>
+          </div>
+        {{/if}}
+      {{/get}}
+      {{#get "pages" filter="tag:hash-corporate-sponsor-gold" include="feature_image"}}
+        {{#if pages}}
+          <div class="level gold">
+            <div class="name"><h3>Gold</h3></div>
+            <div class="bucket">
+              {{#foreach pages}}
+                {{#if feature_image}}
+                  <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+                {{/if}}
+              {{/foreach}}
+            </div>
+          </div>
+        {{/if}}
+      {{/get}}
+      {{#get "pages" filter="tag:hash-corporate-sponsor-silver" include="feature_image"}}
+        {{#if pages}}
+          <div class="level silver">
+            <div class="name"><h3>Silver</h3></div>
+            <div class="bucket">
+              {{#foreach pages}}
+                {{#if feature_image}}
+                  <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
+                {{/if}}
+              {{/foreach}}
+            </div>
+          </div>
+        {{/if}}
+      {{/get}}
     </div>
     <div class="container">
       {{#get "pages" filter="slug:benefits-of-supporting-ruby-central"}}
