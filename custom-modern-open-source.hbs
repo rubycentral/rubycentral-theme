@@ -91,6 +91,35 @@
       {{/foreach}}
       {{/get}}
       </div>
+      <div class="container">
+  <section class="sponsors">
+    <p class="sponsors__title">Our Open Source Sponsors</p>
+    <div class="sponsors__inner">
+      {{#get "pages" order="featured desc, title asc" filter="tags:hash-oss-sponsors" limit="all"}}
+        {{#foreach pages}}
+          {{#if feature_image}}
+            <img src="{{feature_image}}" alt="{{title}}" />
+          {{/if}}
+        {{/foreach}}
+      {{/get}}
+    </div>
+  </section>
+</div>
+
+<div class="container">
+  <section class="sponsors">
+    <p class="sponsors__title">RubyGems Supporters Plus</p>
+    <div class="sponsors__inner">
+      {{#get "pages" order="featured desc, title asc" filter="tags:hash-rubygems-sponsors" limit="all"}}
+        {{#foreach pages}}
+          {{#if feature_image}}
+            <img src="{{feature_image}}" alt="{{title}}" />
+          {{/if}}
+        {{/foreach}}
+      {{/get}}
+    </div>
+  </section>
+</div>
   </div>
 {{/post}}
 {{#contentFor 'scripts'}}
