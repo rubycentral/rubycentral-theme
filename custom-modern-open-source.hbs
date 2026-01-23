@@ -40,7 +40,7 @@
         {{#get "pages" order="featured desc, title asc" filter="tag:[hash-oss-project]"}}
           {{#foreach pages}}
           <div class="project">
-              <h3>{{title}}</h1>
+              <h3>{{title}}</h3>
               {{{html}}}
           </div>
           {{/foreach}}
@@ -52,7 +52,7 @@
         {{#if feature_image}}
         <img src="{{feature_image}}" alt="{{title}}" class="feature-image">
         {{/if}}
-        <h3>{{title}}</h1>
+        <h3>{{title}}</h3>
         <div>{{content}}</div>
         {{/foreach}}
         {{/get}}
