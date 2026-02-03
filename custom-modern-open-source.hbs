@@ -93,27 +93,47 @@
       </div>
       <div class="container">
   <section class="sponsors">
-    <p class="sponsors__title">Our Open Source Sponsors</p>
-    <div class="sponsors__inner">
-      {{#get "pages" order="featured desc, title asc" filter="tags:hash-oss-sponsors" limit="all"}}
-        {{#foreach pages}}
-          {{#if feature_image}}
+  <p class="sponsors__title">Our Open Source Sponsors</p>
+  <div class="sponsors__inner">
+    {{#get "pages"
+      order="featured desc, title asc"
+      filter="tags:hash-oss-sponsors"
+      limit="all"
+      fields="title,feature_image,custom_excerpt"}}
+      {{#foreach pages}}
+        {{#if feature_image}}
+          {{#if custom_excerpt}}
+            <a href="{{custom_excerpt}}" target="_blank" rel="noopener noreferrer" aria-label="{{title}}">
+              <img src="{{feature_image}}" alt="{{title}}" />
+            </a>
+          {{else}}
             <img src="{{feature_image}}" alt="{{title}}" />
           {{/if}}
-        {{/foreach}}
-      {{/get}}
-    </div>
-  </section>
+        {{/if}}
+      {{/foreach}}
+    {{/get}}
+  </div>
+</section>
 </div>
 
 <div class="container">
   <section class="sponsors">
     <p class="sponsors__title">RubyGems Supporters Plus</p>
     <div class="sponsors__inner">
-      {{#get "pages" order="featured desc, title asc" filter="tags:hash-rubygems-sponsors" limit="all"}}
+      {{#get "pages"
+        order="featured desc, title asc"
+        filter="tags:hash-rubygems-sponsors"
+        limit="all"
+        fields="title,feature_image,custom_excerpt"}}
         {{#foreach pages}}
           {{#if feature_image}}
-            <img src="{{feature_image}}" alt="{{title}}" />
+            {{#if custom_excerpt}}
+              <a href="{{custom_excerpt}}" target="_blank" rel="noopener noreferrer" aria-label="{{title}}">
+                <img src="{{feature_image}}" alt="{{title}}" />
+              </a>
+            {{else}}
+              <img src="{{feature_image}}" alt="{{title}}" />
+            {{/if}}
           {{/if}}
         {{/foreach}}
       {{/get}}
