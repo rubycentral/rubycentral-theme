@@ -21,7 +21,12 @@
     column-gap: 60px;
     row-gap: 20px;
     padding: 60px 20px;
-
+    a {
+        text-decoration: none;
+        border-bottom: 0;
+        background-image: none;
+        box-shadow: none;
+    }
     img {
         height: 60px;
         max-width: 100%;
