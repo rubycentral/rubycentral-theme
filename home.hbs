@@ -31,21 +31,87 @@
                 {{/get}}
             </section>
             <section class='home-template__pillars__details--image-grid'>
-                <img
-                    class='home-template__pillars__details--image-grid_item--one'
-                    src={{asset 'images/home__pillars-image-grid-01.jpg'}}
-                    alt='Conference room with numerous attendees and a main stage'
-                />
-                <img
-                    class='home-template__pillars__details--image-grid_item--two'
-                    src={{asset 'images/home__pillars-image-grid-02.jpg'}}
-                    alt='RailsConf 2025 flyer with event dates and times'
-                />
-                <img
-                    class='home-template__pillars__details--image-grid_item--three'
-                    src={{asset 'images/home__pillars-image-grid-03.jpg'}}
-                    alt='Young man in plaid shirt giving a hug to a person with a backpack'
-                />
+    {{#get "pages" filter="tag:hash-home-pillars-image-1" limit="1" include="feature_image"}}
+        {{#foreach pages}}
+            {{#if feature_image}}
+                {{#if custom_excerpt}}
+                    <a
+                        href="{{custom_excerpt}}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="{{title}}"
+                    >
+                        <img
+                            class='home-template__pillars__details--image-grid_item--one'
+                            src="{{feature_image}}"
+                            alt="{{title}}"
+                        />
+                    </a>
+                {{else}}
+                    <img
+                        class='home-template__pillars__details--image-grid_item--one'
+                        src="{{feature_image}}"
+                        alt="{{title}}"
+                    />
+                {{/if}}
+            {{/if}}
+        {{/foreach}}
+    {{/get}}
+
+    {{#get "pages" filter="tag:hash-home-pillars-image-2" limit="1" include="feature_image"}}
+        {{#foreach pages}}
+            {{#if feature_image}}
+                {{#if custom_excerpt}}
+                    <a
+                        href="{{custom_excerpt}}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="{{title}}"
+                    >
+                        <img
+                            class='home-template__pillars__details--image-grid_item--two'
+                            src="{{feature_image}}"
+                            alt="{{title}}"
+                        />
+                    </a>
+                {{else}}
+                    <img
+                        class='home-template__pillars__details--image-grid_item--two'
+                        src="{{feature_image}}"
+                        alt="{{title}}"
+                    />
+                {{/if}}
+            {{/if}}
+        {{/foreach}}
+    {{/get}}
+
+    {{#get "pages" filter="tag:hash-home-pillars-image-3" limit="1" include="feature_image"}}
+        {{#foreach pages}}
+            {{#if feature_image}}
+                {{#if custom_excerpt}}
+                    <a
+                        href="{{custom_excerpt}}"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                        aria-label="{{title}}"
+                    >
+                        <img
+                            class='home-template__pillars__details--image-grid_item--three'
+                            src="{{feature_image}}"
+                            alt="{{title}}"
+                        />
+                    </a>
+                {{else}}
+                    <img
+                        class='home-template__pillars__details--image-grid_item--three'
+                        src="{{feature_image}}"
+                        alt="{{title}}"
+                    />
+                {{/if}}
+            {{/if}}
+        {{/foreach}}
+    {{/get}}
+</section>
             </section>
             <aside class='home-template__pillars__details--stats'>
                 <section>
