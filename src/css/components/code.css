@@ -1,0 +1,114 @@
+/* Inline code */
+:not(pre) > code {
+    background-color: var(--color-lightblue);
+    border: 1px solid color-mix(in srgb, var(--color-blue) 25%, transparent);
+    border-radius: 4px;
+    color: var(--color-mutednavy);
+    font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
+    font-size: 0.875em;
+    padding: 0.15em 0.4em;
+}
+
+/* Code block wrapper — Ghost wraps <pre><code> in a .kg-code-card */
+.kg-code-card {
+    margin: 1.75rem 0;
+}
+
+pre {
+    background-color: var(--color-navy);
+    border-radius: 6px;
+    color: #cdd9e5;
+    font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin: 1.75rem 0;
+    overflow-x: auto;
+    padding: 1.25rem 1.5rem;
+    position: relative;
+}
+
+pre code {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
+}
+
+/* Language label — Ghost adds data-language on the <pre> element */
+pre[data-language]::before {
+    background-color: var(--color-yellow);
+    border-radius: 0 0 4px 4px;
+    color: var(--color-navy);
+    content: attr(data-language);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    position: absolute;
+    right: 1rem;
+    text-transform: uppercase;
+    top: 0;
+}
+
+/* Syntax token colors — tuned for the navy background */
+.kg-code-card .token.comment,
+.kg-code-card .token.prolog,
+.kg-code-card .token.doctype,
+.kg-code-card .token.cdata {
+    color: #768390;
+    font-style: italic;
+}
+
+.kg-code-card .token.punctuation {
+    color: #8dbbe8;
+}
+
+.kg-code-card .token.namespace {
+    opacity: 0.7;
+}
+
+.kg-code-card .token.property,
+.kg-code-card .token.tag,
+.kg-code-card .token.boolean,
+.kg-code-card .token.number,
+.kg-code-card .token.constant,
+.kg-code-card .token.symbol,
+.kg-code-card .token.deleted {
+    color: var(--color-red);
+}
+
+.kg-code-card .token.selector,
+.kg-code-card .token.attr-name,
+.kg-code-card .token.string,
+.kg-code-card .token.char,
+.kg-code-card .token.builtin,
+.kg-code-card .token.inserted {
+    color: var(--color-green);
+}
+
+.kg-code-card .token.operator,
+.kg-code-card .token.entity,
+.kg-code-card .token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #8dbbe8;
+}
+
+.kg-code-card .token.atrule,
+.kg-code-card .token.attr-value,
+.kg-code-card .token.keyword {
+    color: var(--color-blue);
+}
+
+.kg-code-card .token.function,
+.kg-code-card .token.class-name {
+    color: var(--color-yellow);
+}
+
+.kg-code-card .token.regex,
+.kg-code-card .token.important,
+.kg-code-card .token.variable {
+    color: #f69d50;
+}
