@@ -40,12 +40,12 @@ pre.wrap {
     overflow-x: visible;
 }
 
-/* Language label — Prism adds language-* class to <pre> */
-pre[class*="language-"]::before {
+/* Language label — set via JS from Prism's language-* class */
+pre[data-language]::before {
     background-color: var(--color-yellow);
     border-radius: 0 0 4px 4px;
     color: var(--color-navy);
-    content: attr(class);
+    content: attr(data-language);
     font-family: 'Inter', sans-serif;
     font-size: 0.7rem;
     font-weight: 600;
