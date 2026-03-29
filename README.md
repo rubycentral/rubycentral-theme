@@ -54,6 +54,10 @@ You might have to refresh by hand after each change.
 If you can't see your changes, and you're sure that `npm run dev` is still going, you'll likely need to disable your browser's caching.
 Go to the Network tab in your dev tools and toggle "Disable cache".
 
+### Architecture decisions
+
+Significant decisions about how the theme is built are documented in [`docs/adr/`](docs/adr/). Before making a non-trivial change — adding a dependency, changing how a feature works, picking between approaches — please write an ADR. Use [`docs/adr/template.md`](docs/adr/template.md) as a starting point. The goal isn't process for its own sake; it's making sure future contributors understand *why* things are the way they are, not just what they are.
+
 ### Deployment
 
 The theme will automatically check, zip, and upload to Ghost via GitHub Actions. If you want to try it yourself locally:

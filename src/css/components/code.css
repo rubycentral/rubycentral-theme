@@ -1,0 +1,119 @@
+/* Inline code */
+:not(pre) > code {
+    background-color: var(--color-lightblue);
+    border: 1px solid color-mix(in srgb, var(--color-blue) 25%, transparent);
+    border-radius: 4px;
+    color: var(--color-mutednavy);
+    font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
+    font-size: 0.875em;
+    padding: 0.15em 0.4em;
+}
+
+/* Code block wrapper — Ghost wraps <pre><code> in a .kg-code-card */
+.kg-code-card {
+    margin: 1.75rem 0;
+}
+
+pre {
+    background-color: var(--color-navy);
+    border-radius: 6px;
+    color: #cdd9e5;
+    font-family: 'Menlo', 'Consolas', 'Monaco', monospace;
+    font-size: 0.875rem;
+    line-height: 1.6;
+    margin: 1.75rem 0;
+    overflow-x: auto;
+    padding: 1.25rem 1.5rem;
+    position: relative;
+}
+
+pre code {
+    background: none;
+    border: none;
+    color: inherit;
+    font-size: inherit;
+    padding: 0;
+}
+
+pre.wrap {
+    white-space: pre-wrap;
+    overflow-x: visible;
+}
+
+/* Language label — set via JS from Prism's language-* class */
+pre[data-language]::before {
+    background-color: var(--color-yellow);
+    border-radius: 0 0 4px 4px;
+    color: var(--color-navy);
+    content: attr(data-language);
+    font-family: 'Inter', sans-serif;
+    font-size: 0.7rem;
+    font-weight: 600;
+    letter-spacing: 0.05em;
+    padding: 2px 8px;
+    position: absolute;
+    right: 1rem;
+    text-transform: uppercase;
+    top: 0;
+}
+
+/* Syntax token colors — tuned for the navy background */
+.token.comment,
+.token.prolog,
+.token.doctype,
+.token.cdata {
+    color: #768390;
+    font-style: italic;
+}
+
+.token.punctuation {
+    color: #8dbbe8;
+}
+
+.token.namespace {
+    opacity: 0.7;
+}
+
+.token.property,
+.token.tag,
+.token.boolean,
+.token.number,
+.token.constant,
+.token.symbol,
+.token.deleted {
+    color: var(--color-red);
+}
+
+.token.selector,
+.token.attr-name,
+.token.string,
+.token.char,
+.token.builtin,
+.token.inserted {
+    color: var(--color-green);
+}
+
+.token.operator,
+.token.entity,
+.token.url,
+.language-css .token.string,
+.style .token.string {
+    color: #8dbbe8;
+}
+
+.token.atrule,
+.token.attr-value,
+.token.keyword {
+    color: var(--color-blue);
+}
+
+.token.function,
+.token.class-name {
+    color: var(--color-yellow);
+}
+
+.token.regex,
+.token.important,
+.token.variable {
+    color: #f69d50;
+}

@@ -10,6 +10,10 @@
     <script src="//code.jquery.com/jquery-3.6.4.min.js" defer></script>
     <script src="{{asset "dist/app.js"}}" defer></script>
 
+    {{!-- Prism syntax highlighting --}}
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/prism.min.js" defer></script>
+    <script src="https://cdn.jsdelivr.net/npm/prismjs@1/plugins/autoloader/prism-autoloader.min.js" defer></script>
+
     {{!-- contentFor/block scripts - use with defer --}}
     {{{block "scripts"}}}
 

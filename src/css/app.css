@@ -4,6 +4,7 @@
 
 /* Components */
 @import './components/button.css';
+@import './components/code.css';
 @import './components/get-involved.css';
 @import './components/sponsors.css';
 @import './components/profile-image.css';
