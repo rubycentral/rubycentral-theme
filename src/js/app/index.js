@@ -1,6 +1,12 @@
 import "../../css/app.css"
 import './navigation-top';
 
+document.querySelectorAll('.section-header').forEach((header) => {
+    header.addEventListener('click', function () {
+        this.parentNode.classList.toggle('active');
+    });
+});
+
 // LiveReload server
 if (ENV === 'development') {
   const script = document.createElement('script');
