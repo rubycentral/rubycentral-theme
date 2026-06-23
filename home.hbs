@@ -1,8 +1,5 @@
 {{!< default}}
 
-{{! ==============================
-    HERO
-    ============================== }}
 <section class="home-hero" aria-labelledby="home-hero-heading">
   <div class="home-hero__content">
     {{#get 'pages' filter="title:'Home::Hero - Body'" limit='1'}}
@@ -30,9 +27,6 @@
   {{/get}}
 </section>
 
-{{! ==============================
-    STATS
-    ============================== }}
 <section class="home-stats" aria-labelledby="home-stats-heading">
   <h2 id="home-stats-heading" class="home-stats__heading">Two decades of showing up for Ruby</h2>
   <dl class="home-stats__list">
@@ -47,9 +41,6 @@
   </dl>
 </section>
 
-{{! ==============================
-    GALLERY
-    ============================== }}
 <section class="home-gallery" aria-label="Community photos">
   {{#get 'pages' filter='tag:hash-home-gallery-image' limit='5' include='feature_image'}}
     {{#foreach pages}}
@@ -62,9 +53,6 @@
   {{/get}}
 </section>
 
-{{! ==============================
-    INVOLVEMENT
-    ============================== }}
 <section class="home-involvement" aria-labelledby="home-involvement-heading">
   <h2 id="home-involvement-heading" class="home-involvement__heading">Ruby Central is your community</h2>
   <ul class="home-involvement__list" role="list">
@@ -85,9 +73,6 @@
   </ul>
 </section>
 
-{{! ==============================
-    PILLARS
-    ============================== }}
 <section class="home-pillars" aria-labelledby="home-pillars-heading">
   <h2 id="home-pillars-heading" class="home-pillars__label">
     <img src="{{asset 'images/gem-logo--badge.svg'}}" alt="" role="presentation" />
@@ -160,9 +145,6 @@
   </div>
 </section>
 
-{{! ==============================
-    TRANSPARENCY
-    ============================== }}
 <section class="home-transparency" aria-label="Transparency and governance">
   {{#get 'pages' filter="title:'Home::Transparency'" limit='1'}}
     {{#foreach pages}}
