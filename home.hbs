@@ -1,217 +1,177 @@
 {{!< default}}
-<header class='home-template__hero'>
+
+{{! ==============================
+    HERO
+    ============================== }}
+<section class="home-hero" aria-labelledby="home-hero-heading">
+  <div class="home-hero__content">
     {{#get 'pages' filter="title:'Home::Hero - Body'" limit='1'}}
-        {{#foreach pages}}
-            {{content}}
-        {{/foreach}}
+      {{#foreach pages}}
+        {{content}}
+      {{/foreach}}
     {{/get}}
-    <section class='kg-button-card__group'>
-        {{#get 'pages' filter='tag:hash-home-hero-cta' limit='2'}}
-            {{#foreach pages}}
-                {{content}}
-            {{/foreach}}
-        {{/get}}
-    </section>
-</header>
-<section class='home-template__pillars'>
-    <section class='home-template__pillars__inner'>
-        <h2>Pillars of Ruby Central</h2>
-        <hr />
-        <section class='home-template__pillars__details'>
-            <section class='home-template__pillars__details--content'>
-                {{#get 'pages' filter="title:'Home::Pillars - Conferences'" limit='1'}}
-                    {{#foreach pages}}
-                        {{content}}
-                    {{/foreach}}
-                {{/get}}
-                {{#get 'pages' filter="title:'Home::Pillars - Button'" limit='1'}}
-                    {{#foreach pages}}
-                        {{content}}
-                    {{/foreach}}
-                {{/get}}
-            </section>
-            <section class='home-template__pillars__details--image-grid'>
-    {{#get "pages" filter="tag:hash-home-pillars-image-1" limit="1" include="feature_image"}}
+    <div class="home-hero__ctas">
+      {{#get 'pages' filter='tag:hash-home-hero-cta' limit='2'}}
         {{#foreach pages}}
-            {{#if feature_image}}
-                {{#if custom_excerpt}}
-                    <a
-                        href="{{custom_excerpt}}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="{{title}}"
-                    >
-                        <img
-                            class='home-template__pillars__details--image-grid_item--one'
-                            src="{{feature_image}}"
-                            alt="{{title}}"
-                        />
-                    </a>
-                {{else}}
-                    <img
-                        class='home-template__pillars__details--image-grid_item--one'
-                        src="{{feature_image}}"
-                        alt="{{title}}"
-                    />
-                {{/if}}
-            {{/if}}
+          {{content}}
         {{/foreach}}
-    {{/get}}
+      {{/get}}
+    </div>
+  </div>
 
-    {{#get "pages" filter="tag:hash-home-pillars-image-2" limit="1" include="feature_image"}}
-        {{#foreach pages}}
-            {{#if feature_image}}
-                {{#if custom_excerpt}}
-                    <a
-                        href="{{custom_excerpt}}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="{{title}}"
-                    >
-                        <img
-                            class='home-template__pillars__details--image-grid_item--two'
-                            src="{{feature_image}}"
-                            alt="{{title}}"
-                        />
-                    </a>
-                {{else}}
-                    <img
-                        class='home-template__pillars__details--image-grid_item--two'
-                        src="{{feature_image}}"
-                        alt="{{title}}"
-                    />
-                {{/if}}
-            {{/if}}
-        {{/foreach}}
-    {{/get}}
+  {{#get 'pages' filter="title:'Home::Hero - Image'" limit='1' include='feature_image'}}
+    {{#foreach pages}}
+      {{#if feature_image}}
+        <figure class="home-hero__image">
+          <img src="{{feature_image}}" alt="{{custom_excerpt}}" />
+        </figure>
+      {{/if}}
+    {{/foreach}}
+  {{/get}}
+</section>
 
-    {{#get "pages" filter="tag:hash-home-pillars-image-3" limit="1" include="feature_image"}}
-        {{#foreach pages}}
-            {{#if feature_image}}
-                {{#if custom_excerpt}}
-                    <a
-                        href="{{custom_excerpt}}"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        aria-label="{{title}}"
-                    >
-                        <img
-                            class='home-template__pillars__details--image-grid_item--three'
-                            src="{{feature_image}}"
-                            alt="{{title}}"
-                        />
-                    </a>
-                {{else}}
-                    <img
-                        class='home-template__pillars__details--image-grid_item--three'
-                        src="{{feature_image}}"
-                        alt="{{title}}"
-                    />
-                {{/if}}
-            {{/if}}
-        {{/foreach}}
-    {{/get}}
-</section>
-            </section>
-            <aside class='home-template__pillars__details--stats'>
-                <section>
-                    <h3>42</h3>
-                    <p>conferences hosted since 2001</p>
-                </section>
-                <section>
-                    <h3>18,000+</h3>
-                    <p>attendees</p>
-                </section>
-                <section>
-                    <h3>2,000+</h3>
-                    <p>speakers who have graced our stages</p>
-                </section>
-            </aside>
-        </section>
-    </section>
-</section>
-<section class='home-template__open-source'>
-    <section class='home-template__open-source__content'>
-        {{#get 'pages' filter="title:'Home::OpenSource'" limit='1'}}
-            {{#foreach pages}}
-                {{content}}
-            {{/foreach}}
-        {{/get}}
-        {{#get 'pages' filter="title:'Home::OpenSource - Button'" limit='1'}}
-            {{#foreach pages}}
-                {{content}}
-            {{/foreach}}
-        {{/get}}
-    </section>
-    <aside class='home-template__open-source__stats'>
-        <section>
-            <h3>Over 210 Billion</h3>
-            <p>gem downloads served</p>
-        </section>
-        <section>
-            <h3>Over 230K</h3>
-            <p>users and 185K gems</p>
-        </section>
-        <section>
-            <h3>100% Uptime</h3>
-            <p>since 2013 with 24/7 on call</p>
-        </section>
-    </aside>
-</section>
-<section class='home-template__community'>
-    <section class='home-template__community__inner'>
-        <section class='home-template__community__details'>
-            <section class='home-template__community__details--content'>
-                {{#get 'pages' filter="title:'Home::Community'" limit='1'}}
-                    {{#foreach pages}}
-                        {{content}}
-                    {{/foreach}}
-                {{/get}}
-                {{#get 'pages' filter="title:'Home::Community - Button'" limit='1'}}
-                    {{#foreach pages}}
-                        {{content}}
-                    {{/foreach}}
-                {{/get}}
-            </section>
-            <img
-                class='home-template__community__details--image'
-                src={{asset 'images/home__community__details--image.jpg'}}
-                alt='Group of developers hugging and smiling together'
-            />
-            <aside class='home-template__community__details--stats'>
-                <section>
-                    <h3>26</h3>
-                    <p>local meetup grants spanning 5 continents</p>
-                </section>
-                <section>
-                    <h3>330+</h3>
-                    <p>scholars</p>
-                </section>
-                <section>
-                    <h3>1,575</h3>
-                    <p>members</p>
-                </section>
-            </aside>
-        </section>
-    </section>
-</section>
-<section class='home-template__support'>
-    {{#get 'pages' filter="title:'Home::Support'" limit='1'}}
-        {{#foreach pages}}
-            {{content}}
-        {{/foreach}}
-    {{/get}}
-    <section class='sponsors'>
-        <p class='sponsors__title'>A special thanks to our supporters, you make this possible!</p>
-        <div class='sponsors__inner'>
-            {{#get "pages" filter="tag:hash-corporate-sponsor-ruby" include="feature_image"}}
-                {{#foreach pages}}
-                  {{#if feature_image}}
-                    <img src="{{feature_image}}" alt="{{title}}" />
-                  {{/if}}
-                {{/foreach}}
-              {{/get}}
+{{! ==============================
+    STATS
+    ============================== }}
+<section class="home-stats" aria-labelledby="home-stats-heading">
+  <h2 id="home-stats-heading" class="home-stats__heading">Two decades of showing up for Ruby</h2>
+  <dl class="home-stats__list">
+    {{#get 'pages' filter='tag:hash-home-stat' limit='8'}}
+      {{#foreach pages}}
+        <div class="home-stats__item">
+          <dt class="home-stats__value">{{title}}</dt>
+          <dd class="home-stats__description">{{custom_excerpt}}</dd>
         </div>
-    </section>
+      {{/foreach}}
+    {{/get}}
+  </dl>
 </section>
-{{> 'get-involved' }}
+
+{{! ==============================
+    GALLERY
+    ============================== }}
+<section class="home-gallery" aria-label="Community photos">
+  {{#get 'pages' filter='tag:hash-home-gallery-image' limit='5' include='feature_image'}}
+    {{#foreach pages}}
+      {{#if feature_image}}
+        <figure class="home-gallery__item">
+          <img src="{{feature_image}}" alt="{{title}}" />
+        </figure>
+      {{/if}}
+    {{/foreach}}
+  {{/get}}
+</section>
+
+{{! ==============================
+    INVOLVEMENT
+    ============================== }}
+<section class="home-involvement" aria-labelledby="home-involvement-heading">
+  <h2 id="home-involvement-heading" class="home-involvement__heading">Ruby Central is your community</h2>
+  <ul class="home-involvement__list" role="list">
+    {{#get 'pages' filter='tag:hash-home-involvement' limit='6'}}
+      {{#foreach pages}}
+        <li class="home-involvement__item">
+          <a class="home-involvement__link" href="{{custom_excerpt}}">
+            <span class="home-involvement__title">{{title}}</span>
+            <span class="home-involvement__description">{{excerpt words='30'}}</span>
+            <svg class="home-involvement__arrow" aria-hidden="true" focusable="false" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10" />
+              <path d="M8 12h8M14 8l4 4-4 4" />
+            </svg>
+          </a>
+        </li>
+      {{/foreach}}
+    {{/get}}
+  </ul>
+</section>
+
+{{! ==============================
+    PILLARS
+    ============================== }}
+<section class="home-pillars" aria-labelledby="home-pillars-heading">
+  <h2 id="home-pillars-heading" class="home-pillars__label">
+    <img src="{{asset 'images/gem-logo--badge.svg'}}" alt="" role="presentation" />
+    Pillars
+  </h2>
+
+  <div class="home-pillars__columns">
+
+    {{! Events }}
+    <article class="home-pillars__column home-pillars__column--events" aria-labelledby="pillar-events-heading">
+      <h3 id="pillar-events-heading" class="home-pillars__column-title">Events</h3>
+      <p class="home-pillars__column-subtitle">Where the Ruby community comes <em>together</em>.</p>
+
+      {{#get 'pages' filter='tag:hash-home-featured-event' limit='1' include='feature_image'}}
+        {{#foreach pages}}
+          <article class="home-event-card">
+            <p class="home-event-card__label">Next up</p>
+            <h4 class="home-event-card__title">{{title}}</h4>
+            {{#if custom_excerpt}}
+              <p class="home-event-card__meta">{{custom_excerpt}}</p>
+            {{/if}}
+            {{#if feature_image}}
+              <img class="home-event-card__image" src="{{feature_image}}" alt="" />
+            {{/if}}
+            {{#get 'pages' filter='tag:hash-home-event-cta' limit='1'}}
+              {{#foreach pages}}
+                {{content}}
+              {{/foreach}}
+            {{/get}}
+          </article>
+          {{#if excerpt}}
+            <p class="home-event-card__description">{{excerpt}}</p>
+          {{/if}}
+        {{/foreach}}
+      {{/get}}
+    </article>
+
+    {{! Open source }}
+    <article class="home-pillars__column home-pillars__column--open-source" aria-labelledby="pillar-open-source-heading">
+      <h3 id="pillar-open-source-heading" class="home-pillars__column-title">Open source</h3>
+      <p class="home-pillars__column-subtitle">The infrastructure Ruby runs on.</p>
+      {{#get 'pages' filter="title:'Home::OpenSource'" limit='1'}}
+        {{#foreach pages}}
+          <div class="home-pillars__column-description">{{content}}</div>
+        {{/foreach}}
+      {{/get}}
+      {{#get 'pages' filter="title:'Home::OpenSource - Button'" limit='1'}}
+        {{#foreach pages}}
+          {{content}}
+        {{/foreach}}
+      {{/get}}
+    </article>
+
+    {{! Community }}
+    <article class="home-pillars__column home-pillars__column--community" aria-labelledby="pillar-community-heading">
+      <h3 id="pillar-community-heading" class="home-pillars__column-title">Community</h3>
+      <p class="home-pillars__column-subtitle">Built <em>by</em> Rubyists, <em>for</em> Rubyists.</p>
+      {{#get 'pages' filter="title:'Home::Community'" limit='1'}}
+        {{#foreach pages}}
+          <div class="home-pillars__column-description">{{content}}</div>
+        {{/foreach}}
+      {{/get}}
+      {{#get 'pages' filter="title:'Home::Community - Button'" limit='1'}}
+        {{#foreach pages}}
+          {{content}}
+        {{/foreach}}
+      {{/get}}
+    </article>
+
+  </div>
+</section>
+
+{{! ==============================
+    TRANSPARENCY
+    ============================== }}
+<section class="home-transparency" aria-label="Transparency and governance">
+  {{#get 'pages' filter="title:'Home::Transparency'" limit='1'}}
+    {{#foreach pages}}
+      {{content}}
+    {{/foreach}}
+  {{/get}}
+  {{#get 'pages' filter="title:'Home::Transparency - Button'" limit='1'}}
+    {{#foreach pages}}
+      {{content}}
+    {{/foreach}}
+  {{/get}}
+</section>
