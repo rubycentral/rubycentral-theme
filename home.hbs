@@ -2,19 +2,19 @@
 
 {{> "components/hero-home" copy="title:'Home::Hero - Body'" primary="title:'Home::Hero - Button Primary'" secondary="title:'Home::Hero - Button Secondary'"}}
 
-{{#> "components/section" id="pillars" copy="title:'Home::Pillars - Heading'" grid="trio"}}
-  {{> "components/info-block" copy="title:'Home::Pillars - Conferences'" feature="tag:hash-home-featured-event" featureLabel="Next up" featureCta="title:'Home::Pillars - Button'" id="" border=true}}
-  {{> "components/info-block" copy="title:'Home::Pillars - OpenSource'" secondary="title:'Home::Pillars - OpenSource - Button'" id="" border=true}}
-  {{> "components/info-block" copy="title:'Home::Pillars - Community'" primary="title:'Home::Pillars - Community - Button'" id="" border=true}}
-{{/components/section}}
-
 {{#> "components/section"}}
-  <div class="home-involvement u-grid">
+  <div class="home-involvement">
     {{> "components/link-list" links="tag:hash-home-involvement" description=true feature=true}}
     <figure class="home-involvement__image" data-involvement-image>
       {{> "components/image" src="http://localhost:2368/content/images/2026/06/about-mission-audience.jpg" alt="A large audience watching a conference talk"}}
     </figure>
   </div>
+{{/components/section}}
+
+{{#> "components/section" id="pillars" copy="title:'Home::Pillars - Heading'" grid="trio" feature=true}}
+  {{> "components/info-block" copy="title:'Home::Pillars - Conferences'" feature="tag:hash-home-featured-event" featureLabel="Next up" featureCta="title:'Home::Pillars - Button'" id=""}}
+  {{> "components/info-block" copy="title:'Home::Pillars - OpenSource'" secondary="title:'Home::Pillars - OpenSource - Button'" id=""}}
+  {{> "components/info-block" copy="title:'Home::Pillars - Community'" primary="title:'Home::Pillars - Community - Button'" id=""}}
 {{/components/section}}
 
 {{> "components/cta" copy="title:'Home::Transparency'" primary="title:'Home::Transparency - Button'" label="Transparency and governance"}}

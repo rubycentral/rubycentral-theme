@@ -27,3 +27,17 @@
     line-height: var(--line-height--tight);
   }
 }
+
+.section--feature h2 {
+  align-items: center;
+  display: flex;
+  gap: var(--space--medium);
+
+  &::after {
+    background-color: var(--color--secondary-base);
+    content: "";
+    display: block;
+    width: 100%;
+    height: var(--border-width--base);
+  }
+}

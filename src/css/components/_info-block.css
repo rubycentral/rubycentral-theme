@@ -1,5 +1,4 @@
 .info-block {
-  background-color: var(--color--background-base);
   display: flex;
   flex-direction: column;
   gap: var(--space--medium);
@@ -21,9 +20,14 @@
 }
 
 .info-block--border {
+  background-color: var(--color--background-base);
   border: var(--border--dark);
   border-radius: var(--border-radius--base);
   padding: var(--space--base);
+
+  .cta-buttons {
+    margin-block-start: auto;
+  }
 }
 
 .info-block__image {
@@ -69,10 +73,6 @@
     font-size: var(--font-size--heading-subsection);
     font-weight: var(--font-weight--normal);
     line-height: var(--line-height--tight);
-  }
-
-  .cta-buttons {
-    margin-block-start: auto;
   }
 }
 

@@ -1,5 +1,4 @@
-{{!-- params: id (optional, anchor target — matches the hero link-list href), copy (optional, section-level overline+heading filter; omit when the wrapped content already provides its own heading, e.g. a standalone info-block), grid (string: "trio" or "quad" — lay child components out in a flowing grid using the matching u-grid modifier) --}}
-<section{{#if id}} id="{{id}}"{{/if}} class="section u-container">
+<section{{#if id}} id="{{id}}"{{/if}} class="section u-container{{#if feature}} section--feature{{/if}}">
   {{#if copy}}
     {{#get 'pages' filter=copy limit='1'}}
       {{#foreach pages}}
