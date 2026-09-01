@@ -1,0 +1,17 @@
+{
+  "name": "ruby-central-ghost-migrator",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "migrate": "echo \"Running migration from staging to production...\n\n\" && node index.js"
+  },
+  "keywords": [],
+  "author": "Ruby Central",
+  "license": "private",
+  "type": "module",
+  "dependencies": {
+    "@tryghost/admin-api": "^1.13.17",
+    "dotenv": "^16.5.0"
+  }
+}
